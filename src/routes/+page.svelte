@@ -69,7 +69,7 @@
 
     #features {
       background-image: url("images/feature-background.png");
-      background-position: bottom left;
+      background-position: top right;
       background-size: cover;
     }
 </style>
