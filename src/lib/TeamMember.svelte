@@ -3,7 +3,7 @@
     export let member:Member;
 </script>
 
-<div class="rounded-2xl">
+<div class="rounded-lg">
     <div>
         <img src={member.image} alt={member.alt}>
     </div>

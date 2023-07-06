@@ -1,5 +1,4 @@
 <script lang="ts">
-    import type { s } from "vitest/dist/types-71ccd11d";
     import type {BenefitClass} from "$lib/typescript/benefit";
 
     export let benefit:BenefitClass;
@@ -13,7 +12,7 @@
         <p>{benefit.message}</p>
         <a href={benefit.link} class="font-bold underline underline-offset-4">{benefit.linkMessage}</a>
     </div>
-<img src={benefit.photo} alt={benefit.alt} class="md:w-1/2 rounded-2xl">
+<img src={benefit.photo} alt={benefit.alt} class="md:w-1/2 rounded-lg">
 
 
 </div>

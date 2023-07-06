@@ -1,5 +1,7 @@
 <script lang="ts">
     import Header from "$lib/Header.svelte";
+    import MainSolutions from "$lib/MainSolutions.svelte";
+    import {MainSolution} from "$lib/typescript/mainSolution";
 </script>
 
 <Header background=""/>
