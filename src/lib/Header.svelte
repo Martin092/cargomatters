@@ -1,30 +1,54 @@
+<!-- Header Class
+    @uses: `Icon` to import icons from the Iconfy package
+    @prop String background: a class to give background to the header. Default is "bg-surface-300"
+    @ret: a responsive header that can be prepended to any page
+-->
 <script lang="ts">
     import Icon from '@iconify/svelte';
+
+    export let background:String = "bg-surface-400";
+    let showMobileNav:boolean = true;
+
+    function toggleNav() {
+        showMobileNav = !showMobileNav;
+    }
 </script>
 
-<nav class="bg-surface-300 p-2 flex justify-between align-baseline
-            md:p-4
-            xl:grid xl:grid-cols-12 xl:gap-6">
-    <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16 md:hidden">
-    <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12 hidden md:block
+<header class="w-screen">
+    <nav class={background + " p-2 flex justify-between align-baseline " +
+            "md:p-4 " +
+            "xl:grid xl:grid-cols-12 xl:gap-6"}>
+        <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16 md:hidden">
+        <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12 hidden md:block
               xl:col-span-2 xl:col-start-2 xl:h-auto">
 
-    <!--  Mobile Nav - Hidden from md upwards  -->
-    <div class="md:hidden flex right-group gap-2">
-        <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
-        <button><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
-    </div>
+        <!--  Mobile Nav - Hidden from md upwards  -->
+        <div class="md:hidden flex right-group gap-2">
+            <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
+            <button on:click={toggleNav}><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
+        </div>
 
-    <!--  Wide screen nav  -->
-    <div class="hidden md:flex links gap-4
+        <!--  Wide screen nav  -->
+        <div class="hidden md:flex links gap-4
                 xl:col-span-6 xl:col-start-6 xl:justify-end">
-        <a href="/">Home</a>
-        <a href="/about">About Us</a>
-        <a href="/services">Services</a>
-        <a href="/emergency">Emergency</a>
-        <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
-    </div>
-</nav>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="/emergency">Emergency</a>
+            <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
+        </div>
+    </nav>
+
+    {#if showMobileNav}
+        <div class="w-screen flex flex-col
+                    md:hidden">
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/">Home</a>
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/about">About Us</a>
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/services">Services</a>
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/emergency">Emergency</a>
+        </div>
+    {/if}
+</header>
 
 <style lang="scss">
     .right-group {
@@ -33,5 +57,9 @@
 
     .links {
       align-items: center;
+    }
+
+    .dropdown-link {
+      padding: 16px;
     }
 </style>
