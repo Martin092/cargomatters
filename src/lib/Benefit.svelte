@@ -11,9 +11,11 @@
         <h6 class="h6">International Partners</h6>
         <h3 class="h3">Solutions to all your problems</h3>
         <p>{benefit.message}</p>
-
+        <p class="font-bold underline underline-offset-4">{benefit.link}</p>
     </div>
-<img src={benefit.photo} alt={benefit.alt} class="md:w-1/2 rounded-lg">
+<img src={benefit.photo} alt={benefit.alt} class="md:w-1/2 rounded-2xl">
+
+
 </div>
 
 <style>
