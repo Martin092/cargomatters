@@ -18,9 +18,13 @@
     <nav class={background + " p-2 flex justify-between align-baseline " +
             "md:p-4 " +
             "xl:grid xl:grid-cols-12 xl:gap-6"}>
-        <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16 md:hidden">
-        <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12 hidden md:block
-              xl:col-span-2 xl:col-start-2 xl:h-auto">
+        <a href="/" class="h-auto md:hidden">
+            <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
+        </a>
+        <a href="/" class="h-auto hidden md:block
+                      xl:col-span-3 xl:col-start-2 xl:h-auto">
+            <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12">
+        </a>
 
         <!--  Mobile Nav - Hidden from md upwards  -->
         <div data-testid="mobile-nav"  class="md:hidden flex right-group gap-2">
