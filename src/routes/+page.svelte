@@ -11,14 +11,14 @@
 <Header background=""/>
 
 <main class="text-gray-800
-             grid grid-cols-4 gap-2 mx-4
-             md:grid-cols-8 md:gap-4 md:mx-8
-             xl:grid-cols-12 xl:gap-6 xl:mx-32">
+             grid grid-cols-4 gap-x-2 mx-4
+             md:grid-cols-8 md:gap-x-4 md:mx-8
+             xl:grid-cols-12 xl:gap-x-6 xl:mx-32 xl:mt-[-80px]">
 
     <!--  Hero section  -->
-    <div id="hero" class="col-span-4 flex flex-col pb-20
+    <div id="hero" class="col-span-4 flex flex-col
                 md:col-span-6 md:gap-12
-                xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6 xl:mt-[-80px]">
+                xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6">
 
         <!--    Hero Text Group    -->
         <div class="flex flex-col gap-9 mt-80 row-start-1 z-10
@@ -31,7 +31,7 @@
                 <h4 class="max-md:text-base md:max-lg:text-xl
                            xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
             </div>
-            <div class="flex flex-col gap-2 xl:mt-8">
+            <div class="flex flex-col gap-2 mb-20 xl:mt-8">
                 <div class="flex gap-2">
                     <button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button>
                     <button class="btn text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">I need Emergency care</button>
@@ -57,6 +57,8 @@
             <Feature feature={feature3}  />
         </div>
     </div>
+
+    <!--    -->
 </main>
 
 <style lang="scss">
