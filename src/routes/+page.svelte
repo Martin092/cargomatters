@@ -1,9 +1,5 @@
 <script lang="ts">
     import Header from "$lib/Header.svelte";
-    import Benefit from "$lib/Benefit.svelte";
-    import {BenefitClass} from "$lib/typescript/benefit";
-    import TeamMember from "$lib/TeamMember.svelte";
-    import {Member} from "$lib/typescript/member";
 </script>
 
 <Header background=""/>
@@ -39,12 +35,16 @@
         </div>
         <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src="images/hero-image.svg" alt="">
     </div>
+
+    <!-- Features list  -->
+    <div class="">
+        dwsaawd
+    </div>
 </main>
 
 <style lang="scss">
     #hero {
       background-image: url("images/hero-ornaments.svg");
       background-position: left;
-      z-index: -2;
     }
 </style>
