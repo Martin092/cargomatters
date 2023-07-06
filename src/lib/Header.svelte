@@ -7,7 +7,7 @@
     import Icon from '@iconify/svelte';
 
     export let background:String = "bg-surface-400";
-    let showMobileNav:boolean = true;
+    let showMobileNav:boolean = false;
 
     function toggleNav() {
         showMobileNav = !showMobileNav;
@@ -23,13 +23,13 @@
               xl:col-span-2 xl:col-start-2 xl:h-auto">
 
         <!--  Mobile Nav - Hidden from md upwards  -->
-        <div class="md:hidden flex right-group gap-2">
+        <div data-testid="mobile-nav"  class="md:hidden flex right-group gap-2">
             <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
-            <button on:click={toggleNav}><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
+            <button data-testid="toggle-nav" on:click={toggleNav}><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
         </div>
 
         <!--  Wide screen nav  -->
-        <div class="hidden md:flex links gap-4
+        <div data-testid="wide-screen-nav" class="hidden md:flex links gap-4
                 xl:col-span-6 xl:col-start-6 xl:justify-end">
             <a href="/">Home</a>
             <a href="/about">About Us</a>
@@ -39,8 +39,9 @@
         </div>
     </nav>
 
+    <!--  Mobile navigation  -->
     {#if showMobileNav}
-        <div class="w-screen flex flex-col
+        <div data-testid="nav-dropdown" class="w-screen flex flex-col
                     md:hidden">
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/">Home</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/about">About Us</a>
