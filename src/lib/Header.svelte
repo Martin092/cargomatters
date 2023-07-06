@@ -14,10 +14,10 @@
     }
 </script>
 
-<header class="w-screen">
+<header class="w-screen h-20 z-20 relative font-semibold text-gray-800">
     <nav class={background + " p-2 flex justify-between align-baseline " +
             "md:p-4 " +
-            "xl:grid xl:grid-cols-12 xl:gap-6"}>
+            "xl:grid xl:grid-cols-12 xl:gap-6 xl:mx-32 xl:px-0"}>
         <a href="/" class="h-auto md:hidden">
             <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
         </a>
@@ -28,7 +28,7 @@
 
         <!--  Mobile Nav - Hidden from md upwards  -->
         <div data-testid="mobile-nav"  class="md:hidden flex right-group gap-2">
-            <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
+            <a href="/contact" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
             <button data-testid="toggle-nav" on:click={toggleNav}><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
         </div>
 
@@ -39,7 +39,7 @@
             <a href="/about">About Us</a>
             <a href="/services">Services</a>
             <a href="/emergency">Emergency</a>
-            <a href="/contact" class="btn btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
+            <a href="/contact" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
         </div>
     </nav>
 
