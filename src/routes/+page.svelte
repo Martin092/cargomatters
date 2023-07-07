@@ -1,8 +1,5 @@
 <script lang="ts">
     import Header from "$lib/Header.svelte";
-
-    import MainSolutions from "$lib/MainSolutions.svelte";
-    import {MainSolution} from "$lib/typescript/mainSolution";
   
     import {FeatureClass} from "$lib/typescript/feature";
     import Feature from "$lib/Feature.svelte";
@@ -17,6 +14,7 @@
     let feature3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.");
 
     let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/gray.png", "alt", "Explore services >", "/services");
+    let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
 
 
 </script>
@@ -82,6 +80,24 @@
     <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1">
 
     </div>
+
+    <!--  Social Proof  -->
+    <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
+                              ml-[-16px]
+                              md:ml-[-32px]
+                              xl:ml-[-128px]"></div>
+    <div class="flex flex-col row-start-4 col-start-1 col-span-4 gap-16 py-20 w-full
+                md:col-start-1 md:col-span-8
+                xl:col-start-2 xl:col-span-10 xl:flex-row xl:items-center">
+        <div class="flex flex-col text-gray-50 text-center md:text-left xl:w-[30%]">
+            <h3 class="max-md:text-2xl md:mb-4">Our Partners</h3>
+            <h5 class="max-md:text-sm">Partners of CargoMatters have trusted our services. See what they have to say about us.</h5>
+        </div>
+        <div class="flex flex-col gap-6 xl:flex-row xl:w-[60%]">
+            <Review review={review1}/>
+            <Review review={review1}/>
+        </div>
+    </div>
 </main>
 
 
@@ -100,5 +116,10 @@
     #benefit {
       background-image: url("images/benefit-ornaments.svg");
       background-size: contain;
+    }
+
+    #social-proof {
+      background-image: url("images/social-proof.svg");
+      background-size: cover;
     }
 </style>

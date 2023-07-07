@@ -8,7 +8,7 @@
     <div class="p-8 flex flex-col gap-8">
         <div class="flex flex-col gap-4">
             <h5 class="text-[#232323]">{review.title}</h5>
-            <p class="text-secondary-400">{review.text}</p>
+            <p class="max-md:text-xs text-secondary-400">{review.text}</p>
         </div>
         <div class="flex flex-row justify-between items-center">
             <img src={review.logo} alt={review.alt}>
