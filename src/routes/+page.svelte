@@ -35,12 +35,11 @@
         <div class="flex flex-col gap-9 mt-80 row-start-1 z-10
                     md:gap-6
                     xl:gap-6 xl:col-start-2 xl:col-span-6 xl:mt-72">
+
             <!--  Hero Heading  -->
             <div class="flex flex-col gap-4 ">
-                <h1 class="max-md:text-3xl font-extrabold md:max-lg:text-5xl
-                           xl:font-bold">We provide the logistical solutions to connect the world</h1>
-                <h4 class="max-md:text-base md:max-lg:text-xl
-                           xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
+                <h1 class="font-extrabold xl:font-bold">We provide the logistical solutions to connect the world</h1>
+                <h4 class="xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
             </div>
             <div class="flex flex-col gap-2 mb-20 xl:mt-8">
                 <div class="flex gap-2">
@@ -58,7 +57,7 @@
                               ml-[-16px]
                               md:ml-[-32px]
                               xl:ml-[-128px]">s</div>
-    <div class="py-20 col-start-2 col-span-2 flex flex-col gap-4 row-start-2
+    <div class="py-20 col-start-2 col-span-2 flex flex-col gap-8 row-start-2
                 md:col-start-1 md:flex-row md:col-span-8
                 xl:col-start-2 xl:col-span-10" >
         <Feature feature={feature1}  />
@@ -77,9 +76,7 @@
         <Benefit benefit={benefit1}/>
         <Benefit benefit={benefit1}/>
     </div>
-    <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1">
-
-    </div>
+    <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1"></div>
 
     <!--  Social Proof  -->
     <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
@@ -90,8 +87,8 @@
                 md:col-start-1 md:col-span-8
                 xl:col-start-2 xl:col-span-10 xl:flex-row xl:items-center">
         <div class="flex flex-col text-gray-50 text-center md:text-left xl:w-[30%]">
-            <h3 class="max-md:text-2xl md:mb-4">Our Partners</h3>
-            <h5 class="max-md:text-sm">Partners of CargoMatters have trusted our services. See what they have to say about us.</h5>
+            <h3 class="md:mb-4">Our Partners</h3>
+            <h5>Partners of CargoMatters have trusted our services. See what they have to say about us.</h5>
         </div>
         <div class="flex flex-col gap-6 xl:flex-row xl:w-[60%]">
             <Review review={review1}/>

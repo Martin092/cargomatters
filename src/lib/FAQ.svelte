@@ -9,22 +9,22 @@
         <AccordionItem open>
             <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
             <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-            <svelte:fragment slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</svelte:fragment>
+            <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
         </AccordionItem>
         <AccordionItem open>
             <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
             <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-            <svelte:fragment slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</svelte:fragment>
+            <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
         </AccordionItem>
         <AccordionItem open>
             <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
             <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-            <svelte:fragment slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</svelte:fragment>
+            <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
         </AccordionItem>
         <AccordionItem open>
             <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
             <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-            <svelte:fragment slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</svelte:fragment>
+            <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
         </AccordionItem>
     </Accordion>
 </div>
