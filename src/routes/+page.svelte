@@ -18,8 +18,7 @@
 
     let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/gray.png", "alt", "Explore services >", "/services");
 
-    let review1 = new ReviewClass("Honest, dedicated work", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.",
-                                    "images/gray.png", "logo", "company1");
+
 </script>
 
 <Header background=""/>
@@ -84,10 +83,6 @@
 
     </div>
 </main>
-
-<div class="bg-[#FFFFFF]">
-    <Review review={review1}/>
-</div>
 
 
 <style lang="scss">
