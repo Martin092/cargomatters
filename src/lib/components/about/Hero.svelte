@@ -11,7 +11,7 @@
 
 <style lang="scss">
   #hero {
-    background-image: url("images/hero-ornaments.svg");
+    background-image: url("/images/hero-ornaments.svg");
     background-position: left;
     background-size: cover;
   }
