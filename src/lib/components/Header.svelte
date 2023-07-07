@@ -18,10 +18,10 @@
     <nav class={background + " p-2 flex justify-between align-baseline " +
             "md:p-4 " +
             "xl:grid xl:grid-cols-12 xl:gap-6 xl:mx-32 xl:px-0"}>
-        <a href="/static" class="h-auto md:hidden">
+        <a href="/" class="h-auto md:hidden">
             <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
         </a>
-        <a href="/static" class="h-auto hidden md:block
+        <a href="/" class="h-auto hidden md:block
                       xl:col-span-3 xl:col-start-2 xl:h-auto">
             <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12">
         </a>
@@ -35,7 +35,7 @@
         <!--  Wide screen nav  -->
         <div data-testid="wide-screen-nav" class="hidden md:flex links gap-4
                 xl:col-span-6 xl:col-start-6 xl:justify-end">
-            <a href="/static">Home</a>
+            <a href="/">Home</a>
             <a href="/about">About Us</a>
             <a href="/services">Services</a>
             <a href="/emergency">Emergency</a>
