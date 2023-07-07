@@ -19,11 +19,11 @@
             "md:p-4 " +
             "xl:grid xl:grid-cols-12 xl:gap-6 xl:mx-32 xl:px-0"}>
         <a href="/" class="h-auto md:hidden">
-            <img src="images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
+            <img src="/images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
         </a>
         <a href="/" class="h-auto hidden md:block
                       xl:col-span-3 xl:col-start-2 xl:h-auto">
-            <img src="images/logo-full.png" alt="Cargo Matters' full logo." class="h-12">
+            <img src="/images/logo-full.png" alt="Cargo Matters' full logo." class="h-12">
         </a>
 
         <!--  Mobile Nav - Hidden from md upwards  -->
