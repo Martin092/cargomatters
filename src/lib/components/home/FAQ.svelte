@@ -4,7 +4,7 @@
 </script>
 
 
-<div id="faq" class="col-start-2 col-span-full row-start-5"></div>
+<div id="faq" class="col-start-1 col-span-full row-start-5 overflow-visible"></div>
 <div class="flex flex-col row-start-5 col-start-1 col-span-4 gap-16 py-20 w-full items-center
                 md:col-start-1 md:col-span-8
                 xl:col-start-2 xl:col-span-10">

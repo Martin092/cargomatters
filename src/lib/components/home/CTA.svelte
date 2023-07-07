@@ -9,6 +9,6 @@
                 <h5>We answer within 24 hours.</h5>
             </div>
         </div>
-        <button class="btn w-1/2 p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button>
+        <a data-testid="home-cta-bottom" href="/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button></a>
     </div>
 </div>

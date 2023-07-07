@@ -19,7 +19,7 @@
             <h4 class="text-gray-50">{feature.title}</h4>
             <p class="text-gray-300">{feature.description}</p>
         </div>
-        <a href={feature.link} class="text-primary-500 underline"><p>{feature.linkText}</p></a>
+        <p><a href={feature.link} class="text-primary-500 underline">{feature.linkText}</a></p>
     </div>
 </div>
 
