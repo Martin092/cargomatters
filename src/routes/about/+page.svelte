@@ -1,6 +1,7 @@
 <script lang="ts">
+
+    import {Hero, Benefits, Stats, Ideals, Members} from "$lib/components/about";
     import Header from "$lib/components/Header.svelte";
-    import {Hero, Features, Benefits, SocialProof, FAQ, CTA} from "$lib/components/home"
 </script>
 
 <Header background=""/>
@@ -8,27 +9,23 @@
 <main class="text-gray-800
              grid grid-cols-4 gap-x-2 mx-4
              md:grid-cols-8 md:gap-x-4 md:mx-8
-             xl:grid-cols-12 xl:gap-x-6 xl:mx-32 xl:mt-[-80px]">
+             xl:grid-cols-12 xl:gap-x-6 xl:mx-32">
 
     <!--  Hero section  -->
     <Hero />
 
-    <!-- Features list  -->
-    <Features />
-
     <!--  Benefits  -->
     <Benefits />
 
-    <!--  Social Proof  -->
-    <SocialProof />
+    <!--  Ideals  -->
+    <Ideals />
 
-    <!--  FAQ  -->
-    <FAQ />
+    <!--  Members  -->
+    <Members />
 
-    <!--  CTA  -->
-    <CTA />
+    <!--  Stats  -->
+    <Stats />
 </main>
-
 
 <style lang="scss">
 
