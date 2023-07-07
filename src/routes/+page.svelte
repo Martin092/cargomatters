@@ -1,6 +1,6 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
-    import {Hero, Features, Benefits, SocialProof, FAQ, CTA} from "$lib/components/home/index"
+    import {Hero, Features, Benefits, SocialProof, FAQ, CTA} from "$lib/components/home"
 </script>
 
 <Header background=""/>

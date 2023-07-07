@@ -28,16 +28,16 @@ import Icon from "@iconify/svelte";
             <h4>Links</h4>
             <div class="flex flex-row gap-8">
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href=""><p>Terms of Use</p></a>
-                    <a href=""><p>Privacy Policy</p></a>
+                    <a href="/termsofservice"><p>Terms of Use</p></a>
+                    <a href="/privacy"><p>Privacy Policy</p></a>
                     <a href=""><p>Attributions</p></a>
                     <a href=""><p>Sitemap</p></a>
                 </div>
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
                     <a href=""><p>Transport Services</p></a>
                     <a href=""><p>Logistical Services</p></a>
-                    <a href=""><p>Contact</p></a>
-                    <a href=""><p>About Us</p></a>
+                    <a href="/contact"><p>Contact</p></a>
+                    <a href="/about"><p>About Us</p></a>
                 </div>
             </div>
         </div>
