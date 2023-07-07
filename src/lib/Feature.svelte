@@ -14,11 +14,9 @@
     <div class="hidden xl:block">
         <Icon color="grey" height="25" icon={feature.icon} />
     </div>
-    <div class="flex flex-col gap-4">
-        <h4 class="max-md:text-base text-gray-50
-                   md:max-xl:text-xl">{feature.title}</h4>
-        <p class="max-md:text-xs text-gray-300
-                  md:max-xl:text-sm">{feature.description}</p>
+    <div class="flex flex-col gap-2">
+        <h4 class="text-gray-50">{feature.title}</h4>
+        <p class="text-gray-300">{feature.description}</p>
     </div>
 </div>
 

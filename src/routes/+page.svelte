@@ -1,8 +1,5 @@
 <script lang="ts">
     import Header from "$lib/Header.svelte";
-
-    import MainSolutions from "$lib/MainSolutions.svelte";
-    import {MainSolution} from "$lib/typescript/mainSolution";
   
     import {FeatureClass} from "$lib/typescript/feature";
     import Feature from "$lib/Feature.svelte";
@@ -17,8 +14,9 @@
     let feature3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.");
 
     let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/gray.png", "alt", "Explore services >", "/services");
+    let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
 
-
+    import FAQ from "$lib/FAQ.svelte";
 </script>
 
 <Header background=""/>
@@ -37,12 +35,11 @@
         <div class="flex flex-col gap-9 mt-80 row-start-1 z-10
                     md:gap-6
                     xl:gap-6 xl:col-start-2 xl:col-span-6 xl:mt-72">
+
             <!--  Hero Heading  -->
             <div class="flex flex-col gap-4 ">
-                <h1 class="max-md:text-3xl font-extrabold md:max-lg:text-5xl
-                           xl:font-bold">We provide the logistical solutions to connect the world</h1>
-                <h4 class="max-md:text-base md:max-lg:text-xl
-                           xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
+                <h1 class="font-extrabold xl:font-bold">We provide the logistical solutions to connect the world</h1>
+                <h4 class="xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
             </div>
             <div class="flex flex-col gap-2 mb-20 xl:mt-8">
                 <div class="flex gap-2">
@@ -60,7 +57,7 @@
                               ml-[-16px]
                               md:ml-[-32px]
                               xl:ml-[-128px]">s</div>
-    <div class="py-20 col-start-2 col-span-2 flex flex-col gap-4 row-start-2
+    <div class="py-20 col-start-2 col-span-2 flex flex-col gap-8 row-start-2
                 md:col-start-1 md:flex-row md:col-span-8
                 xl:col-start-2 xl:col-span-10" >
         <Feature feature={feature1}  />
@@ -79,8 +76,49 @@
         <Benefit benefit={benefit1}/>
         <Benefit benefit={benefit1}/>
     </div>
-    <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1">
+    <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1"></div>
 
+    <!--  Social Proof  -->
+    <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
+                              ml-[-16px]
+                              md:ml-[-32px]
+                              xl:ml-[-128px]"></div>
+    <div class="flex flex-col row-start-4 col-start-1 col-span-4 gap-16 py-20 w-full
+                md:col-start-1 md:col-span-8
+                xl:col-start-2 xl:col-span-10 xl:flex-row xl:items-center">
+        <div class="flex flex-col text-gray-50 text-center md:text-left xl:w-[30%]">
+            <h3 class="md:mb-4">Our Partners</h3>
+            <h5>Partners of CargoMatters have trusted our services. See what they have to say about us.</h5>
+        </div>
+        <div class="flex flex-col gap-6 xl:flex-row xl:w-[60%]">
+            <Review review={review1}/>
+            <Review review={review1}/>
+        </div>
+    </div>
+
+    <!--  FAQ  -->
+    <div id="faq" class="col-start-2 col-span-full row-start-5"></div>
+    <div class="flex flex-col row-start-5 col-start-1 col-span-4 gap-16 py-20 w-full items-center
+                md:col-start-1 md:col-span-8
+                xl:col-start-2 xl:col-span-10">
+        <h3 class="text-center leading-normal">Frequently Asked Questions</h3>
+        <FAQ />
+    </div>
+
+    <!--  CTA  -->
+    <div class="flex flex-col row-start-6 col-start-1 col-span-4 gap-4 py-20 w-full items-center
+                md:col-start-1 md:col-span-8
+                xl:col-start-4 xl:col-span-6">
+        <div class="flex flex-col gap-8 items-center">
+            <div class="flex flex-col gap-4 text-center">
+                <h3 class="text-center leading-normal">Let's find a solution together</h3>
+                <div class="flex flex-col gap-2 font-bold">
+                    <h5>Call us directly or write an email. We will help you choose the perfect service for your logistical needs.</h5>
+                    <h5>We answer within 24 hours.</h5>
+                </div>
+            </div>
+            <button class="btn w-1/2 p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button>
+        </div>
     </div>
 </main>
 
@@ -100,5 +138,15 @@
     #benefit {
       background-image: url("images/benefit-ornaments.svg");
       background-size: contain;
+    }
+
+    #social-proof {
+      background-image: url("images/social-proof.svg");
+      background-size: cover;
+    }
+
+    #faq {
+      background-image: url("images/faq-ornaments.svg");
+      background-size: cover;
     }
 </style>

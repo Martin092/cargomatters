@@ -8,7 +8,7 @@
         <img src={mainSolution.image} alt={mainSolution.alt} class="rounded-t-lg">
     </div>
     <div class="flex flex-col bg-[#313131] gap-2 md:gap-4 xl:gap-6 p-9">
-        <h4 class="h4 text-white">{mainSolution.type} Solutions</h4>
+        <h4 class="text-white">{mainSolution.type} Solutions</h4>
         <p class=text-white>{mainSolution.description}</p>
         <ol class="pl-8 pt-3 list-disc">
             {#each mainSolution.bullets as bullet}
