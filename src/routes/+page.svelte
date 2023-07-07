@@ -107,6 +107,22 @@
         <h3 class="text-center leading-normal">Frequently Asked Questions</h3>
         <FAQ />
     </div>
+
+    <!--  CTA  -->
+    <div class="flex flex-col row-start-6 col-start-1 col-span-4 gap-4 py-20 w-full items-center
+                md:col-start-1 md:col-span-8
+                xl:col-start-4 xl:col-span-6">
+        <div class="flex flex-col gap-8 items-center">
+            <div class="flex flex-col gap-4 text-center">
+                <h3 class="text-center leading-normal">Let's find a solution together</h3>
+                <div class="flex flex-col gap-2 font-bold">
+                    <h5>Call us directly or write an email. We will help you choose the perfect service for your logistical needs.</h5>
+                    <h5>We answer within 24 hours.</h5>
+                </div>
+            </div>
+            <button class="btn w-1/2 p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button>
+        </div>
+    </div>
 </main>
 
 
