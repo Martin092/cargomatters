@@ -1,7 +1,4 @@
-
-<div id="hero"  class="col-start-1 row-start-1 col-span-full">
-
-</div>
+<div id="hero"  class="col-start-1 row-start-1 col-span-full"></div>
 
 <div class="col-span-4 flex flex-col row-start-1 pt-80 pb-20
             md:col-span-6 md:gap-12
