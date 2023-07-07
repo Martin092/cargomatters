@@ -16,7 +16,7 @@
     let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/gray.png", "alt", "Explore services >", "/services");
     let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
 
-
+    import FAQ from "$lib/FAQ.svelte";
 </script>
 
 <Header background=""/>
@@ -98,6 +98,15 @@
             <Review review={review1}/>
         </div>
     </div>
+
+    <!--  FAQ  -->
+    <div id="faq" class="col-start-2 col-span-full row-start-5"></div>
+    <div class="flex flex-col row-start-5 col-start-1 col-span-4 gap-16 py-20 w-full items-center
+                md:col-start-1 md:col-span-8
+                xl:col-start-2 xl:col-span-10">
+        <h3 class="text-center leading-normal">Frequently Asked Questions</h3>
+        <FAQ />
+    </div>
 </main>
 
 
@@ -120,6 +129,11 @@
 
     #social-proof {
       background-image: url("images/social-proof.svg");
+      background-size: cover;
+    }
+
+    #faq {
+      background-image: url("images/faq-ornaments.svg");
       background-size: cover;
     }
 </style>
