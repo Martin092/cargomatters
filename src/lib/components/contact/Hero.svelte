@@ -9,7 +9,7 @@
             xl:col-start-2 xl:col-span-12">
     <div class="flex flex-col gap-4">
         <h1>Contact Us</h1>
-        <div class="flex flex-row gap-12 items-baseline md:flex-col">
+        <div class="flex flex-col gap-12 items-baseline">
             <div class="flex flex-col md:flex-row gap-4 md:gap-32">
                 <div class="flex flex-col">
                     <h4>Reach us on phone or via email.</h4>
