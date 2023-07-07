@@ -47,7 +47,7 @@
     {#if showMobileNav}
         <div data-testid="nav-dropdown" class="w-screen flex flex-col
                     md:hidden">
-            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/">Home</a>
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/static">Home</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/about">About Us</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/services">Services</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/emergency">Emergency</a>
