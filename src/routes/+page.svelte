@@ -6,10 +6,14 @@
   
     import {FeatureClass} from "$lib/typescript/feature";
     import Feature from "$lib/Feature.svelte";
+    import Benefit from "$lib/Benefit.svelte";
+    import {BenefitClass} from "$lib/typescript/benefit";
 
     let feature1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.");
     let feature2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.");
     let feature3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.");
+
+    let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/gray.png", "alt", "Explore services >", "/services");
 </script>
 
 <Header background=""/>
@@ -20,7 +24,7 @@
              xl:grid-cols-12 xl:gap-x-6 xl:mx-32 xl:mt-[-80px]">
 
     <!--  Hero section  -->
-    <div id="hero" class="col-span-4 flex flex-col
+    <div id="hero" class="col-span-4 flex flex-col row-start-1
                 md:col-span-6 md:gap-12
                 xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6">
 
@@ -62,7 +66,17 @@
         </div>
     </div>
 
-    <!--    -->
+    <!--  Benefits  -->
+    <div class="flex flex-col row-start-3 col-start-1 col-span-4 gap-16 py-20
+                md:col-span-8
+                xl:col-start-2 xl:col-span-10">
+        <Benefit benefit={benefit1}/>
+        <Benefit benefit={benefit1}/>
+        <Benefit benefit={benefit1}/>
+    </div>
+    <div id="benefit" class="row-start-3 col-span-1 xl:col-start-1">
+
+    </div>
 </main>
 
 <style lang="scss">
@@ -75,5 +89,10 @@
       background-image: url("images/feature-background.png");
       background-position: top right;
       background-size: cover;
+    }
+
+    #benefit {
+      background-image: url("images/benefit-ornaments.svg");
+      background-size: contain;
     }
 </style>
