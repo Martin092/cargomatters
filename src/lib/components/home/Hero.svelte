@@ -20,12 +20,12 @@
             <h6>More than 1000 companies chose us as their logistical partner</h6>
         </div>
     </div>
-    <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src="images/hero-image.svg" alt="">
+    <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src="/images/hero-image.svg" alt="">
 </div>
 
 <style lang="scss">
     #hero {
-        background-image: url("images/hero-ornaments.svg");
+        background-image: url("/images/hero-ornaments.svg");
         background-position: left;
     }
 </style>
