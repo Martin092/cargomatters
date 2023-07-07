@@ -39,16 +39,19 @@
                     <div class="flex flex-col">
                         <div class="gap-2 text-white">
                             <h4 class="text-[#8F8F8F]">{emergency.stats[i].num}</h4>
-                            <p class="text-white">{emergency.stats[i].name}</p>
+                            <h5 class="text-white">{emergency.stats[i].name}</h5>
                         </div>
                         <div class="gap-2 text-white">
                             <h4 class="text-[#8F8F8F]">{emergency.stats[i+1].num}</h4>
-                            <p class="text-white">{emergency.stats[i+1].name}</p>
+                            <h5 class="text-white">{emergency.stats[i+1].name}</h5>
                         </div>
                     </div>
                     {/if}
                 {/each}
             </div>
+            <a href="a">
+                <h5 class="underline underline-offset-2 text-primary-500">Consult Us for Free ></h5>
+            </a>
         </div>
     </div>
 </div>
