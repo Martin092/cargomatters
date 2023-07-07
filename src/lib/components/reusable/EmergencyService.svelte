@@ -5,32 +5,53 @@
     export let emergency:EmergencyServiceClass;
 </script>
 
+<!-- Mobile version -->
 <div class="flex flex-col gap-4 rounded-t-lg border-2 border-black bg-[#313131] p-3 md:hidden">
     <Icon color="grey" height="30"  icon={emergency.icon}/>
     <div>
         <h6 class="text-white">{emergency.subTitle}</h6>
         <h3 class="text-white">{emergency.title}</h3>   
-        <p class="text-white">{emergency.description}</p>
+        <p class="text-[#CBCBCB]">{emergency.description}</p>
     </div>
     <div class="flex flex-row justify-between gap-2">
         {#each emergency.stats as stat}
             <div class="gap-2 text-white">
-                <h4>{stat.num}</h4>
-                <p>{stat.name}</p>
+                <h4 class="text-[#8F8F8F]">{stat.num}</h4>
+                <p class="text-white">{stat.name}</p>
             </div>
         {/each}
     </div>
 </div>
-<!-- <div class="flex flex-col gap-4 rounded-t-lg border-2 border-black bg-[#313131]">
-    <div class="flex flex-row">
-        <img src={emergency.image} alt={emergency.alt}>
-        <div class="flex flex-col">
-            <h6 class="h6 text-white">{emergency.subTitle}</h6>
-            <h3 class="h3 text-white font-bold">{emergency.title}</h3>
-        </div>
 
+<!-- Wide screen version -->
+<div class="flex flex-col gap-4 rounded-t-lg border-2 border-black bg-[#313131] hidden md:flex">
+    <div class="flex flex-row">
+        <img src={emergency.image} alt={emergency.alt} class="w-2/5">
+        <div class="flex flex-col gap-4 p-3">
+            <div>
+                <h6 class="text-white">{emergency.subTitle}</h6>
+                <h3 class="text-white">{emergency.title}</h3>   
+            </div>
+            <p class="text-[#CBCBCB]">{emergency.description}</p>
+            <div class="flex flex-row justify-between ">
+                {#each emergency.stats as stat, i}
+                    {#if i%2==0}
+                    <div class="flex flex-col">
+                        <div class="gap-2 text-white">
+                            <h4 class="text-[#8F8F8F]">{emergency.stats[i].num}</h4>
+                            <p class="text-white">{emergency.stats[i].name}</p>
+                        </div>
+                        <div class="gap-2 text-white">
+                            <h4 class="text-[#8F8F8F]">{emergency.stats[i+1].num}</h4>
+                            <p class="text-white">{emergency.stats[i+1].name}</p>
+                        </div>
+                    </div>
+                    {/if}
+                {/each}
+            </div>
+        </div>
     </div>
-</div> -->
+</div>
 
 <style>
 

@@ -36,8 +36,9 @@
     <!--  CTA  -->
     <CTA />
 </main>
-
-<EmergencyService emergency={emergency}/>
+<div class="w-1/3 h-1/2">
+    <EmergencyService emergency={emergency}/>
+</div>
 
 <style lang="scss">
 
