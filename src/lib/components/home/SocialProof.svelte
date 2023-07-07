@@ -2,7 +2,7 @@
     import {Review} from "$lib/components/reusable/index";
     import {ReviewClass} from "$lib/typescript/review";
 
-    let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
+    let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
 </script>
 <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
                               ml-[-16px]
@@ -24,7 +24,7 @@
 
 <style lang="scss">
     #social-proof {
-        background-image: url("images/social-proof.svg");
+        background-image: url("/images/social-proof.svg");
         background-size: cover;
     }
 </style>
