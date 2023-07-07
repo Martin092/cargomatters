@@ -14,9 +14,12 @@
     <div class="hidden xl:block">
         <Icon color="grey" height="25" icon={feature.icon} />
     </div>
-    <div class="flex flex-col gap-2">
-        <h4 class="text-gray-50">{feature.title}</h4>
-        <p class="text-gray-300">{feature.description}</p>
+    <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-2">
+            <h4 class="text-gray-50">{feature.title}</h4>
+            <p class="text-gray-300">{feature.description}</p>
+        </div>
+        <a href={feature.link} class="text-primary-500 underline"><p>{feature.linkText}</p></a>
     </div>
 </div>
 
