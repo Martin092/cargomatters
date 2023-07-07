@@ -11,7 +11,7 @@
     <Benefit benefit={benefit1}/>
     <Benefit benefit={benefit1}/>
 </div>
-<div id="benefit" class="row-start-2 col-span-1 xl:col-start-1"></div>
+<div id="benefit" class="row-start-2 col-span-1 xl:col-start-12"></div>
 
 <style lang="scss">
   #benefit {
