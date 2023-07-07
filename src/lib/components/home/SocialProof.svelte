@@ -1,5 +1,5 @@
 <script>
-    import Review from "$lib/components/Review.svelte";
+    import {Review} from "$lib/components/reusable/index";
     import {ReviewClass} from "$lib/typescript/review";
 
     let review1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
