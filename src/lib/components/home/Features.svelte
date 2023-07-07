@@ -25,7 +25,7 @@
 
 <style lang="scss">
     #features {
-        background-image: url("images/feature-background.png");
+        background-image: url("/images/feature-background.png");
         background-position: top right;
         background-size: cover;
     }
