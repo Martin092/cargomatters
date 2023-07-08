@@ -1,5 +1,5 @@
 <script lang="ts">
-    import EmergencyService from "$lib/components/reusable/EmergencyService.svelte";
+    import WideSolution from "$lib/components/reusable/WideSolution.svelte";
     import {EmergencyServiceClass, Stat} from "$lib/typescript";
 
     let stat1 = new Stat(12, "Services");
@@ -15,22 +15,22 @@
                 md:grid md:grid-cols-8
                 xl:grid-cols-12">
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
         <div class="md:col-span-4">
-            <EmergencyService emergency={em} />
+            <WideSolution emergency={em} />
         </div>
     </div>
 </div>
