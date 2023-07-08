@@ -1,6 +1,6 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
-    import {SubHero} from "$lib/components/services";
+    import {SubHero, IndustrySolutions} from "$lib/components/services";
 </script>
 
 <Header background=""/>
@@ -13,7 +13,7 @@
     <SubHero title="Logistical & Industrial Services" subTitle="Need specific logistic our industrial solutions for your business? Browse our catalog"
              showInfo={false} emergency={false}/>
 
-    <div class="col-start-1 row-start-2 col-span-4 flex flex-col py-20
+    <div class="col-start-1 row-start-2 col-span-4 flex flex-col py-20 pb-0
             md:col-start-1 md:col-span-8 md:gap-12
             xl:col-start-2 xl:col-span-6">
         <div class="flex flex-col gap-4">
@@ -22,6 +22,6 @@
         </div>
     </div>
 
-    
+    <IndustrySolutions />
 </main>
 
