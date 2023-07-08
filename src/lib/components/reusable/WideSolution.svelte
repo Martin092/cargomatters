@@ -1,8 +1,8 @@
 <script lang="ts">
-    import type {EmergencyServiceClass} from "$lib/typescript/emergencyService";
+    import type {WidesolutionClass} from "$lib/typescript/widesolutionClass";
     import Icon from '@iconify/svelte';
 
-    export let emergency:EmergencyServiceClass;
+    export let emergency:WidesolutionClass;
 </script>
 
 <div class="flex flex-col gap-4 rounded-lg border-2 border-black bg-[#313131] p-8 xl:p-8">

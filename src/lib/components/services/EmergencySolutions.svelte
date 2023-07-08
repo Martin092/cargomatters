@@ -1,10 +1,10 @@
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
-    import {EmergencyServiceClass, Stat} from "$lib/typescript";
+    import {WidesolutionClass, Stat} from "$lib/typescript";
 
     let stat1 = new Stat(12, "Services");
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
-    let em = new EmergencyServiceClass("/images/gray.png", "alt", "mdi:card-account-details", "Fast Solution",
+    let em = new WidesolutionClass("/images/gray.png", "alt", "mdi:card-account-details", "Fast Solution",
         "On Board Courier", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.", stats);
 </script>
 
