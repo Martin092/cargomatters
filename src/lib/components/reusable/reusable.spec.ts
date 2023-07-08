@@ -36,7 +36,7 @@ describe('Benefit component', () => {
 describe('Main Solutions Service component', () => {
     it('renders correct link', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"]);
+            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
 
         render(MainSolutions, {mainSolution: testSolution});
         const link = screen.getByText("See all Industrial solutions");
@@ -46,7 +46,7 @@ describe('Main Solutions Service component', () => {
 
     it('renders correct heading', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"]);
+            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
 
         render(MainSolutions, {mainSolution: testSolution});
         const link = screen.getByText("Industrial Solutions");
@@ -56,7 +56,7 @@ describe('Main Solutions Service component', () => {
 
     it('renders all bullets', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"]);
+            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
 
         render(MainSolutions, {mainSolution: testSolution});
         const bullet1 = screen.getByText("bullet1");
