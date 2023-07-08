@@ -4,7 +4,7 @@
 
     let mainSolution = new MainSolution("/images/gray.png", "/images/gray.png", "Industrial", "description",
                                         ["Road Freight", "Sea Freight", "Air Freight", "Rail Freight", "Emergency Transport Services"],
-                                        "link")
+                                        "/services/transport")
 </script>
 
 
