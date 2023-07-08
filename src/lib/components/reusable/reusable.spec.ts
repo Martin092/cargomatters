@@ -2,9 +2,7 @@ import {describe, it, expect, beforeEach} from "vitest";
 import {cleanup, render, screen} from '@testing-library/svelte';
 
 import {Feature, Benefit, MainSolutions} from "./index";
-import {FeatureClass} from "../../typescript/feature";
-import {BenefitClass} from "../../typescript/benefit";
-import {MainSolution} from "../../typescript/mainSolution";
+import {FeatureClass, BenefitClass, MainSolution} from "../../typescript/index";
 
 describe('Feature component', () => {
     beforeEach(() => cleanup());
