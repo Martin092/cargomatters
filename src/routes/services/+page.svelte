@@ -11,6 +11,7 @@
         new EmergencyServiceClass("/", "alt", "/", "fast", "title", "none", stats);
 
     import {Hero, WorkProcess} from "$lib/components/services/index"
+    import {FAQ, CTA} from "$lib/components/home/index";
     import Header from "$lib/components/Header.svelte";
 </script>
 
@@ -24,6 +25,10 @@
     <Hero />
 
     <WorkProcess />
+
+    <FAQ row="row-start-4" />
+
+    <CTA row="row-start-5" />
 
 </main>
 
