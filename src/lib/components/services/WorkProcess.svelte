@@ -4,7 +4,7 @@
                                       ml-[-16px]
                                       md:ml-[-32px]
                                       xl:ml-[-128px]"></div>
-<div class="row-start-3 col-start-1 col-span-full flex flex-col gap-2 py-20 pt-80 mt-[-420px]
+<div class="row-start-3 col-start-1 col-span-full flex flex-col gap-2 py-20
             md:grid md:grid-cols-8 md:gap-4 md:col-start-1 md:col-span-8
             lg:col-start-1 lg:col-span-8 lg:flex-row-reverse
             xl:col-start-2 xl:col-span-10 xl:gap-16
