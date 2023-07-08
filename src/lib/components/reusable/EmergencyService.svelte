@@ -5,15 +5,14 @@
     export let emergency:EmergencyServiceClass;
 </script>
 
-<!-- Mobile version -->
-<div class="flex flex-col gap-4 rounded-t-lg border-2 border-black bg-[#313131] p-3 md:hidden">
-    <Icon color="grey" height="30"  icon={emergency.icon}/>
+<div class="flex flex-col gap-4 rounded-lg border-2 border-black bg-[#313131] p-8 xl:p-8">
+    <Icon color="lightgray" height="30"  icon={emergency.icon}/>
     <div>
-        <h6 class="text-white">{emergency.subTitle}</h6>
-        <h3 class="text-white">{emergency.title}</h3>   
-        <p class="text-[#CBCBCB]">{emergency.description}</p>
+        <h6 class="text-gray-100">{emergency.subTitle}</h6>
+        <h3 class="text-gray-100">{emergency.title}</h3>
+        <p class="text-gray-300">{emergency.description}</p>
     </div>
-    <div class="flex flex-row justify-between gap-2">
+    <div class="flex flex-row gap-4 xl:gap-x-16 flex-wrap">
         {#each emergency.stats as stat}
             <div class="gap-2 text-white">
                 <h4 class="text-[#8F8F8F]">{stat.num}</h4>
@@ -21,43 +20,7 @@
             </div>
         {/each}
     </div>
-</div>
-
-<!-- Wide screen version -->
-<div class="hidden flex-col gap-4 rounded-t-lg border-2 border-black bg-[#313131] md:flex">
-    <div class="flex flex-row">
-        <img src={emergency.image} alt={emergency.alt} class="w-2/5">
-        <div class="flex flex-col gap-4 p-3">
-            <div>
-                <h6 class="text-white">{emergency.subTitle}</h6>
-                <h3 class="text-white">{emergency.title}</h3>   
-            </div>
-            <p class="text-[#CBCBCB]">{emergency.description}</p>
-            <div class="flex flex-row justify-between ">
-                {#if emergency.stats.length > 0}
-                    {#each emergency.stats as stat, i}
-                        {#if i%2===0}
-                            <div class="flex flex-col">
-                                <div class="gap-2 text-white">
-                                    <h4 class="text-[#8F8F8F]">{emergency.stats[i].num}</h4>
-                                    <h5 class="text-white">{emergency.stats[i].name}</h5>
-                                </div>
-                                {#if emergency.stats[i+1]}
-                                    <div class="gap-2 text-white">
-                                        <h4 class="text-[#8F8F8F]">{emergency.stats[i+1].num}</h4>
-                                        <h5 class="text-white">{emergency.stats[i+1].name}</h5>
-                                    </div>
-                                {/if}
-                            </div>
-                        {/if}
-                    {/each}
-                {/if}
-            </div>
-            <a href="a">
-                <h5 class="underline underline-offset-2 text-primary-500">Consult Us for Free ></h5>
-            </a>
-        </div>
-    </div>
+    <a href="/contact" class="underline text-primary-500">Consult Us for Free ></a>
 </div>
 
 <style>
