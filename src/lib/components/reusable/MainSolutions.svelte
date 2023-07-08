@@ -15,8 +15,8 @@
                 <li class="text-white">{bullet}</li>
             {/each}
         </ol>
-        <a href={mainSolution.link} class="underline underline-offset-4 text-white pt-9 text-primary-500">
-            See all {mainSolution.type} solutions
+        <a href={mainSolution.link} class="underline underline-offset-4 mt-9 text-primary-500">
+            See all {mainSolution.type} solutions >
         </a>
     </div>
 </div>
