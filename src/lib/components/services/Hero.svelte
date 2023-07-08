@@ -11,8 +11,12 @@
 <div id="hero" data-testid="xl-hero" class="col-start-1 col-span-full row-start-1 w-screen py-52
                                       ml-[-16px]
                                       md:ml-[-32px]
-                                      xl:ml-[-128px]"></div>
+                                      xl:ml-[-128px] xl:py-80"></div>
 
+<div id="heroOrnaments" data-testid="xl-hero" class="col-start-2 col-span-full row-start-2 mt-[-30px] hidden
+                                      ml-[-16px]
+                                      md:ml-[-32px]
+                                      xl:block xl:ml-[-128px]"></div>
 <div class="row-start-2 col-start-1 col-span-full flex flex-col gap-2 py-40 pb-80 mt-[-420px]
             md:flex-row
             lg:col-start-2 lg:col-span-6
@@ -27,5 +31,11 @@
         background-image: url("/images/services-hero.svg");
         background-size: cover;
         background-position: center;
+    }
+
+    #heroOrnaments {
+      background-image: url("/images/hero-ornaments.svg");
+      background-size: cover;
+      background-position: left;
     }
 </style>
