@@ -1,3 +1,7 @@
+<script lang="ts">
+    export let showInfo:boolean = true;
+</script>
+
 <div id="hero" class="col-start-1 row-start-1 col-span-full
                       md:col-start-9 md:col-span-3"></div>
 
@@ -15,9 +19,11 @@
                     I need Emergent Care
                 </button>
             </a>
-            <a href="/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
-                More Information >
-            </a>
+            {#if showInfo}
+                <a href="/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
+                    More Information >
+                </a>
+            {/if}
         </div>
     </div>
 </div>
