@@ -1,6 +1,5 @@
 <script lang="ts">
-    import {Stat} from "$lib/typescript/Stats";
-    import {EmergencyServiceClass} from "$lib/typescript/emergencyService";
+    import {EmergencyServiceClass, Stat} from "$lib/typescript";
 
     let stat1 = new Stat(12, "flights");
     let stat2 = new Stat(13, "trucks");
@@ -11,7 +10,7 @@
     let testEmergency =
         new EmergencyServiceClass("/", "alt", "/", "fast", "title", "none", stats);
 
-    import {Hero} from "$lib/components/services/index"
+    import {Hero, WorkProcess} from "$lib/components/services/index"
     import Header from "$lib/components/Header.svelte";
 </script>
 
@@ -23,6 +22,8 @@
              xl:grid-cols-12 xl:gap-x-6 xl:mx-32 xl:mt-[-80px]">
 
     <Hero />
+
+    <WorkProcess />
 
 </main>
 

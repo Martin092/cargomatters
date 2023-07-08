@@ -13,7 +13,7 @@
                                       md:ml-[-32px]
                                       xl:ml-[-128px]"></div>
 
-<div class="row-start-2 col-start-1 col-span-full flex flex-col gap-2 py-40 mt-[-420px]
+<div class="row-start-2 col-start-1 col-span-full flex flex-col gap-2 py-40 pb-80 mt-[-420px]
             md:flex-row
             lg:col-start-2 lg:col-span-6
             xl:col-start-3 xl:col-span-8
