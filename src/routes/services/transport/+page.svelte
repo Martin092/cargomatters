@@ -1,6 +1,6 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
-    import SubHero from "$lib/components/services/SubHero.svelte";
+    import {SubHero, TransportSolutions} from "$lib/components/services";
 
 </script>
 
@@ -14,4 +14,5 @@
 
     <SubHero />
 
+    <TransportSolutions />
 </main>
