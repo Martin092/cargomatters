@@ -34,20 +34,24 @@
             </div>
             <p class="text-[#CBCBCB]">{emergency.description}</p>
             <div class="flex flex-row justify-between ">
-                {#each emergency.stats as stat, i}
-                    {#if i%2===0}
-                        <div class="flex flex-col">
-                            <div class="gap-2 text-white">
-                                <h4 class="text-[#8F8F8F]">{emergency.stats[i].num}</h4>
-                                <h5 class="text-white">{emergency.stats[i].name}</h5>
+                {#if emergency.stats.length > 0}
+                    {#each emergency.stats as stat, i}
+                        {#if i%2===0}
+                            <div class="flex flex-col">
+                                <div class="gap-2 text-white">
+                                    <h4 class="text-[#8F8F8F]">{emergency.stats[i].num}</h4>
+                                    <h5 class="text-white">{emergency.stats[i].name}</h5>
+                                </div>
+                                {#if emergency.stats[i+1]}
+                                    <div class="gap-2 text-white">
+                                        <h4 class="text-[#8F8F8F]">{emergency.stats[i+1].num}</h4>
+                                        <h5 class="text-white">{emergency.stats[i+1].name}</h5>
+                                    </div>
+                                {/if}
                             </div>
-                            <div class="gap-2 text-white">
-                                <h4 class="text-[#8F8F8F]">{emergency.stats[i+1].num}</h4>
-                                <h5 class="text-white">{emergency.stats[i+1].name}</h5>
-                            </div>
-                        </div>
-                    {/if}
-                {/each}
+                        {/if}
+                    {/each}
+                {/if}
             </div>
             <a href="a">
                 <h5 class="underline underline-offset-2 text-primary-500">Consult Us for Free ></h5>
