@@ -30,12 +30,12 @@ import Icon from "@iconify/svelte";
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
                     <a href="/termsofservice"><p>Terms of Use</p></a>
                     <a href="/privacy"><p>Privacy Policy</p></a>
-                    <a href=""><p>Attributions</p></a>
-                    <a href=""><p>Sitemap</p></a>
+                    <a href="/"><p>Attributions</p></a>
+                    <a href="/"><p>Sitemap</p></a>
                 </div>
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href=""><p>Transport Services</p></a>
-                    <a href=""><p>Logistical Services</p></a>
+                    <a href="/services/transport"><p>Transport Services</p></a>
+                    <a href="/services/industry"><p>Logistical Services</p></a>
                     <a href="/contact"><p>Contact</p></a>
                     <a href="/about"><p>About Us</p></a>
                 </div>
