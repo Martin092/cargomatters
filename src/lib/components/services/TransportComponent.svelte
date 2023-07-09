@@ -1,35 +1,39 @@
 <script lang="ts">
     import type {TransportServiceClass} from "$lib/typescript/transportService";
-    import Feature from "../reusable/Feature.svelte";
+    import {Feature} from "$lib/components/reusable";
+
     export let transportService:TransportServiceClass;
-    let colors:string[] = ["text-[#707070]", "text-black", "text-[#474747]"]
+
+    let colors = {icon: "text-[#707070]",text: "text-gray-900", title: "text-[#474747]"};
     let hasLink:boolean = false;
     let smallText:boolean = true;
-    let iconSize:string[] = ["20", "35", "20"];
+    let iconSize:string = "20";
 </script>
 
-<div class="flex flex-col mt-4 gap-4">
+<div class="flex flex-col mt-4 gap-4 py-8 lg:py-4">
     <div class="md:hidden">
-        <h5>{transportService.title}</h5>
-        <h6>{transportService.subtitle}</h6>
+        <h3>{transportService.title}</h3>
+        <h4>{transportService.subtitle}</h4>
     </div>
 
     <div class="hidden md:flex flex-col">
-        <h4>{transportService.title}</h4>
-        <h5>{transportService.subtitle}</h5>
+        <h3 class="font-bold">{transportService.title}</h3>
+        <h4>{transportService.subtitle}</h4>
     </div>
 
     <h6 class="md:hidden">{transportService.description}</h6>
     <p class="hidden md:block">{transportService.description}</p>
-    <div class="flex flex-row justify-between gap-4">
+    <div class="flex flex-row flex-wrap sm:flex-nowrap justify-between gap-4">
         {#each transportService.features as feat}
-            <Feature feature={feat} colors={colors} hasLink={hasLink} smallText={smallText} iconSize={iconSize}/>
+            <div class="max-w-[220px]">
+                <Feature feature={feat} colors={colors} hasLink={hasLink} smallText={smallText} iconSize={iconSize}/>
+            </div>
         {/each}
     </div>
 
-    <a href={transportService.link}>
-        <h6 class="font-bold underline text-primary-500 md:hidden">{transportService.linkText}</h6>
-        <p class="font-bold underline text-primary-500 hidden md:block">{transportService.linkText}</p>
+    <a href="/contact">
+        <h6 class="font-bold underline text-primary-500 md:hidden">Consult {transportService.title} ></h6>
+        <p class="font-bold underline text-primary-500 hidden md:block">Consult {transportService.title} ></p>
     </a>
 </div>
 
