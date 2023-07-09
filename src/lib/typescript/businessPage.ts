@@ -17,7 +17,7 @@ export class BusinessPage {
         this.features = features;
         this.benefits = benefits;
         this.reviews = reviews;
-        this._catalogueCard = new IndustrySolutionClass(image, alt, `${type} + Industry Solutions`, subTitle, `See ${type} solutions`, `/services/industry/${type.toLowerCase()}`);
+        this._catalogueCard = new IndustrySolutionClass(image, alt, `${type} Industry Solutions`, subTitle, `See ${type} solutions`, `/services/industry/${type.toLowerCase()}`);
     }
 
     get catalogueCard(): IndustrySolutionClass {
