@@ -1,13 +1,15 @@
-<script>
+<script lang="ts">
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
     import Icon from "@iconify/svelte";
+
+    export let row:String = "row-start-5"
 </script>
 
 
-<div id="faq" class="col-start-1 col-span-full row-start-5 overflow-visible"></div>
-<div class="flex flex-col row-start-5 col-start-1 col-span-4 gap-16 py-20 w-full items-center
+<div id="faq" class={`col-start-1 col-span-full ${row} overflow-visible`}></div>
+<div class={`flex flex-col ${row} col-start-1 col-span-4 gap-16 py-20 w-full items-center
                 md:col-start-1 md:col-span-8
-                xl:col-start-2 xl:col-span-10">
+                xl:col-start-2 xl:col-span-10`}>
     <h3 class="text-center leading-normal">Frequently Asked Questions</h3>
     <div class="md:w-10/12 bg-[#353535] text-gray-100 rounded-lg">
         <Accordion autocollapse padding="py-2 px-4 md:py-3 px-6 xl:py-4 xl:px-10 ">

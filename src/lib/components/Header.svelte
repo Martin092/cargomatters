@@ -15,9 +15,9 @@
 </script>
 
 <header class="w-screen h-20 z-20 relative font-semibold text-gray-800">
-    <nav class={background + " p-2 flex justify-between align-baseline " +
-            "md:p-4 " +
-            "xl:grid xl:grid-cols-12 xl:gap-6 xl:mx-32 xl:px-0"}>
+    <nav class={`${background} text-black p-2 flex justify-between align-baseline
+                md:p-4
+                xl:grid xl:grid-cols-12 xl:gap-6 xl:mx-32 xl:px-0`}>
         <a href="/" class="h-auto md:hidden">
             <img src="/images/logo-planet.png" alt="Cargo Matters' planet logo." class="h-16">
         </a>
@@ -47,7 +47,7 @@
     {#if showMobileNav}
         <div data-testid="nav-dropdown" class="w-screen flex flex-col
                     md:hidden">
-            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/static">Home</a>
+            <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/">Home</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/about">About Us</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/services">Services</a>
             <a class="dropdown-link bg-surface-300 hover:bg-surface-400" href="/emergency">Emergency</a>

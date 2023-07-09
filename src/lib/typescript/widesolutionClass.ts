@@ -1,6 +1,6 @@
 import type {Stat} from "$lib/typescript/Stats";
 
-export class EmergencyServiceClass{
+export class WidesolutionClass {
     image: string;
     alt: string;
     icon: string;

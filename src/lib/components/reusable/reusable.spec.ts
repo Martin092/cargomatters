@@ -35,10 +35,10 @@ describe('Main Solutions Service component', () => {
 
     it('renders correct link', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
+            new MainSolution("image", "alt", "Transport", "lorem", ["bullet1", "bullet2"], "/");
 
         render(MainSolutions, {mainSolution: testSolution});
-        const link = screen.getByText("See all Industrial solutions");
+        const link = screen.getByText("See all Transport solutions >");
 
         expect(link).toBeTruthy();
     });
@@ -55,13 +55,15 @@ describe('Main Solutions Service component', () => {
 
     it('renders all bullets', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
+            new MainSolution("image", "alt", "Industrial", "lorem", ["aa", "bb"], "/");
 
-        render(MainSolutions, {mainSolution: testSolution});
-        const bullet1 = screen.getByText("bullet1");
-        const bullet2 = screen.getByText("bullet2");
+        const {getAllByText} = render(MainSolutions, {mainSolution: testSolution});
+        const bullet1 = getAllByText("aa");
+        const bullet2 = getAllByText("bb");
 
         expect(bullet1).toBeTruthy();
+        expect(bullet1.length).toBe(2);
         expect(bullet2).toBeTruthy();
+        expect(bullet2.length).toBe(2);
     });
 });

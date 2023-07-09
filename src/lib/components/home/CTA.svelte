@@ -1,6 +1,10 @@
-<div class="flex flex-col row-start-6 col-start-1 col-span-4 gap-4 py-20 w-full items-center
+<script lang="ts">
+    export let row:String = "row-start-6"
+</script>
+
+<div class={`flex flex-col ${row} col-start-1 col-span-4 gap-4 py-20 w-full items-center
                 md:col-start-1 md:col-span-8
-                xl:col-start-4 xl:col-span-6">
+                xl:col-start-4 xl:col-span-6`}>
     <div class="flex flex-col gap-8 items-center">
         <div class="flex flex-col gap-4 text-center">
             <h3 class="text-center leading-normal">Let's find a solution together</h3>
