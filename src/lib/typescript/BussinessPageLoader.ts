@@ -1,7 +1,7 @@
-import type {BusinessPage} from "$lib/typescript/businessPage";
-import type {IndustrySolutionClass} from "$lib/typescript/industrySolutions";
-import type {BusinessDao} from "$lib/typescript/businessDao";
-import type {PagesDatabase} from "$lib/typescript/PagesDatabase";
+import type {BusinessPage} from "./businessPage";
+import type {IndustrySolutionClass} from "./industrySolutions";
+import type {BusinessDao} from "./businessDao";
+import type {PagesDatabase} from "./PagesDatabase";
 
 export class BusinessPageLoader implements BusinessDao {
     private pagesDatabase:PagesDatabase;

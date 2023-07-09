@@ -1,5 +1,4 @@
-import type {BusinessPage} from "$lib/typescript/businessPage";
-import type {IndustrySolutionClass} from "$lib/typescript/industrySolutions";
+import type {BusinessPage, IndustrySolutionClass} from "./index";
 
 export interface BusinessDao {
     getPage(type:string):BusinessPage|null;

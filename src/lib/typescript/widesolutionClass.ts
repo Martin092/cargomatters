@@ -1,4 +1,4 @@
-import type {Stat} from "$lib/typescript/Stats";
+import type {Stat} from "./Stats";
 
 export class WidesolutionClass {
     image: string;

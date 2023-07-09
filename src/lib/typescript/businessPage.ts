@@ -1,5 +1,4 @@
-import {FeatureClass} from "$lib/typescript/feature";
-import {IndustrySolutionClass, BenefitClass, ReviewClass} from "$lib/typescript";
+import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "./index";
 
 export class BusinessPageBuilder {
     public type:string = "";

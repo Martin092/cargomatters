@@ -1,4 +1,4 @@
-import type {BusinessPage} from "$lib/typescript/businessPage";
+import type {BusinessPage} from "./businessPage";
 
 export class PagesDatabase {
     private static instance: PagesDatabase;
