@@ -21,7 +21,7 @@
         <h4>{transportService.subtitle}</h4>
     </div>
 
-    <h6 class="md:hidden">{transportService.description}</h6>
+    <h5 class="md:hidden">{transportService.description}</h5>
     <p class="hidden md:block">{transportService.description}</p>
     <div class="flex flex-row flex-wrap sm:flex-nowrap justify-between gap-4">
         {#each transportService.features as feat}
@@ -32,7 +32,7 @@
     </div>
 
     <a href="/contact">
-        <h6 class="font-bold underline text-primary-500 md:hidden">Consult {transportService.title} ></h6>
+        <h5 class="font-bold underline text-primary-500 md:hidden">Consult {transportService.title} ></h5>
         <p class="font-bold underline text-primary-500 hidden md:block">Consult {transportService.title} ></p>
     </a>
 </div>
