@@ -1,5 +1,6 @@
 import {BusinessPage} from "$lib/typescript";
-import {BusinessDao} from "$lib/typescript/businessDao";
+import type {BusinessDao} from "$lib/typescript/businessDao";
+import {BusinessPageLoader} from "$lib/typescript/BussinessPageLoader";
 
 let pages = new Map<string, BusinessPage>();
 
@@ -8,4 +9,4 @@ let aero = new BusinessPage("Aerospace", "Lorem ipsum dolor sit amet, consectetu
 
 pages.set("aerospace", aero);
 
-export const businessDao = new BusinessDao(pages);
+export const businessDao:BusinessDao = new BusinessPageLoader(pages);

@@ -1,5 +1,5 @@
 import type { PageServerLoad } from './$types';
-import {businessDao} from "$lib/server/adapterBussiness";
+import {businessDao} from "$lib/server/server";
 
 export const load = (async () => {
     const res = businessDao.getCatalogue();
