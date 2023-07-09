@@ -1,8 +1,8 @@
 export class Stat{
-    num: string;
+    num: number;
     name: string;
 
-    constructor(num:string, name:string){
+    constructor(num:number, name:string){
         this.num = num;
         this.name = name;
     }

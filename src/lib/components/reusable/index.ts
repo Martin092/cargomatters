@@ -1,7 +1,9 @@
-import Benefit from "$lib/components/reusable/Benefit.svelte";
-import Feature from "$lib/components/reusable/Feature.svelte";
-import MainSolutions from "$lib/components/reusable/MainSolutions.svelte";
-import Review from "$lib/components/reusable/Review.svelte";
-import TeamMember from "$lib/components/reusable/TeamMember.svelte";
+import Benefit from "./Benefit.svelte";
+import Feature from "./Feature.svelte";
+import MainSolutions from "./MainSolutions.svelte";
+import Review from "./Review.svelte";
+import TeamMember from "./TeamMember.svelte";
+import WideSolution from "./WideSolution.svelte";
+import IndustrySolution from "./IndustrySolution.svelte";
 
-export {Benefit, Feature, MainSolutions, Review, TeamMember};
+export {Benefit, Feature, MainSolutions, Review, TeamMember, WideSolution, IndustrySolution};
