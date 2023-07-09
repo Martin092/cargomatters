@@ -6,5 +6,6 @@ import {MainSolution} from "./mainSolution";
 import {Member} from "./member";
 import {ReviewClass} from "./review";
 import {Stat} from "./Stats"
+import {BusinessPage} from "./businessPage"
 
-export {BenefitClass, WidesolutionClass, FeatureClass, IndustrySolutionClass, MainSolution, Member, ReviewClass, Stat};
+export {BenefitClass, WidesolutionClass, FeatureClass, IndustrySolutionClass, MainSolution, Member, ReviewClass, Stat, BusinessPage};
