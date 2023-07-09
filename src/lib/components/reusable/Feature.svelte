@@ -3,30 +3,31 @@
     import Icon from "@iconify/svelte";
 
     export let feature:FeatureClass;
-    export let colors:string[] = ["grey", "text-gray-50", "text-gray-300"]; //always size 3 
-    export let iconSize:string[] = ["25", "40", "25"]; //also always has to be size 3
+
+    export let colors = {icon: "grey",text: "text-gray-50", title: "text-gray-300"};
+    export let iconSize:string= "25";
     export let hasLink:boolean = true;
-    export let smallText:boolean = false;;
+    export let smallText:boolean = false;
 </script>
 
 <div class="flex flex-col gap-2">
     <div class="md:hidden">
-        <Icon color={colors[0]} height={iconSize[0]} icon={feature.icon} />
+        <Icon color={colors.icon} height={iconSize} icon={feature.icon} />
     </div>
     <div class="hidden md:block xl:hidden">
-        <Icon color={colors[0]} height={iconSize[1]} icon={feature.icon} />
+        <Icon color={colors.icon} height={iconSize} icon={feature.icon} />
     </div>
     <div class="hidden xl:block">
-        <Icon color={colors[0]} height={iconSize[0]} icon={feature.icon} />
+        <Icon color={colors.icon} height={iconSize} icon={feature.icon} />
     </div>
     <div class="flex flex-col gap-8">
         <div class="flex flex-col gap-2">
             {#if smallText}
-                <p class={colors[1]}>{feature.title}</p>
-                <h6 class={colors[2]}>{feature.description}</h6>
+                <p class={colors.text}>{feature.title}</p>
+                <h6 class={colors.title}>{feature.description}</h6>
             {:else}
-                <h4 class={colors[1]}>{feature.title}</h4>
-                <p class={colors[2]}>{feature.description}</p>
+                <h4 class={colors.text}>{feature.title}</h4>
+                <p class={colors.title}>{feature.description}</p>
             {/if}
         </div>
         {#if hasLink}

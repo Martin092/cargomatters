@@ -13,4 +13,8 @@ export class FeatureClass {
         this.link = link;
         this.linkText = linkText;
     }
+
+    public static TransportFeature(icon: string, title: string, description: string) {
+        return new FeatureClass(icon, title, description, "", "");
+    }
 }
