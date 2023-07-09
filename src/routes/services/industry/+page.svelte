@@ -1,7 +1,10 @@
 <script lang="ts">
+    import type { PageData } from './$types';
     import Header from "$lib/components/Header.svelte";
     import {SubHero, IndustrySolutions} from "$lib/components/services";
     import LogisticsSolutions from "$lib/components/services/LogisticsSolutions.svelte";
+
+    export let data: PageData;
 </script>
 
 <Header background=""/>
@@ -23,7 +26,7 @@
         </div>
     </div>
 
-    <IndustrySolutions />
+    <IndustrySolutions catalogue={data.catalogue} />
 
     <div class="col-start-1 row-start-4 col-span-4 flex flex-col py-20 pb-0
             md:col-start-1 md:col-span-8 md:gap-12
