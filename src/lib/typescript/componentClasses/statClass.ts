@@ -8,13 +8,31 @@ export class Stat {
     private readonly _statistic:string
 
     /**
-     * Stat constructor that shortens the given number if necessary
+     * Private stat constructor that shortens the given number if necessary
      * @param num the number to be set as integer. Could be of a shortened form - 40k etc.
      * @param statistic the statistic information displayed usually below the number
      */
-    constructor(num: number, statistic: string) {
-        this._number = Stat.shortenNumber(num);
+    private constructor(num: string, statistic: string) {
+        this._number = num;
         this._statistic = statistic;
+    }
+
+    /**
+     * Create a statistic using the number shortener function
+     * @param num the number that will potentially be shortened
+     * @param stat the statistic name to be rendered below the number
+     */
+    public static shortenedStatistic(num:number, stat:string):Stat {
+        return new Stat(Stat.shortenNumber(num), stat);
+    }
+
+    /**
+     * Create a statistic without using the shortener function
+     * @param num the number that will be displayed above
+     * @param stat the statistic name to be rendered below the number
+     */
+    public static normalStatistic(num:string, stat:string):Stat {
+        return new Stat(num, stat);
     }
 
     /**

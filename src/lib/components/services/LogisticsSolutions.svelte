@@ -7,7 +7,7 @@
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
     import {WidesolutionClass, Stat} from "$lib/typescript";
 
-    let stat1 = new Stat(12, "Services");
+    let stat1 = Stat.shortenedStatistic(12, "Services");
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
     let em = new WidesolutionClass("mdi:card-account-details", "Fast Solution",
         "On Board Courier", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.", stats);

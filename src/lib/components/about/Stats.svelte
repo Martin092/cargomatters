@@ -5,11 +5,11 @@
 <script lang="ts">
     import {Stat} from "$lib/typescript";
 
-    let stat1:Stat = new Stat(15, "Years of experience");
-    let stat2:Stat = new Stat(321, "Happy clients");
-    let stat3:Stat = new Stat(800, "Tonnes transported");
-    let stat4:Stat = new Stat(644, "Fulfilled orders");
-    let stat5:Stat = new Stat(12, "International Partners");
+    let stat1:Stat = Stat.shortenedStatistic(15, "Years of experience");
+    let stat2:Stat = Stat.shortenedStatistic(321, "Happy clients");
+    let stat3:Stat = Stat.shortenedStatistic(800, "Tonnes transported");
+    let stat4:Stat = Stat.shortenedStatistic(644, "Fulfilled orders");
+    let stat5:Stat = Stat.shortenedStatistic(12, "International Partners");
 
     let statistics:Stat[] = [stat1, stat2, stat3, stat4, stat5];
 
