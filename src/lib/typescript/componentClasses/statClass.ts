@@ -40,7 +40,33 @@ export class Stat {
      * @param num must be non-negative integer that is smaller than 10^12 - one trillion
      */
     public static shortenNumber(num:number):string {
-        return num.toString();
+        if (num < 0) return "0";
+
+        if (num < 1000) return num.toString();
+
+        if (num < 1000000) {
+            let quotient = Math.floor(num / 1000);
+            let remainder = num % 1000;
+
+            if (quotient < 10) {
+                return `${quotient.toString()}.${Math.round(remainder/100)}k`
+            } else {
+                return `${Math.round(num / 1000).toString()}k`
+            }
+        }
+
+        if (num < 1000000000) {
+            let quotient = Math.floor(num / 1000000);
+            let remainder = num % 1000000;
+
+            if (quotient < 10) {
+                return `${quotient.toString()}.${Math.round(remainder/100000)}m`;
+            } else {
+                return `${Math.round(num / 1000000).toString()}m`;
+            }
+        }
+
+        return "0";
     }
 
     /**
