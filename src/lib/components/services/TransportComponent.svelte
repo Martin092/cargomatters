@@ -4,7 +4,7 @@
 -->
 
 <script lang="ts">
-    import type {TransportServiceClass} from "$lib/typescript/transportService";
+    import type {TransportServiceClass} from "$lib/typescript";
     import {Feature} from "$lib/components/reusable";
 
     /**

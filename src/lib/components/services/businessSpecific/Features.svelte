@@ -6,7 +6,7 @@
 
 <script lang="ts">
     import {Feature} from "$lib/components/reusable/index";
-    import {FeatureClass} from "$lib/typescript/feature";
+    import {FeatureClass} from "$lib/typescript";
 
     /**
      * an array of all the features that have to be loaded on the page

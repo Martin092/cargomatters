@@ -1,4 +1,4 @@
-import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "./index";
+import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "../index";
 
 export class BusinessPageBuilder {
     public type:string = "";

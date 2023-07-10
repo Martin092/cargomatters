@@ -4,7 +4,7 @@
 -->
 
 <script lang="ts">
-    import type {ReviewClass} from "$lib/typescript/review";
+    import type {ReviewClass} from "$lib/typescript/componentClasses/review";
 
     /**
      * A typescript object that holds information about the review

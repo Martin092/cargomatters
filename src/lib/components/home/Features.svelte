@@ -4,7 +4,7 @@
 -->
 <script>
     import {Feature} from "$lib/components/reusable/index";
-    import {FeatureClass} from "$lib/typescript/feature";
+    import {FeatureClass} from "$lib/typescript";
 
     let feature1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
     let feature2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");

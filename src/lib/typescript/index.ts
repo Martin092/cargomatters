@@ -1,13 +1,26 @@
-import {BenefitClass} from "./benefit";
-import {WidesolutionClass} from "./widesolutionClass";
-import {FeatureClass} from "./feature";
-import {IndustrySolutionClass} from "./industrySolutions";
-import {MainSolution} from "./mainSolution";
-import {Member} from "./member";
-import {ReviewClass} from "./review";
-import {Stat} from "./StatClass"
-import {BusinessPage, BusinessPageBuilder} from "./businessPage"
+import {BenefitClass} from "./componentClasses/benefit";
+import {WidesolutionClass} from "./componentClasses/widesolutionClass";
+import {FeatureClass} from "./componentClasses/feature";
+import {IndustrySolutionClass} from "./componentClasses/industrySolutions";
+import {MainSolution} from "./componentClasses/mainSolution";
+import {Member} from "./componentClasses/member";
+import {ReviewClass} from "./componentClasses/review";
+import {Stat} from "./componentClasses/statClass"
+import {BusinessPage, BusinessPageBuilder} from "./componentClasses/businessPage"
 import {BusinessPageLoader} from "./BussinessPageLoader";
 import {PagesDatabase} from "./PagesDatabase";
+import {TransportServiceClass} from "./componentClasses/transportService"
 
-export {BenefitClass, WidesolutionClass, FeatureClass, IndustrySolutionClass, MainSolution, Member, ReviewClass, Stat, BusinessPage, BusinessPageLoader, PagesDatabase, BusinessPageBuilder};
+export {BenefitClass,
+        WidesolutionClass,
+        FeatureClass,
+        IndustrySolutionClass,
+        MainSolution,
+        Member,
+        ReviewClass,
+        Stat,
+        BusinessPage,
+        BusinessPageLoader,
+        PagesDatabase,
+        BusinessPageBuilder,
+        TransportServiceClass};

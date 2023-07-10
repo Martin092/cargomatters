@@ -5,7 +5,7 @@
 
 <script lang="ts">
     import {Benefit} from "$lib/components/reusable";
-    import {BenefitClass} from "$lib/typescript/benefit";
+    import {BenefitClass} from "$lib/typescript";
 
     /**
      * an array of all the benefits that have to be loaded on the page

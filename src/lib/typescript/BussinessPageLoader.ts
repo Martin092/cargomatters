@@ -1,5 +1,5 @@
-import type {BusinessPage} from "./businessPage";
-import type {IndustrySolutionClass} from "./industrySolutions";
+import type {BusinessPage} from "./componentClasses/businessPage";
+import type {IndustrySolutionClass} from "./componentClasses/industrySolutions";
 import type {BusinessDao} from "./businessDao";
 import type {PagesDatabase} from "./PagesDatabase";
 

@@ -4,7 +4,7 @@
 -->
 
 <script lang="ts">
-    import type {Member} from "$lib/typescript/member";
+    import type {Member} from "$lib/typescript";
 
     /**
      * a typescript object that holds information about the member

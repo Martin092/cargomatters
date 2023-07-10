@@ -3,7 +3,7 @@
     @ret: a component that has information about the benefit and accompanying image
 -->
 <script lang="ts">
-    import type {BenefitClass} from "$lib/typescript/benefit";
+    import type {BenefitClass} from "$lib/typescript";
 
     /**
      * a typescript object that holds the benefits to be loaded

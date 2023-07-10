@@ -7,7 +7,7 @@
 
     import TransportComponent from "$lib/components/services/TransportComponent.svelte";
 
-    import {TransportServiceClass} from "$lib/typescript/transportService";
+    import {TransportServiceClass} from "$lib/typescript";
     import {FeatureClass} from "$lib/typescript";
 
     let f1 = FeatureClass.TransportFeature("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.");

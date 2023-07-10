@@ -5,7 +5,7 @@
 -->
 
 <script lang="ts">
-    import type {IndustrySolutionClass} from "$lib/typescript/industrySolutions";
+    import type {IndustrySolutionClass} from "$lib/typescript";
 
     /**
      * A typescript object that holds information about the solution

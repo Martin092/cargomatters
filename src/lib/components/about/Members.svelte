@@ -4,7 +4,7 @@
 -->
 <script lang="ts">
     import TeamMember from "$lib/components/reusable/TeamMember.svelte";
-    import {Member} from "$lib/typescript/member";
+    import {Member} from "$lib/typescript";
 
     let member = new Member("/images/gray.png", "member", "CEO", "Peter Griffin", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.")
 </script>

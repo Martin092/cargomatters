@@ -1,4 +1,4 @@
-import type {BusinessPage} from "./businessPage";
+import type {BusinessPage} from "./componentClasses/businessPage";
 
 /**
  * Singleton PageDatabase class to store the business pages. Used for the naive
