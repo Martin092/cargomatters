@@ -1,6 +1,10 @@
 <!-- SubHero component for Hero of Sub pages
 -->
 <script lang="ts">
+
+    /**
+     * If the information should be shown
+     */
     export let showInfo:boolean = true;
     export let title:string = "For any Emergency services Contact us ASAP";
     export let subTitle:string = "Your time is precious. Let’s tackle the logistical issues as soon as possible!";
@@ -27,7 +31,7 @@
                     </button>
                 {:else}
                     <button class="btn p-4 text-xs rounded-lg bg-primary-500 text-gray-950 font-bold md:text-base">
-                        Consult Bussiness Solutions
+                        Consult Business Solutions
                     </button>
                 {/if}
             </a>

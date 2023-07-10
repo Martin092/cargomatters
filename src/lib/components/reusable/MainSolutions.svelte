@@ -1,10 +1,13 @@
 <!-- Main Solution component
     @uses: the MainSolution class as a data structure to load information about the component
-    @prop mainSolution: an object to load information about this main solution
     @ret: a component that that presents a solution group with sub-services as bullet points
 -->
 <script lang="ts">
     import type {MainSolution} from "$lib/typescript";
+
+    /**
+     * An object to load information about this main solution
+     */
     export let mainSolution:MainSolution;
 </script>
 

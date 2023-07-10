@@ -1,11 +1,14 @@
 <!-- Review component
     @uses: the ReviewClass class as a data structure to load information about the component
-    @prop review: a typescript object that holds information about the review
     @ret: a component that that holds the text of the review, the name of the company and a logo
 -->
 
 <script lang="ts">
     import type {ReviewClass} from "$lib/typescript/review";
+
+    /**
+     * A typescript object that holds information about the review
+     */
     export let review:ReviewClass;
 </script>
 

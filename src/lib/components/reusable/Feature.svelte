@@ -18,6 +18,10 @@
     export let colors = {icon: "grey",text: "text-gray-50", title: "text-gray-300"};
     export let iconSize:string= "25";
     export let hasLink:boolean = true;
+
+    /**
+     * a boolean that indicates whether the text is small or not
+     */
     export let smallText:boolean = false;
 </script>
 
