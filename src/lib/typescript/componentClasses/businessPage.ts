@@ -184,7 +184,7 @@ export class BusinessPage {
 /**
  * A function to create dummy features
  */
-function dummyFeatures():FeatureClass[] {
+export function dummyFeatures():FeatureClass[] {
     let f1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
     let f2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
     let f3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
@@ -195,7 +195,7 @@ function dummyFeatures():FeatureClass[] {
 /**
  * A function to create dummy benefits
  */
-function dummyBenefits():BenefitClass[] {
+export function dummyBenefits():BenefitClass[] {
     let b1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/gray.png", "alt", "Explore services >", "/services");
 
     return [b1, b1];
@@ -204,7 +204,7 @@ function dummyBenefits():BenefitClass[] {
 /**
  * A function to create dummy reviews
  */
-function dummyReviews():ReviewClass[] {
+export function dummyReviews():ReviewClass[] {
     let r1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
 
     return [r1, r1];
