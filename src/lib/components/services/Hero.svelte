@@ -1,3 +1,7 @@
+<!-- Hero for the Main Solutions Page
+    @uses: MainSolutions component and the MainSolution class to load the two main solution groups
+    @
+-->
 <script>
     import {MainSolutions} from "$lib/components/reusable";
     import {MainSolution} from "$lib/typescript";

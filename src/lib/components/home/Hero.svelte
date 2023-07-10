@@ -1,3 +1,6 @@
+<!-- Home Hero section
+    @ret: a responsive Hero section for the home
+-->
 <div id="hero" class="col-span-4 flex flex-col row-start-1
                 md:col-span-6 md:gap-12
                 xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6">

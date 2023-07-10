@@ -1,3 +1,5 @@
+<!-- SubHero component for Hero of Sub pages
+-->
 <script lang="ts">
     export let showInfo:boolean = true;
     export let title:string = "For any Emergency services Contact us ASAP";

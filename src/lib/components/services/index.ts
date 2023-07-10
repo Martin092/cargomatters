@@ -1,3 +1,7 @@
+/**
+ * Components for the Services main Page and subpages of the service
+ */
+
 import Hero from './Hero.svelte';
 import WorkProcess from "./WorkProcess.svelte";
 import SubHero from "./SubHero.svelte";

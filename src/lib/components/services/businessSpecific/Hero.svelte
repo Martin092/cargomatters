@@ -1,3 +1,9 @@
+<!-- Hero for Business Page
+    @prop type String: the type of the business. Used to create the title
+    @prop subTitle String: the subtitle rendered underneath the title
+    @prop heroImage String: path to the image to be loaded inside the hero section
+    @ret: a responsive Frequently Asked Questions section used in the dynamic business page
+-->
 <script lang="ts">
     export let type = "";
     export let subTitle = "";

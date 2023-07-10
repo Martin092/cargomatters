@@ -1,3 +1,11 @@
+<!--/**
+ * Index for Contact components used exclusively
+ * inside the Contact and the Emergency Contact pages
+ */ CTA Group
+    @prop row String: class for which row to take when loading the component inside a grid element
+    @ret: a responsive Call to Action section used on the Home page
+    and on the main services page
+-->
 <script lang="ts">
     export let row:String = "row-start-6"
 </script>

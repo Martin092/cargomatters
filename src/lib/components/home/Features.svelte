@@ -1,3 +1,7 @@
+<!-- Home Features
+    @uses: Feature component and FeatureClass class to load features
+    @ret: a responsive features section used on the Home page
+-->
 <script>
     import {Feature} from "$lib/components/reusable/index";
     import {FeatureClass} from "$lib/typescript/feature";

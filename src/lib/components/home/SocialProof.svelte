@@ -1,3 +1,7 @@
+<!-- Home Social Proof
+    @uses: Review component and ReviewClass class to load reviews and social proof
+    @ret: a responsive features section used on the Home and the main services page
+-->
 <script>
     import {Review} from "$lib/components/reusable/index";
     import {ReviewClass} from "$lib/typescript/review";

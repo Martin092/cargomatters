@@ -1,5 +1,4 @@
 <script lang="ts">
-
     import {Hero} from "$lib/components/contact";
     import Header from "$lib/components/Header.svelte";
 </script>

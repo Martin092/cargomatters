@@ -2,6 +2,9 @@
     import type {TransportServiceClass} from "$lib/typescript/transportService";
     import {Feature} from "$lib/components/reusable";
 
+    /**
+     * The transport service to be loaded as a TransportServiceClass
+     */
     export let transportService:TransportServiceClass;
 
     let colors = {icon: "text-[#707070]",text: "text-gray-900", title: "text-[#474747]"};

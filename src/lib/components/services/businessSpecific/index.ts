@@ -1,3 +1,8 @@
+/**
+ * Index for all the components rendered on the
+ * Dynamic Specific Business solutions page
+ */
+
 import Benefits from "$lib/components/services/businessSpecific/Benefits.svelte";
 import CTA from "$lib/components/services/businessSpecific/CTA.svelte";
 import FAQ from "$lib/components/services/businessSpecific/FAQ.svelte";

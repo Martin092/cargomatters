@@ -1,3 +1,7 @@
+<!-- Hero component for Contact pages
+    @uses: `Icon` to import icons from the Iconify package
+    @ret: a responsive hero section for the Contact page
+-->
 <script>
     import Icon from "@iconify/svelte";
 </script>
