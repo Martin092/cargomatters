@@ -1,15 +1,15 @@
 <!-- EmergencySolutions component
-    @uses: WideSolution component; WidesolutionClass, Stat classes to load all the solutions
+    @uses: WideSolution component; WideSolutionClass, Stat classes to load all the solutions
     @ret: a responsive emergency section used on the emergency solutions page
 -->
 
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
-    import {WidesolutionClass, Stat} from "$lib/typescript";
+    import {WideSolutionClass, Stat} from "$lib/typescript";
 
     let stat1 = Stat.shortenedStatistic(12, "Services");
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
-    let em = new WidesolutionClass("mdi:card-account-details", "Fast Solution",
+    let em = new WideSolutionClass("mdi:card-account-details", "Fast Solution",
         "On Board Courier", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.", stats);
 </script>
 
@@ -20,22 +20,22 @@
                 md:grid md:grid-cols-8
                 xl:grid-cols-12">
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
     </div>
 </div>

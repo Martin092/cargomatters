@@ -6,7 +6,7 @@ import {
     FeatureClass,
     IndustrySolutionClass,
     Member,
-    Stat, TransportServiceClass, WidesolutionClass
+    Stat, TransportServiceClass, WideSolutionClass
 } from "../index";
 import {dummyBenefits, dummyFeatures, dummyReviews} from "./businessPage";
 
@@ -137,7 +137,7 @@ describe("Constructor methods", () => {
     it('it should compile', function () {
         let m = new Member("img", "alt", "ceo", "name", "desc");
         let ts = new TransportServiceClass("img", "alt", "ceo", []);
-        let wc = new WidesolutionClass("img", "alt", "ceo", "name", []);
+        let wc = new WideSolutionClass("img", "alt", "ceo", "name", []);
 
         expect(m.position).toBe("ceo");
         expect(ts.title).toBe("img");

@@ -3,7 +3,7 @@ import type {Stat} from "../index";
 /**
  * Data structure used to load information into the WideSolution component
  */
-export class WidesolutionClass {
+export class WideSolutionClass {
     icon: string;
     subTitle: string;
     title: string;

@@ -1,5 +1,5 @@
 import {BenefitClass} from "./componentClasses/benefit";
-import {WidesolutionClass} from "./componentClasses/widesolutionClass";
+import {WideSolutionClass} from "./componentClasses/wideSolutionClass";
 import {FeatureClass} from "./componentClasses/feature";
 import {IndustrySolutionClass} from "./componentClasses/industrySolutions";
 import {MainSolution} from "./componentClasses/mainSolution";
@@ -13,7 +13,7 @@ import {TransportServiceClass} from "./componentClasses/transportService"
 import type {HashMapPagesDatabase} from "./PagesDatabase";
 
 export {BenefitClass,
-        WidesolutionClass,
+        WideSolutionClass,
         FeatureClass,
         IndustrySolutionClass,
         MainSolution,
