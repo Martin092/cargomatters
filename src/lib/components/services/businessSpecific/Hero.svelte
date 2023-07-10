@@ -4,22 +4,19 @@
 <script lang="ts">
 
     /**
-     * the type of the business. Used to create the title
+     * Hero information prop containing the type of the business used in
+     * the title, the subtitle rendered underneath the title and the
+     * path to the image to be loaded in side the hero section
      */
-    export let type = "";
+    export let hero = {
+        type: "",
+        subTitle: "",
+        heroImage: "/images/hero-ornaments.svg"
+    }
 
-    /**
-     * the subtitle rendered underneath the title
-     */
-    export let subTitle = "";
-
-    /**
-     * path to the image to be loaded inside the hero section
-     */
-    export let heroImage = "/images/hero-ornaments.svg";
 </script>
 
-<div style={`background-image: url("${heroImage}")`} class="col-span-4 flex flex-col row-start-1
+<div style={`background-image: url("${hero.heroImage}")`} class="col-span-4 flex flex-col row-start-1
                 md:col-span-6 md:gap-12
                 xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6">
 
@@ -30,8 +27,8 @@
 
         <!--  Hero Heading  -->
         <div class="flex flex-col gap-4 ">
-            <h1 class="font-extrabold xl:font-bold">We provide services for the {type} industry</h1>
-            <h4 class="xl:pr-40">{subTitle}</h4>
+            <h1 class="font-extrabold xl:font-bold">We provide services for the {hero.type} industry</h1>
+            <h4 class="xl:pr-40">{hero.subTitle}</h4>
         </div>
         <div class="flex flex-col gap-2 mb-20 xl:mt-8">
             <div class="flex gap-2">

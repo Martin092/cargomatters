@@ -7,6 +7,12 @@
     export let data: PageData;
 
     const page:BusinessPage = data.page;
+
+    let hero = {
+        type: page.type,
+        subTitle: page.subTitle,
+        heroImage: page.heroImage
+    }
 </script>
 
 <Header background=""/>
@@ -17,7 +23,7 @@
              xl:grid-cols-12 xl:gap-x-6 xl:mx-32 xl:mt-[-80px]">
 
     <!--  Hero section  -->
-    <Hero type={page.type} subTitle={page.subTitle} />
+    <Hero {hero} />
 
     <!-- Features list  -->
     {#if page.features.length !== 0}
