@@ -1,5 +1,8 @@
 import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "../index";
 
+/**
+ * A business page builder for seamless creation of business pages
+ */
 export class BusinessPageBuilder {
     public type:string = "undefined";
     public subTitle:string = "undefined";
