@@ -1,3 +1,7 @@
 import {describe, it, expect} from "vitest";
-import {cleanup, render, screen} from '@testing-library/svelte';
-import ExampleComponent from "./ExampleComponent.svelte";
+
+describe("test suite", () => {
+    it('should work', function () {
+        expect(1+3).toBe(4);
+    });
+})
