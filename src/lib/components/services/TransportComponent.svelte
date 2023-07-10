@@ -1,3 +1,8 @@
+<!-- TransportComponent catalogue item
+    @uses: Feature component; TransportServiceClass class to load the information about this solution
+    @ret: a responsive text description of a transport service WITHOUT the image
+-->
+
 <script lang="ts">
     import type {TransportServiceClass} from "$lib/typescript/transportService";
     import {Feature} from "$lib/components/reusable";

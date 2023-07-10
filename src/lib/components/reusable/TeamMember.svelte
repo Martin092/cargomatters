@@ -1,3 +1,9 @@
+<!-- TeamMember component
+    @uses: the Member class as a data structure to load information about the component
+    @prop member: a typescript object that holds information about the member
+    @ret: a component that that an image of the member, his position, name and a brief description
+-->
+
 <script lang="ts">
     import type {Member} from "$lib/typescript/member";
     export let member:Member;

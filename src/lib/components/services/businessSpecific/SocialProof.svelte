@@ -1,3 +1,9 @@
+<!-- SocialProof component
+    @uses: Review component and ReviewClass class to load reviews and social proof
+    @prop reviews: an array of all the reviews that have to be loaded on the page
+    @ret: a responsive features section used on the Home and the main services page
+-->
+
 <script lang="ts">
     import {Review} from "$lib/components/reusable";
     import {ReviewClass} from "$lib/typescript";

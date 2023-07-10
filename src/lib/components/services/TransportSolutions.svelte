@@ -1,3 +1,8 @@
+<!-- TransportSolutions
+    @uses: TransportComponent component; TransportServiceClass and FeatureClass classes to load necessary information
+    @ret: a responsive section with information about the possible transports
+-->
+
 <script lang="ts">
 
     import TransportComponent from "$lib/components/services/TransportComponent.svelte";

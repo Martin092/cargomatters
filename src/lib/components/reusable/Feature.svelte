@@ -1,3 +1,14 @@
+<!-- Feature component
+    @uses: the FeatureClass class as a data structure to load information about the feature and
+    `Icon` to import icons from the Iconify package
+    @prop feature: a typescript object that holds the features to be loaded
+    @prop colors: the colors of the text as an object
+    @prop iconSize: the size of the icon as a string
+    @prop hasLink: a boolean that indicates whether the feature has a link at the bottom
+    @prop smallText: a boolean that indicates whether the text is small or not
+    @ret: a component that holds information about the feature together with an icon and a link (optional)
+-->
+
 <script lang="ts">
     import type { FeatureClass } from "$lib/typescript";
     import Icon from "@iconify/svelte";

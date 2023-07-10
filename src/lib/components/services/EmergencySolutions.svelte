@@ -1,3 +1,8 @@
+<!-- EmergencySolutions component
+    @uses: WideSolution component; WidesolutionClass, Stat classes to load all the solutions
+    @ret: a responsive emergency section used on the emergency solutions page
+-->
+
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
     import {WidesolutionClass, Stat} from "$lib/typescript";

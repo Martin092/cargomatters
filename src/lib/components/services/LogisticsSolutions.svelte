@@ -1,3 +1,8 @@
+<!-- LogisticsSolutions Catalogue
+    @uses: WideSolution component; WidesolutionClass and Stat classes to load necessary information
+    @ret: a responsive logistics solutions section used on the Business solutions page
+-->
+
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
     import {WidesolutionClass, Stat} from "$lib/typescript";
