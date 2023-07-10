@@ -1,6 +1,5 @@
 <!-- Benefits component
     @uses: the BenefitClass class as a data structure to load information about the component and the Benefit svelte component
-    @prop benefits: an array of all the benefits that have to be loaded on the page
     @ret: a component that holds all the benefits that are needed for a page
 -->
 
@@ -8,6 +7,9 @@
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript/benefit";
 
+    /**
+     * an array of all the benefits that have to be loaded on the page
+     */
     export let benefits:BenefitClass[] = [];
 </script>
 

@@ -1,11 +1,13 @@
 <!-- Benefit component
     @uses: the Benefit class as a data structure to load information about the benefit
-    @prop: a typescript object that holds the benefits to be loaded
     @ret: a component that has information about the benefit and accompanying image
 -->
 <script lang="ts">
     import type {BenefitClass} from "$lib/typescript/benefit";
 
+    /**
+     * a typescript object that holds the benefits to be loaded
+     */
     export let benefit:BenefitClass;
 </script>
 

@@ -1,6 +1,5 @@
 <!-- SocialProof component
     @uses: Review component and ReviewClass class to load reviews and social proof
-    @prop reviews: an array of all the reviews that have to be loaded on the page
     @ret: a responsive features section used on the Home and the main services page
 -->
 
@@ -8,6 +7,9 @@
     import {Review} from "$lib/components/reusable";
     import {ReviewClass} from "$lib/typescript";
 
+    /**
+     * an array of all the reviews that have to be loaded on the page
+     */
     export let reviews:ReviewClass[] = [];
 </script>
 <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
