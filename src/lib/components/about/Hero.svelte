@@ -1,3 +1,6 @@
+<!-- About Page Hero Group
+    @ret: a responsive About Page Hero section
+-->
 <div id="hero"  class="col-start-1 row-start-1 col-span-full"></div>
 
 <div class="col-start-1 row-start-1 col-span-4 flex flex-col pt-80 pb-20

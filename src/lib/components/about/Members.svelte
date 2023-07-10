@@ -1,3 +1,7 @@
+<!-- About Page Stats Group
+    @uses: TeamMember component together with its accompanying Member class to instantiate the members
+    @ret: a responsive statistics section for some key company statistics
+-->
 <script lang="ts">
     import TeamMember from "$lib/components/reusable/TeamMember.svelte";
     import {Member} from "$lib/typescript/member";

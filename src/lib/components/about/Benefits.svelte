@@ -1,3 +1,7 @@
+<!-- About Page Benefit Group
+    @uses: Benefit & BenefitClass to load two main Benefits
+    @ret: a responsive About Page Benefits section
+-->
 <script lang="ts">
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript/benefit";

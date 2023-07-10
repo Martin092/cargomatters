@@ -1,4 +1,6 @@
-
+<!-- About Page Ideals Group
+    @ret: a responsive ideals section with the main characteristics of the company
+-->
 <div id="ideals" class="col-start-1 col-span-full row-start-3 w-screen
                               ml-[-16px]
                               md:ml-[-32px]

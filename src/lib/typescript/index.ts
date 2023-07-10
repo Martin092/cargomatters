@@ -5,7 +5,7 @@ import {IndustrySolutionClass} from "./industrySolutions";
 import {MainSolution} from "./mainSolution";
 import {Member} from "./member";
 import {ReviewClass} from "./review";
-import {Stat} from "./Stats"
+import {Stat} from "./StatClass"
 import {BusinessPage, BusinessPageBuilder} from "./businessPage"
 import {BusinessPageLoader} from "./BussinessPageLoader";
 import {PagesDatabase} from "./PagesDatabase";

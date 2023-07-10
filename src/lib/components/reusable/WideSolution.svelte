@@ -15,8 +15,8 @@
     <div class="flex flex-row gap-4 xl:gap-x-16 flex-wrap">
         {#each emergency.stats as stat}
             <div class="gap-2 text-white">
-                <h4 class="text-[#8F8F8F]">{stat.num}</h4>
-                <p class="text-white">{stat.name}</p>
+                <h4 class="text-[#8F8F8F]">{stat.number}</h4>
+                <p class="text-white">{stat.statistic}</p>
             </div>
         {/each}
     </div>

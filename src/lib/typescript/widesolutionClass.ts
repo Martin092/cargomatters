@@ -1,4 +1,4 @@
-import type {Stat} from "./Stats";
+import type {Stat} from "./index";
 
 export class WidesolutionClass {
     image: string;
