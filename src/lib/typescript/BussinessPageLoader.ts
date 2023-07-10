@@ -1,21 +1,21 @@
 import type {BusinessPage} from "./componentClasses/businessPage";
 import type {IndustrySolutionClass} from "./componentClasses/industrySolutions";
 import type {BusinessDao} from "./businessDao";
-import type {PagesDatabase} from "./PagesDatabase";
+import type {HashMapPagesDatabase} from "./PagesDatabase";
 
 /**
  * Implementation (port) for the BusinessDao adapter. Utilizes a page database
  * of class PageDatabase which uses a private hash map with all pages
  */
 export class BusinessPageLoader implements BusinessDao {
-    private pagesDatabase:PagesDatabase;
+    private pagesDatabase:HashMapPagesDatabase;
 
     /**
      * Generate BusinessPageLoader - a port for the BusinessDao adapter
      * @param pagesDatabase - the 'database' with the pages. Allows for
      * dependency injection for mocking.
      */
-    constructor(pagesDatabase:PagesDatabase) {
+    constructor(pagesDatabase:HashMapPagesDatabase) {
         this.pagesDatabase = pagesDatabase;
     }
 
@@ -39,8 +39,8 @@ export class BusinessPageLoader implements BusinessDao {
     public getCatalogue():IndustrySolutionClass[] {
         let res:IndustrySolutionClass[] = [];
 
-        this.pagesDatabase.pages.forEach((value: BusinessPage, key:string) => {
-            res.push(value.catalogueCard);
+        this.pagesDatabase.getPages().forEach((page: BusinessPage) => {
+            res.push(page.catalogueCard);
         });
 
         return res;

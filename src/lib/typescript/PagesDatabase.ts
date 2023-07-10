@@ -6,7 +6,7 @@ import type {BusinessPage} from "./componentClasses/businessPage";
  * using only the keyword of the business. Could be disregarded if switched for
  * a headless CMS.
  */
-export class PagesDatabase {
+export class PagesDatabase implements HashMapPagesDatabase {
     private static instance: PagesDatabase;
     private _pages:Map<string, BusinessPage>;
 
@@ -41,16 +41,48 @@ export class PagesDatabase {
     /**
      * Get a page from the database
      * @param type the type keyword of the page e.g. aerospace, military etc.
+     * @return a business page if found inside the hashmap, otherwise undefined
      */
     public getPage(type:string):BusinessPage|undefined {
         return this._pages.get(type.toLowerCase());
     }
 
     /**
-     * A getter method for a reference to the hashmap database implementation
-     * @return the database hashmap
+     * Get all the business pages inside the hash map database
+     * @return an array of all saved business pages
      */
-    get pages(): Map<string, BusinessPage> {
-        return this._pages;
+    getPages(): BusinessPage[] {
+        let res:BusinessPage[] = [];
+
+        this._pages.forEach((value:BusinessPage) => {
+            res.push(value);
+        })
+
+        return res;
     }
+}
+
+/**
+ * Interface for Pages Database that uses hashmap
+ */
+export interface HashMapPagesDatabase {
+
+    /**
+     * Add a page to the database by providing a BusinessPage class
+     * @param page the page to be added as a BusinessPage class
+     */
+    addPage(page:BusinessPage):void;
+
+    /**
+     * Get a page from the database
+     * @param type the type keyword of the page e.g. aerospace, military etc.
+     * @return a business page if found inside the hashmap, otherwise undefined
+     */
+    getPage(type:string):BusinessPage|undefined;
+
+    /**
+     * Get all the business pages inside the hash map database
+     * @return an array of all saved business pages
+     */
+    getPages():BusinessPage[];
 }

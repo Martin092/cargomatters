@@ -10,6 +10,7 @@ import {BusinessPage, BusinessPageBuilder} from "./componentClasses/businessPage
 import {BusinessPageLoader} from "./BussinessPageLoader";
 import {PagesDatabase} from "./PagesDatabase";
 import {TransportServiceClass} from "./componentClasses/transportService"
+import type {HashMapPagesDatabase} from "./PagesDatabase";
 
 export {BenefitClass,
         WidesolutionClass,
@@ -23,4 +24,5 @@ export {BenefitClass,
         BusinessPageLoader,
         PagesDatabase,
         BusinessPageBuilder,
-        TransportServiceClass};
+        TransportServiceClass,
+        HashMapPagesDatabase};
