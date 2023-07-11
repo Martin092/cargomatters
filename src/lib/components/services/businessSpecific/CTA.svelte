@@ -1,4 +1,11 @@
+<!-- CTA component
+    @ret: a call to action component together with a link that leads to a contact page
+-->
+
 <script lang="ts">
+    /**
+     * class for which row to take when loading the component inside a grid element
+     */
     export let row:String = "row-start-6"
 </script>
 

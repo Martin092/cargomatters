@@ -1,8 +1,25 @@
+<!-- SubHero component for Hero of Sub pages
+-->
 <script lang="ts">
+
+    /**
+     * If the information should be shown
+     */
     export let showInfo:boolean = true;
+
+    /**
+     * The title inside the hero of the subpages of the services
+     */
     export let title:string = "For any Emergency services Contact us ASAP";
+
+    /**
+     * The subtitle inside the hero of the subpages of the services
+     */
     export let subTitle:string = "Your time is precious. Let’s tackle the logistical issues as soon as possible!";
 
+    /**
+     * If the emergency CTA button shall be displayed instead of the normal one
+     */
     export let emergency:boolean = true;
 </script>
 
@@ -25,7 +42,7 @@
                     </button>
                 {:else}
                     <button class="btn p-4 text-xs rounded-lg bg-primary-500 text-gray-950 font-bold md:text-base">
-                        Consult Bussiness Solutions
+                        Consult Business Solutions
                     </button>
                 {/if}
             </a>

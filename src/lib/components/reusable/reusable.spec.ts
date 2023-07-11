@@ -33,33 +33,25 @@ describe('Benefit component', () => {
 describe('Main Solutions Service component', () => {
     beforeEach(() => cleanup());
 
-    it('renders correct link', async () => {
-        let testSolution =
-            new MainSolution("image", "alt", "Transport", "lorem", ["bullet1", "bullet2"], "/");
-
-        render(MainSolutions, {mainSolution: testSolution});
-        const link = screen.getByText("See all Transport solutions >");
-
-        expect(link).toBeTruthy();
-    });
-
-    it('renders correct heading', async () => {
+    it('renders correctly', async () => {
         let testSolution =
             new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
 
         render(MainSolutions, {mainSolution: testSolution});
-        const link = screen.getByText("Industrial Solutions");
+        const title = screen.getByText("Industrial Solutions");
+        const link = screen.getByText("See all Industrial solutions >");
 
+        expect(title).toBeTruthy();
         expect(link).toBeTruthy();
     });
 
     it('renders all bullets', async () => {
         let testSolution =
-            new MainSolution("image", "alt", "Industrial", "lorem", ["aa", "bb"], "/");
+            new MainSolution("image", "alt", "Industrial", "lorem", ["bullet1", "bullet2"], "/");
 
         const {getAllByText} = render(MainSolutions, {mainSolution: testSolution});
-        const bullet1 = getAllByText("aa");
-        const bullet2 = getAllByText("bb");
+        const bullet1 = getAllByText("bullet1");
+        const bullet2 = getAllByText("bullet2");
 
         expect(bullet1).toBeTruthy();
         expect(bullet1.length).toBe(2);

@@ -1,4 +1,12 @@
+<!--CTA Group
+    @ret: a responsive Call to Action section used on the Home page
+    and on the main services page
+-->
 <script lang="ts">
+
+    /**
+     * Class for which row to take when loading the component inside a grid element
+     */
     export let row:String = "row-start-6"
 </script>
 

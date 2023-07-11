@@ -1,4 +1,7 @@
-
+<!-- WorkProcess
+    @ret: a section that describes the work process of the company,
+     used on the contact and emergency contact pages
+-->
 
 <div id="workProcess" data-testid="xl-hero" class="col-start-1 col-span-full row-start-3
                                       ml-[-16px]

@@ -21,8 +21,18 @@ let chem = new BusinessPageBuilder()
     .withDummyReviews()
     .build();
 
+let agriculture = new BusinessPageBuilder()
+    .setKeywordTitle("Agriculture")
+    .withSubTitle("Lorem ipsum dolor sitamet")
+    .withImage("/images/gray.png", "Gray image")
+    .withDummyFeatures()
+    .withDummyBenefits()
+    .withDummyReviews()
+    .build();
+
 export const data = PagesDatabase.getInstance();
 
 data.addPage(aero);
 data.addPage(military);
 data.addPage(chem);
+data.addPage(agriculture);

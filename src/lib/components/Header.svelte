@@ -1,14 +1,19 @@
 <!-- Header Class
-    @uses: `Icon` to import icons from the Iconfy package
-    @prop String background: a class to give background to the header. Default is "bg-surface-300"
-    @ret: a responsive header that can be prepended to any page
+    @uses: `Icon` to import icons from the Iconify package
+    @ret: a responsive footer that can be appended to any page. Used in +layout.svelte
 -->
 <script lang="ts">
     import Icon from '@iconify/svelte';
 
+    /**
+     * A class to give background to the header. Default is "bg-surface-300"
+     */
     export let background:String = "bg-surface-400";
     let showMobileNav:boolean = false;
 
+    /**
+     * Function to toggle the dropdown on mobile devices
+     */
     function toggleNav() {
         showMobileNav = !showMobileNav;
     }

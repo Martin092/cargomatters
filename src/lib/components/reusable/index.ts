@@ -1,3 +1,8 @@
+/**
+ * Index for Reusable classes used in many other components
+ * and on certain pages.
+ */
+
 import Benefit from "./Benefit.svelte";
 import Feature from "./Feature.svelte";
 import MainSolutions from "./MainSolutions.svelte";

@@ -1,3 +1,7 @@
+<!-- Hero for the Main Solutions Page
+    @uses: MainSolutions component and the MainSolution class to load the two main solution groups
+    @ret: A responsive hero section for the main service page
+-->
 <script>
     import {MainSolutions} from "$lib/components/reusable";
     import {MainSolution} from "$lib/typescript";

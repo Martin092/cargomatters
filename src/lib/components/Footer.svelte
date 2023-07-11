@@ -1,6 +1,9 @@
+<!-- Footer Class
+    @uses: `Icon` to import icons from the Iconify package
+    @ret: a responsive header that can be prepended to any page
+-->
 <script lang="ts">
-
-import Icon from "@iconify/svelte";
+    import Icon from "@iconify/svelte";
 </script>
 
 <footer class="w-screen py-20">

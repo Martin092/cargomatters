@@ -1,7 +1,14 @@
+<!-- FAQ Group
+    @uses: Accordion and Accordion library components from the Skeleton Library
+    @ret: a responsive Frequently Asked Questions section used on the Home page and on the main services page
+-->
 <script lang="ts">
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
     import Icon from "@iconify/svelte";
 
+    /**
+     * Class for which row to take when loading the component inside a grid element
+     */
     export let row:String = "row-start-5"
 </script>
 
