@@ -40,11 +40,11 @@
         <!--  Wide screen nav  -->
         <div data-testid="wide-screen-nav" class="hidden md:flex links gap-4
                 xl:col-span-6 xl:col-start-6 xl:justify-end">
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/services">Services</a>
-            <a href="/emergency">Emergency</a>
-            <a href="/contact" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
+            <a href="/" data-testid="home-button">Home</a>
+            <a href="/about" data-testid="about-us-button">About Us</a>
+            <a href="/services" data-testid="services-button">Services</a>
+            <a href="/emergency" data-testid="emergency-button">Emergency</a>
+            <a href="/contact" data-testid="consult-us-button" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">Consult Us for Free</a>
         </div>
     </nav>
 

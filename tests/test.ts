@@ -40,3 +40,59 @@ test('hero image does not appear on mobile', async ({ page }) => {
 
 	await expect(await page.getByTestId("xl-hero").isVisible()).toBe(false);
 });
+
+//------------------test buttons in the header------------------
+
+// test('Home button goes where it should', async ({ page }) => {
+//     await page.setViewportSize({width: 810, height: 1080});
+//     await page.goto('/');
+
+//     const home = page.getByTestId("home-button");
+//     home.click();
+//     console.log(page.url() + " is the title");
+
+//     await expect(page).toHaveURL(/^https?:\/\/[^\/]+\/$/);
+// });
+
+test('About us button goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const aboutUs = page.getByTestId("about-us-button");
+    aboutUs.click();
+
+    await expect(page).toHaveURL(/\/about$/);
+});
+
+test('Services button goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const services = page.getByTestId("services-button");
+    services.click();
+
+    await expect(page).toHaveURL(/\/services$/);
+});
+
+test('Emergency button goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const emergency = page.getByTestId("emergency-button");
+    emergency.click();
+
+    await expect(page).toHaveURL(/\/emergency$/);
+});
+
+test('Consult us button goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const consultUs = page.getByTestId("consult-us-button");
+    consultUs.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+
+//------------------test buttons in the header------------------
