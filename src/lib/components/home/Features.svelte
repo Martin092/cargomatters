@@ -6,9 +6,12 @@
     import {Feature} from "$lib/components/reusable/index";
     import {FeatureClass} from "$lib/typescript";
 
-    let feature1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
-    let feature2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-    let feature3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
+    import {t, locale} from "$lib/translations";
+
+    let feature1 = new FeatureClass("pepicons-print:truck", $t('home.features.1.title'), $t('home.features.1.desc'), `${$locale}/contact`, `${$t('home.features.1.link-text')} >`);
+    let feature2 = new FeatureClass("pepicons-print:airplane", $t('home.features.2.title'), $t('home.features.2.desc'), `${$locale}/contact`, `${$t('home.features.1.link-text')} >`);
+    let feature3 = new FeatureClass("solar:box-bold", $t('home.features.3.title'), $t('home.features.3.desc'), "/contact", `${$t('home.features.1.link-text')} >`);
+    let feature4 = new FeatureClass("solar:box-bold", $t('home.features.4.title'), $t('home.features.4.desc'), "/contact", `${$t('home.features.4.link-text')} >`);
 </script>
 
 <div id="features" class="col-start-1 col-span-full row-start-2 w-screen
@@ -21,9 +24,7 @@
     <Feature feature={feature1}  />
     <Feature feature={feature2}  />
     <Feature feature={feature3}  />
-    <div class="hidden xl:block">
-        <Feature feature={feature3}  />
-    </div>
+    <Feature feature={feature4}  />
 </div>
 
 

@@ -21,8 +21,8 @@
         </div>
         <div class="flex flex-col gap-2 mb-20 xl:mt-8">
             <div class="flex gap-2">
-                <a href="${$locale}/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">{$t('home.hero.button.consult')}</button></a>
-                <a href="${$locale}/emergency"><button class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">{$t('home.hero.button.emergency')}</button></a>
+                <a href="{$locale}/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">{$t('home.hero.button.consult')}</button></a>
+                <a href="{$locale}/emergency"><button class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">{$t('home.hero.button.emergency')}</button></a>
             </div>
             <h6>{$t('home.hero.social-proof')}</h6>
         </div>
