@@ -95,4 +95,122 @@ test('Consult us button goes to the correct page', async ({ page }) => {
 });
 
 
-//------------------test buttons in the header------------------
+//------------------test buttons in the hero section------------------
+
+test('Consult us button in hero goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const consultUs = page.getByTestId("consult-us-hero-button");
+    consultUs.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+test('Emergency button in hero goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const consultUs = page.getByTestId("emergency-hero-button");
+    consultUs.click();
+
+    await expect(page).toHaveURL(/\/emergency$/);
+});
+
+//------------------test buttons in the features section------------------
+
+test('Consult us link in features section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const consultUs = page.getByTestId("consult-us-link").first();
+    consultUs.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+//------------------test buttons in the benefits section------------------
+
+test('Link in Benefits section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("explore-services-button").first();
+    button.click();
+
+    await expect(page).toHaveURL(/\/services$/);
+});
+
+//------------------test buttons in the benefits section------------------
+
+test('Consult us link in CTA section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("home-cta-bottom");
+    button.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+//------------------test buttons in the footer section------------------
+
+test('Terms of use link in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("terms-of-use-button");
+    button.click();
+
+    await expect(page).toHaveURL(/\/termsofservice$/);
+});
+
+test('Privacy policy in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("privacy-policy-button");
+    button.click();
+
+    await expect(page).toHaveURL(/\/privacy$/);
+});
+
+test('Transport services in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("transport-services-footer");
+    button.click();
+
+    await expect(page).toHaveURL(/\/services\/transport$/);
+});
+
+test('Logistical services in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("logistical-services-footer");
+    button.click();
+
+    await expect(page).toHaveURL(/\/services\/industry$/);
+});
+
+test('Contact us in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("contact-us-footer");
+    button.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+test('About us in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("about-us-footer");
+    button.click();
+
+    await expect(page).toHaveURL(/\/about$/);
+});
