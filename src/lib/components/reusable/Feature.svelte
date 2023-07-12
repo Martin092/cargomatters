@@ -56,7 +56,7 @@
             {/if}
         </div>
         {#if hasLink}
-            <p><a href={feature.link} class="text-primary-500 underline">{feature.linkText}</a></p>
+            <p><a href={feature.link} data-testid="consult-us-link" class="text-primary-500 underline">{feature.linkText}</a></p>
         {/if}
     </div>
 </div>

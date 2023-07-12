@@ -21,7 +21,7 @@
             </div>
             <p class="text-secondary-400">{benefit.message}</p>
         </div>
-        <a href={benefit.link} class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
+        <a href={benefit.link} data-testid="explore-services-button" class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
             {benefit.linkMessage}
         </a>
     </div>

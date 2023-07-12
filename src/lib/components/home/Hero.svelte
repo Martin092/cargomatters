@@ -17,8 +17,8 @@
         </div>
         <div class="flex flex-col gap-2 mb-20 xl:mt-8">
             <div class="flex gap-2">
-                <a href="/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button></a>
-                <a href="/emergency"><button class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">I need Emergency care</button></a>
+                <a href="/contact"><button data-testid="consult-us-hero-button" class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button></a>
+                <a href="/emergency"><button data-testid="emergency-hero-button" class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">I need Emergency care</button></a>
             </div>
             <h6>More than 1000 companies chose us as their logistical partner</h6>
         </div>

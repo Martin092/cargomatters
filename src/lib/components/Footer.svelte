@@ -31,16 +31,16 @@
             <h4>Links</h4>
             <div class="flex flex-row gap-8">
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href="/termsofservice"><p>Terms of Use</p></a>
-                    <a href="/privacy"><p>Privacy Policy</p></a>
+                    <a href="/termsofservice" data-testid="terms-of-use-button"><p>Terms of Use</p></a>
+                    <a href="/privacy" data-testid="privacy-policy-button"><p>Privacy Policy</p></a>
                     <a href="/"><p>Attributions</p></a>
                     <a href="/"><p>Sitemap</p></a>
                 </div>
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href="/services/transport"><p>Transport Services</p></a>
-                    <a href="/services/industry"><p>Logistical Services</p></a>
-                    <a href="/contact"><p>Contact</p></a>
-                    <a href="/about"><p>About Us</p></a>
+                    <a href="/services/transport" data-testid="transport-services-footer"><p>Transport Services</p></a>
+                    <a href="/services/industry" data-testid="logistical-services-footer"><p>Logistical Services</p></a>
+                    <a href="/contact" data-testid="contact-us-footer"><p>Contact</p></a>
+                    <a href="/about" data-testid="about-us-footer"><p>About Us</p></a>
                 </div>
             </div>
         </div>
