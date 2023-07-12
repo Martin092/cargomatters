@@ -1,3 +1,7 @@
+<script lang="ts">
+    import {t, locale} from "$lib/translations";
+</script>
+
 <!-- Home Hero section
     @ret: a responsive Hero section for the home
 -->
@@ -12,15 +16,15 @@
 
         <!--  Hero Heading  -->
         <div class="flex flex-col gap-4 ">
-            <h1 class="font-extrabold xl:font-bold">We provide the logistical solutions to connect the world</h1>
-            <h4 class="xl:pr-40">With more than a decade of experience, we find the optimal solution to your problems regarding transport, warehousing and logistical needs.</h4>
+            <h1 class="font-extrabold xl:font-bold">{$t('home.hero.title')}</h1>
+            <h4 class="xl:pr-40">{$t('home.hero.subtitle')}</h4>
         </div>
         <div class="flex flex-col gap-2 mb-20 xl:mt-8">
             <div class="flex gap-2">
-                <a href="/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">Consult Us For Free</button></a>
-                <a href="/emergency"><button class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">I need Emergency care</button></a>
+                <a href="${$locale}/contact"><button class="btn p-4 text-xs rounded-lg bg-primary-500 font-bold md:text-base">{$t('home.hero.button.consult')}</button></a>
+                <a href="${$locale}/emergency"><button class="btn p-4 text-xs rounded-lg bg-tertiary-500 font-bold text-white md:text-base">{$t('home.hero.button.emergency')}</button></a>
             </div>
-            <h6>More than 1000 companies chose us as their logistical partner</h6>
+            <h6>{$t('home.hero.social-proof')}</h6>
         </div>
     </div>
     <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src="/images/hero-image.svg" alt="">

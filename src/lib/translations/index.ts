@@ -8,15 +8,11 @@ const config:Config = {
         bg: { lang },
     },
     loaders: [
+        // English Localization
         {
             locale: 'en',
             key: 'home',
             loader: async () => (await import('./en/home.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'home',
-            loader: async () => (await import('./bg/home.json')).default,
         },
         {
             locale: 'en',
@@ -24,15 +20,22 @@ const config:Config = {
             loader: async () => (await import('./en/header.json')).default,
         },
         {
-            locale: 'bg',
-            key: 'header',
-            loader: async () => (await import('./bg/header.json')).default,
-        },
-        {
             locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/error.json')).default,
+        },
+
+        // Bulgarian Localization
+        {
+            locale: 'bg',
+            key: 'home',
+            loader: async () => (await import('./bg/home.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'header',
+            loader: async () => (await import('./bg/header.json')).default,
         },
         {
             locale: 'bg',
