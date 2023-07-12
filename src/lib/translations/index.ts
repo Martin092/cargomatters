@@ -21,6 +21,31 @@ const config:Config = {
         },
         {
             locale: 'en',
+            key: 'footer',
+            loader: async () => (await import('./en/footer.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'benefits',
+            loader: async () => (await import('./en/benefits.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'social-proof',
+            loader: async () => (await import('./en/social-proof.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'faq',
+            loader: async () => (await import('./en/faq.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'cta',
+            loader: async () => (await import('./en/cta.json')).default,
+        },
+        {
+            locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/error.json')).default,
@@ -36,6 +61,31 @@ const config:Config = {
             locale: 'bg',
             key: 'header',
             loader: async () => (await import('./bg/header.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'footer',
+            loader: async () => (await import('./bg/footer.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'benefits',
+            loader: async () => (await import('./bg/benefits.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'social-proof',
+            loader: async () => (await import('./bg/social-proof.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'faq',
+            loader: async () => (await import('./bg/faq.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'cta',
+            loader: async () => (await import('./bg/cta.json')).default,
         },
         {
             locale: 'bg',

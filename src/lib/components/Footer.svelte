@@ -4,6 +4,7 @@
 -->
 <script lang="ts">
     import Icon from "@iconify/svelte";
+    import {t, locale} from "$lib/translations";
 </script>
 
 <footer class="w-screen py-20">
@@ -16,7 +17,7 @@
                     md:row-start-1 md:col-span-8
                     xl:col-start-2 xl:col-span-3">
             <h4>CargoMatters</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.</p>
+            <p>{$t('footer.desc')}</p>
             <div class="flex flex-row gap-2">
                 <Icon color="grey" height="25" icon="mdi:facebook" />
                 <Icon color="grey" height="25" icon="mdi:twitter" />
@@ -28,19 +29,19 @@
         <div class="flex flex-col gap-4 col-span-4
                     md:row-start-2 md:col-span-4
                     xl:row-start-1 xl:col-start-6 xl:col-span-3">
-            <h4>Links</h4>
+            <h4>{$t('footer.titles.links')}</h4>
             <div class="flex flex-row gap-8">
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href="/termsofservice"><p>Terms of Use</p></a>
-                    <a href="/privacy"><p>Privacy Policy</p></a>
-                    <a href="/"><p>Attributions</p></a>
-                    <a href="/"><p>Sitemap</p></a>
+                    <a href="/{$locale}/termsofservice"><p>{$t('footer.nav.tos')}</p></a>
+                    <a href="/{$locale}/privacy"><p>{$t('footer.nav.privacy')}</p></a>
+                    <a href="/{$locale}"><p>{$t('footer.nav.attr')}</p></a>
+                    <a href="/{$locale}"><p>{$t('footer.nav.sitemap')}</p></a>
                 </div>
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href="/services/transport"><p>Transport Services</p></a>
-                    <a href="/services/industry"><p>Logistical Services</p></a>
-                    <a href="/contact"><p>Contact</p></a>
-                    <a href="/about"><p>About Us</p></a>
+                    <a href="/{$locale}/services/transport"><p>{$t('footer.nav.transport')}</p></a>
+                    <a href="/{$locale}/services/industry"><p>{$t('footer.nav.logistical')}</p></a>
+                    <a href="/{$locale}/contact"><p>{$t('footer.nav.contact')}</p></a>
+                    <a href="/{$locale}/about"><p>{$t('footer.nav.about')}</p></a>
                 </div>
             </div>
         </div>
@@ -49,10 +50,10 @@
         <div class="flex flex-col gap-4 col-span-4
                     md:row-start-2 md:col-span-4
                     xl:row-start-1 xl:col-start-9 xl:col-span-3">
-            <h4>Contact</h4>
-            <p>Email: contact@cargomatters.com</p>
-            <p>Phone: +359888888888</p>
-            <a class="text-primary-500 underline" href="contact">Consult Us now for Free</a>
+            <h4>{$t('footer.titles.contact')}</h4>
+            <p>{$t('footer.contact.email')}: contact@cargomatters.com</p>
+            <p>{$t('footer.contact.phone')}: +359888888888</p>
+            <a class="text-primary-500 underline" href="/{$locale}/contact">{$t('footer.contact.cta')}</a>
         </div>
     </div>
 </footer>
