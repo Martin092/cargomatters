@@ -46,6 +46,16 @@ const config:Config = {
         },
         {
             locale: 'en',
+            key: 'contact',
+            loader: async () => (await import('./en/contact.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'work-process',
+            loader: async () => (await import('./en/work-process.json')).default,
+        },
+        {
+            locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/error.json')).default,
@@ -86,6 +96,16 @@ const config:Config = {
             locale: 'bg',
             key: 'cta',
             loader: async () => (await import('./bg/cta.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'contact',
+            loader: async () => (await import('./bg/contact.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'work-process',
+            loader: async () => (await import('./bg/work-process.json')).default,
         },
         {
             locale: 'bg',
