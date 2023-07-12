@@ -52,7 +52,7 @@
             <h4>Contact</h4>
             <p>Email: contact@cargomatters.com</p>
             <p>Phone: +359888888888</p>
-            <a class="text-primary-500 underline" href="contact">Consult Us now for Free</a>
+            <a class="text-primary-500 underline" href="contact" data-testid="consult-us-for-free">Consult Us now for Free</a>
         </div>
     </div>
 </footer>

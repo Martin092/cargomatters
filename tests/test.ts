@@ -214,3 +214,84 @@ test('About us in footer section goes to the correct page', async ({ page }) => 
 
     await expect(page).toHaveURL(/\/about$/);
 });
+
+test('Consult us now for free in footer section goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/');
+
+    const button = page.getByTestId("consult-us-for-free");
+    button.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+
+//----------------------------------------------------------------------
+//------------------test about us page----------------------------------
+
+test('Explore services in about us page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/about');
+
+    const button = page.getByTestId("explore-services-button").first();
+    button.click();
+
+    await expect(page).toHaveURL(/\/services$/);
+});
+
+//----------------------------------------------------------------------
+//------------------test services us page-------------------------------
+
+test('See all transport solutions in services goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services');
+
+    const elements = await page.$$('[data-testid="see-all-solutions"]');
+    elements[0].click();
+
+    await expect(page).toHaveURL(/\/services\/transport$/);
+});
+
+test('See all logistics solutions in services goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services');
+
+    const elements = await page.$$('[data-testid="see-all-solutions"]');
+    elements[1].click();
+
+    await expect(page).toHaveURL(/\/services\/industry$/);
+});
+
+test('Explore work proccess component in services page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services');
+
+    const button = page.getByTestId("services-main-bottom");
+    button.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+test('CTA in services page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services');
+
+    const button = page.getByTestId("home-cta-bottom");
+    button.click();
+
+    await expect(page).toHaveURL(/\/contact$/);
+});
+
+
+//----------------------------------------------------------------------
+//------------------test emergency page---------------------------------
+
+test('CTA in about us page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/emergency');
+
+    const button = page.getByTestId("emergency-solutions");
+    button.click();
+
+    await expect(page).toHaveURL(/\/services\/transport\/emergency$/);
+});

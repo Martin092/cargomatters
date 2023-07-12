@@ -38,7 +38,7 @@
             </ol>
         </div>
     </div>
-    <a href={mainSolution.link} class=" underline underline-offset-4 mx-8 text-primary-500">
+    <a href={mainSolution.link} class=" underline underline-offset-4 mx-8 text-primary-500" data-testid="see-all-solutions">
         See all {mainSolution.type} solutions >
     </a>
 </div>
