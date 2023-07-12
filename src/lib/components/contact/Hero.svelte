@@ -33,7 +33,7 @@
                     </ol>
                 </div>
             </div>
-            <a href="/emergency">
+            <a href="/emergency" data-testid="emergent-care-button">
                 <button class="btn p-4 text-xs rounded-lg bg-tertiary-500 text-gray-100 font-bold md:text-base">
                     I need Emergent Care
                 </button>

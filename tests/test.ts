@@ -286,7 +286,7 @@ test('CTA in services page goes to the correct page', async ({ page }) => {
 //----------------------------------------------------------------------
 //------------------test emergency page---------------------------------
 
-test('CTA in about us page goes to the correct page', async ({ page }) => {
+test('Browse emergency solutions in emergency page goes to the correct page', async ({ page }) => {
     await page.setViewportSize({width: 810, height: 1080});
     await page.goto('/emergency');
 
@@ -294,4 +294,17 @@ test('CTA in about us page goes to the correct page', async ({ page }) => {
     button.click();
 
     await expect(page).toHaveURL(/\/services\/transport\/emergency$/);
+});
+
+//----------------------------------------------------------------------
+//------------------test contact us page---------------------------------
+
+test('emergency button in contact us page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/contact');
+
+    const button = page.getByTestId("emergent-care-button");
+    button.click();
+
+    await expect(page).toHaveURL(/\/emergency$/);
 });
