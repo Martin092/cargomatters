@@ -32,8 +32,8 @@
       "title": "За каквито и да е спешни нужди, свържете се с нас директно",
       "subtitle": "Вашето време е безценно. Нека разрешим спешния Ви проблем при първа възможност!",
       "cta": {
-        "button": "I need Emergent Care",
-        "link": "More Information"
+        "button": "Нуждая се от спешна помощ",
+        "link": "Повече Информация"
       }
     },
     "hero": {
@@ -83,6 +83,30 @@
             "title": "Бързо решение",
             "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
           }
+        }
+      }
+    }
+  },
+  "emergency": {
+    "sub-hero": {
+      "title": "За каквито и да е спешни нужди, свържете се с нас директно",
+      "subtitle": "Вашето време е безценно. Нека разрешим спешния Ви проблем при първа възможност!",
+      "cta": {
+        "button": "Нуждая се от спешна помощ",
+        "link": "Повече Информация"
+      }
+    },
+    "hero": {
+      "title": "Спешни решения",
+      "subtitle": "Тук са изброени в каталог спешните решния, които предлагаме. Ако се нуждаете от която и да е от тях, ни се обадете при първа възможност."
+    },
+    "solutions": {
+      "1": {
+        "subtitle": "Бързо решение",
+        "title": "Куриер на борда",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+        "stats": {
+          "1": "Услуги"
         }
       }
     }

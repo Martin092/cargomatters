@@ -86,5 +86,29 @@
         }
       }
     }
+  },
+  "emergency": {
+    "sub-hero": {
+      "title": "For any Emergency services Contact us ASAP",
+      "subtitle": "Your time is precious. Let’s tackle the logistical issues as soon as possible!",
+      "cta": {
+        "button": "I need Emergent Care",
+        "link": "More Information"
+      }
+    },
+    "hero": {
+      "title": "Emergency Solutions",
+      "subtitle": "Here are possible emergency solutions for your emergency needs. If you are in need of any of them contact us immediately."
+    },
+    "solutions": {
+      "1": {
+        "subtitle": "Fast Solution",
+        "title": "On Board Courier",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+        "stats": {
+          "1": "services"
+        }
+      }
+    }
   }
 }
