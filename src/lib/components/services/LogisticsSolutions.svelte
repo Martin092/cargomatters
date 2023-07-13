@@ -6,11 +6,14 @@
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
     import {WideSolutionClass, Stat} from "$lib/typescript";
+    import {t} from "$lib/translations";
 
-    let stat1 = Stat.shortenedStatistic(12, "Services");
+    let stat1 = Stat.shortenedStatistic(12, $t('services.logistical.logistics.solutions.1.stats.1'));
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
-    let em = new WideSolutionClass("mdi:card-account-details", "Fast Solution",
-        "On Board Courier", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.", stats);
+    let em = new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.1.subtitle'),
+        $t('services.logistical.logistics.solutions.1.title'),
+        $t('services.logistical.logistics.solutions.1.desc'), stats);
 </script>
 
 <div class="col-start-1 row-start-5 col-span-4 flex flex-col py-20

@@ -110,5 +110,33 @@
         }
       }
     }
+  },
+  "logistical": {
+    "hero": {
+      "title": "Logistical & Industrial Services",
+      "subtitle": "Need specific logistic our industrial solutions for your business? Browse our catalog",
+      "cta": "Consult Business Solutions"
+    },
+    "business": {
+      "title": "We support industries of all kind",
+      "subtitle": "Looking for whole package solution for your business? Browse our industrial solutions catalog or contact us directly.",
+      "catalogue": {
+
+      }
+    },
+    "logistics": {
+      "title": "In search of a specific logistics service?",
+      "subtitle": "Looking for whole package solution for your business? Browse our industrial solutions catalog or contact us directly.",
+      "solutions": {
+        "1": {
+          "subtitle": "Fast Solution",
+          "title": "On Board Courier",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        }
+      }
+    }
   }
 }
