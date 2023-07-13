@@ -4,17 +4,28 @@
 -->
 
 <script lang="ts">
-
     import TransportComponent from "$lib/components/services/TransportComponent.svelte";
-
     import {TransportServiceClass} from "$lib/typescript";
     import {FeatureClass} from "$lib/typescript";
+    import {t} from "$lib/translations";
 
-    let f1 = FeatureClass.TransportFeature("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.");
-    let t1 = new TransportServiceClass("Road Freight", "Affordable and extensive", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.", [f1,f1,f1]);
-    let t2 = new TransportServiceClass("Sea Freight", "Affordable and extensive", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.", [f1,f1,f1]);
-    let t3 = new TransportServiceClass("Air Freight", "Affordable and extensive", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.", [f1,f1,f1]);
-    let t4 = new TransportServiceClass("Rail Freight", "Affordable and extensive", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.", [f1,f1,f1]);
+    let f1 = FeatureClass.TransportFeature("pepicons-print:truck",
+        $t('services.transport.solutions.road.features.1.title'), $t('services.transport.solutions.road.features.1.desc'));
+    let t1 = new TransportServiceClass($t('services.transport.solutions.road.title'),
+        $t('services.transport.solutions.road.subtitle'),
+        $t('services.transport.solutions.road.desc'), [f1,f1,f1]);
+
+    let t2 = new TransportServiceClass($t('services.transport.solutions.sea.title'),
+        $t('services.transport.solutions.sea.subtitle'),
+        $t('services.transport.solutions.sea.desc'), [f1,f1,f1]);
+
+    let t3 = new TransportServiceClass($t('services.transport.solutions.air.title'),
+        $t('services.transport.solutions.air.subtitle'),
+        $t('services.transport.solutions.air.desc'), [f1,f1,f1]);
+
+    let t4 = new TransportServiceClass($t('services.transport.solutions.rail.title'),
+        $t('services.transport.solutions.rail.subtitle'),
+        $t('services.transport.solutions.rail.desc'), [f1,f1,f1]);
 </script>
 
 

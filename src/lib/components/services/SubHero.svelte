@@ -1,6 +1,7 @@
 <!-- SubHero component for Hero of Sub pages
 -->
 <script lang="ts">
+    import {t, locale} from "$lib/translations";
 
     /**
      * If the information should be shown
@@ -35,10 +36,10 @@
             <h4>{subTitle}</h4>
         </div>
         <div class="flex flex-row flex-wrap gap-8 w-10/12 items-center">
-            <a href="/emergency">
+            <a href="/{$locale}/emergency">
                 {#if emergency}
                     <button class="btn p-4 text-xs rounded-lg bg-tertiary-500 text-gray-100 font-bold md:text-base">
-                        I need Emergent Care
+                        {$t('services.transport.sub-hero.cta.button')}
                     </button>
                 {:else}
                     <button class="btn p-4 text-xs rounded-lg bg-primary-500 text-gray-950 font-bold md:text-base">
@@ -47,8 +48,8 @@
                 {/if}
             </a>
             {#if showInfo}
-                <a href="/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
-                    More Information >
+                <a href="/{$locale}/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
+                    {$t('services.transport.sub-hero.cta.link')} >
                 </a>
             {/if}
         </div>
