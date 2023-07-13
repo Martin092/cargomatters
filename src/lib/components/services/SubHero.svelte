@@ -35,7 +35,7 @@
             <h4>{subTitle}</h4>
         </div>
         <div class="flex flex-row flex-wrap gap-8 w-10/12 items-center">
-            <a href="/emergency">
+            <a href="/emergency" data-testid="emergent-care">
                 {#if emergency}
                     <button class="btn p-4 text-xs rounded-lg bg-tertiary-500 text-gray-100 font-bold md:text-base">
                         I need Emergent Care
@@ -47,7 +47,7 @@
                 {/if}
             </a>
             {#if showInfo}
-                <a href="/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
+                <a href="/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base" data-testid="more-info-button1">
                     More Information >
                 </a>
             {/if}

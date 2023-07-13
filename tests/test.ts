@@ -299,7 +299,7 @@ test('Browse emergency solutions in emergency page goes to the correct page', as
 //----------------------------------------------------------------------
 //------------------test contact us page---------------------------------
 
-test('emergency button in contact us page goes to the correct page', async ({ page }) => {
+test('Emergency button in contact us page goes to the correct page', async ({ page }) => {
     await page.setViewportSize({width: 810, height: 1080});
     await page.goto('/contact');
 
@@ -307,4 +307,43 @@ test('emergency button in contact us page goes to the correct page', async ({ pa
     button.click();
 
     await expect(page).toHaveURL(/\/emergency$/);
+});
+
+//----------------------------------------------------------------------
+//------------------test transport page---------------------------------
+
+test('Emergency button in transport page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services/transport');
+
+    const button = page.getByTestId("emergent-care");
+    button.click();
+
+    await expect(page).toHaveURL(/\/emergency$/);
+});
+
+test('More info button in transport page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services/transport');
+
+    const button = page.getByTestId("more-info-button1");
+    button.click();
+
+    await expect(page).toHaveURL(/\/services\/transport\/emergency$/);
+});
+
+test('All transport buttons in transport page goes to the correct page', async ({ page }) => {
+    await page.setViewportSize({width: 810, height: 1080});
+    await page.goto('/services/transport');
+
+    const elementss = await page.$$('[data-testid="transport-contact-button"]');
+    // elements[0].click();
+    // await expect(page).toHaveURL(/\/contact$/);
+    for(let i = 0; i < elementss.length; i++){
+        const elements = await page.$$('[data-testid="transport-contact-button"]');
+        elements[i].click();
+        await expect(page).toHaveURL(/\/contact$/);
+        await page.goBack();
+    }
+
 });

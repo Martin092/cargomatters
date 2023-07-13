@@ -39,7 +39,7 @@
         {/each}
     </div>
 
-    <a href="/contact">
+    <a href="/contact" data-testid="transport-contact-button">
         <h5 class="font-bold underline text-primary-500 md:hidden">Consult {transportService.title} ></h5>
         <p class="font-bold underline text-primary-500 hidden md:block">Consult {transportService.title} ></p>
     </a>
