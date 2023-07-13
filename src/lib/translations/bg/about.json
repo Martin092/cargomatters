@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "За нас",
+    "subtitle": "Ние сме CargoMatters - вашият логистичен партньор."
+  },
+  "ideals": {
+    "title": "Ние вярваме в",
+    "1": "Ефикасност",
+    "2": "Честност",
+    "3": "Амбициозност",
+    "4": "Доброта",
+    "5": "Сигурност",
+    "6": "Безопасност"
+  },
+  "team": {
+    "title": "Запознайте се с отбора",
+    "subtitle": "Ние сме CargoMatters",
+    "members": {
+      "1": {
+        "position": "CEO",
+        "name": "Питър Грифин",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+      },
+      "2": {
+        "position": "CEO",
+        "name": "Питър Грифин",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+      }
+    }
+  },
+  "stats": {
+    "1": "Години опит",
+    "2": "Доволни клиенти",
+    "3": "Тона транспортирани",
+    "4": "Завършени доставки",
+    "5": "Интернационални партньори"
+  }
+}

@@ -56,6 +56,11 @@ const config:Config = {
         },
         {
             locale: 'en',
+            key: 'about',
+            loader: async () => (await import('./en/about.json')).default,
+        },
+        {
+            locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/error.json')).default,
@@ -106,6 +111,11 @@ const config:Config = {
             locale: 'bg',
             key: 'work-process',
             loader: async () => (await import('./bg/work-process.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'about',
+            loader: async () => (await import('./bg/about.json')).default,
         },
         {
             locale: 'bg',

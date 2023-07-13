@@ -4,12 +4,13 @@
 -->
 <script lang="ts">
     import {Stat} from "$lib/typescript";
+    import {t} from "$lib/translations";
 
-    let stat1:Stat = Stat.shortenedStatistic(15, "Years of experience");
-    let stat2:Stat = Stat.shortenedStatistic(321, "Happy clients");
-    let stat3:Stat = Stat.shortenedStatistic(800, "Tonnes transported");
-    let stat4:Stat = Stat.shortenedStatistic(644, "Fulfilled orders");
-    let stat5:Stat = Stat.shortenedStatistic(12, "International Partners");
+    let stat1:Stat = Stat.shortenedStatistic(15, $t('about.stats.1'));
+    let stat2:Stat = Stat.shortenedStatistic(321, $t('about.stats.2'));
+    let stat3:Stat = Stat.shortenedStatistic(800, $t('about.stats.3'));
+    let stat4:Stat = Stat.shortenedStatistic(644, $t('about.stats.4'));
+    let stat5:Stat = Stat.shortenedStatistic(12, $t('about.stats.5'));
 
     let statistics:Stat[] = [stat1, stat2, stat3, stat4, stat5];
 

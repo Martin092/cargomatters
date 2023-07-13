@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "About Us",
+    "subtitle": "We are CargoMatters and we do logistics for you."
+  },
+  "ideals": {
+    "title": "We believe in",
+    "1": "Efficiency",
+    "2": "Honesty",
+    "3": "Ambition",
+    "4": "Kindness",
+    "5": "Security",
+    "6": "Safety"
+  },
+  "team": {
+    "title": "Meet the Team",
+    "subtitle": "We are CargoMatters",
+    "members": {
+      "1": {
+        "position": "CEO",
+        "name": "Pieter Griffin",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+      },
+      "2": {
+        "position": "CEO",
+        "name": "Pieter Griffin",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+      }
+    }
+  },
+  "stats": {
+    "1": "Years of Experience",
+    "2": "Happy clients",
+    "3": "Tonnes transported",
+    "4": "Fulfilled orders",
+    "5": "International partners"
+  }
+}
