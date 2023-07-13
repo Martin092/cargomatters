@@ -1,0 +1,30 @@
+{
+  "mpc": {
+    "title": "{{type}} Solutions",
+    "link": "See all {{type}} solutions",
+    "transport": {
+      "type": "Transport",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "road": "Road Freight",
+        "sea": "Sea Freight",
+        "air": "Air Freight",
+        "rail": "Rail Freight",
+        "emergency": "Emergency Transport"
+      }
+    },
+    "logistical": {
+      "type": "Logistics & Industry",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "1": "Business Solutions",
+        "2": "Customs handling",
+        "3": "Integrated services",
+        "4": "Distributions",
+        "5": "Cargo Insurance",
+        "6": "Claim Handling",
+        "7": "Added Value Services"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "mpc": {
+    "title": "{{type}} Услуги",
+    "link": "Вижте всички {{type}} услуги",
+    "transport": {
+      "type": "Транспортни",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "road": "Сухопътен транспорт",
+        "sea": "Воден транспорт",
+        "air": "Въздушен транспорт",
+        "rail": "Железопътен транспорт",
+        "emergency": "Спешен транспорт"
+      }
+    },
+    "logistical": {
+      "type": "Логистични и Бизнес",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "1": "Бизнес решения",
+        "2": "Customs handling",
+        "3": "Интегрирани услуги",
+        "4": "Дистрибуции",
+        "5": "Товарна застраховка",
+        "6": "Claim Handling",
+        "7": "Услуги за добавена стойност"
+      }
+    }
+  }
+}

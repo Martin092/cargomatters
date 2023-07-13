@@ -27,17 +27,17 @@ const config:Config = {
         {
             locale: 'en',
             key: 'benefits',
-            loader: async () => (await import('./en/components/benefits.json')).default,
+            loader: async () => (await import('./en/common/benefits.json')).default,
         },
         {
             locale: 'en',
             key: 'social-proof',
-            loader: async () => (await import('./en/components/social-proof.json')).default,
+            loader: async () => (await import('./en/common/social-proof.json')).default,
         },
         {
             locale: 'en',
             key: 'faq',
-            loader: async () => (await import('./en/components/faq.json')).default,
+            loader: async () => (await import('./en/common/faq.json')).default,
         },
         {
             locale: 'en',
@@ -52,12 +52,17 @@ const config:Config = {
         {
             locale: 'en',
             key: 'work-process',
-            loader: async () => (await import('./en/components/work-process.json')).default,
+            loader: async () => (await import('./en/common/work-process.json')).default,
         },
         {
             locale: 'en',
             key: 'about',
             loader: async () => (await import('./en/pages/about.json')).default,
+        },
+        {
+            locale: 'en',
+            key: 'services',
+            loader: async () => (await import('./en/pages/services.json')).default,
         },
         {
             locale: 'en',
@@ -85,17 +90,17 @@ const config:Config = {
         {
             locale: 'bg',
             key: 'benefits',
-            loader: async () => (await import('./bg/components/benefits.json')).default,
+            loader: async () => (await import('./bg/common/benefits.json')).default,
         },
         {
             locale: 'bg',
             key: 'social-proof',
-            loader: async () => (await import('./bg/components/social-proof.json')).default,
+            loader: async () => (await import('./bg/common/social-proof.json')).default,
         },
         {
             locale: 'bg',
             key: 'faq',
-            loader: async () => (await import('./bg/components/faq.json')).default,
+            loader: async () => (await import('./bg/common/faq.json')).default,
         },
         {
             locale: 'bg',
@@ -110,12 +115,17 @@ const config:Config = {
         {
             locale: 'bg',
             key: 'work-process',
-            loader: async () => (await import('./bg/components/work-process.json')).default,
+            loader: async () => (await import('./bg/common/work-process.json')).default,
         },
         {
             locale: 'bg',
             key: 'about',
             loader: async () => (await import('./bg/pages/about.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'services',
+            loader: async () => (await import('./bg/pages/services.json')).default,
         },
         {
             locale: 'bg',
