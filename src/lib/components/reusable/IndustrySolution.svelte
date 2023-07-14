@@ -6,6 +6,7 @@
 
 <script lang="ts">
     import type {IndustrySolutionClass} from "$lib/typescript";
+    import {locale, t} from "$lib/translations";
 
     /**
      * A typescript object that holds information about the solution
@@ -17,11 +18,13 @@
     <img src={industrySolution.image} alt={industrySolution.alt}>  
     <div class="flex flex-col gap-6 p-7">
         <div class="flex flex-col gap-2 text-white">
-            <h5 class="font-bold">{industrySolution.title}</h5>
+            <h5 class="font-bold">{$t('business.common.card-title', { type: industrySolution.type})}</h5>
             <p>{industrySolution.description}</p>
         </div> 
-        <a href={industrySolution.link}>
-            <p class="text-primary-500 underline underline-offset-4">{industrySolution.linkText}</p>
+        <a href={`/${$locale}${industrySolution.link}`}>
+            <p class="text-primary-500 underline underline-offset-4">
+                {$t('business.common.card-link', { type: industrySolution.type})}
+            </p>
         </a>
     </div>
 </div>

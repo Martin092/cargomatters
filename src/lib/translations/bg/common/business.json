@@ -1,0 +1,17 @@
+{
+  "common": {
+    "card-title": "{{type}} Бизнес Решения",
+    "card-link": "Вижте {{type}} решения",
+    "hero": "Ние предлагаме решения за {{type}} индустрия"
+  },
+  "entries": {
+    "aerospace": {
+      "type": "Аеровъздушната",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "chemical": {
+      "type": "Химическата",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    }
+  }
+}

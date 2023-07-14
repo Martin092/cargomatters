@@ -9,8 +9,7 @@
     const page:BusinessPage = data.page;
 
     let hero = {
-        type: page.type,
-        subTitle: page.subTitle,
+        lkey: page.localizationKey,
         heroImage: page.heroImage
     }
 </script>

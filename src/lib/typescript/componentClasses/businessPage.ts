@@ -141,6 +141,7 @@ export class BusinessPageBuilder {
  * class instead for creating business pages.
  */
 export class BusinessPage {
+    localizationKey:string;
     type:string;
     subTitle:string;
     heroImage:string;
@@ -168,8 +169,10 @@ export class BusinessPage {
         this.features = features;
         this.benefits = benefits;
         this.reviews = reviews;
-        this._catalogueCard = new IndustrySolutionClass(image, alt, `${type} Industry Solutions`, subTitle, `See ${type} solutions`, `/services/industry/${type.toLowerCase()}`);
+        this._catalogueCard = new IndustrySolutionClass(image, alt, type, subTitle, `/services/industry/${type.toLowerCase()}`);
         this.heroImage = heroImage;
+
+        this.localizationKey = type.toLowerCase();
     }
 
     /**
