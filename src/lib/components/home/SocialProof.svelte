@@ -7,7 +7,7 @@
     import {ReviewClass} from "$lib/typescript";
     import {t} from "$lib/translations";
 
-    let review1 = new ReviewClass($t('social-proof.reviews.praxidike.title'), $t('social-proof.reviews.praxidike.review'), "/images/companies/prax-logo.png", "alt", $t('social-proof.reviews.praxidike.author'));
+    let review1 = new ReviewClass("praxidike", "/images/companies/prax-logo.png");
 </script>
 <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
                               ml-[-16px]

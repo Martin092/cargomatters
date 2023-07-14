@@ -4,14 +4,14 @@
 -->
 
 <script lang="ts">
-    import {BusinessReview} from "$lib/components/reusable";
-    import {BusinessReviewClass} from "$lib/typescript";
+    import {Review} from "$lib/components/reusable";
+    import {ReviewClass} from "$lib/typescript";
     import {t} from "$lib/translations";
 
     /**
      * an array of all the reviews that have to be loaded on the page
      */
-    export let reviews:BusinessReviewClass[] = [];
+    export let reviews:ReviewClass[] = [];
 </script>
 <div id="social-proof" class="col-start-1 col-span-full row-start-4 w-screen
                               ml-[-16px]
@@ -26,7 +26,7 @@
     </div>
     <div class="flex flex-col gap-6 xl:flex-row xl:w-[60%]">
         {#each reviews as review}
-            <BusinessReview {review}/>
+            <Review {review}/>
         {/each}
     </div>
 </div>

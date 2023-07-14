@@ -1,4 +1,4 @@
-import {IndustrySolutionClass, BusinessReviewClass, BusinessFeatureClass, BenefitClass} from "../index";
+import {IndustrySolutionClass, ReviewClass, BusinessFeatureClass, BenefitClass} from "../index";
 
 /**
  * A business page builder for seamless creation of business pages
@@ -7,7 +7,7 @@ export class BusinessPageBuilder {
     public type:string = "undefined";
     public features:BusinessFeatureClass[] = [];
     public benefits:BenefitClass[] = [];
-    public reviews:BusinessReviewClass[] = [];
+    public reviews:ReviewClass[] = [];
     public questions:string[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
@@ -50,7 +50,7 @@ export class BusinessPageBuilder {
      * as an array of ReviewClass objects rendered inside the
      * Social Proof component of the dynamic Business page
      */
-    withReviews(reviews:BusinessReviewClass[]):BusinessPageBuilder {
+    withReviews(reviews:ReviewClass[]):BusinessPageBuilder {
         this.reviews = reviews;
         return this;
     }
@@ -153,7 +153,7 @@ export class BusinessPage {
     heroImage:string;
     features:BusinessFeatureClass[];
     benefits:BenefitClass[];
-    reviews:BusinessReviewClass[];
+    reviews:ReviewClass[];
     questions:string[];
     private readonly _catalogueCard:IndustrySolutionClass;
 
@@ -170,7 +170,7 @@ export class BusinessPage {
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: BusinessReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
@@ -210,8 +210,8 @@ export function dummyBenefits():BenefitClass[] {
 /**
  * Create dummy reviews array
  */
-export function dummyReviews():BusinessReviewClass[] {
-    let r1 = new BusinessReviewClass("/images/companies/prax-logo.png", "alt", "praxidike");
+export function dummyReviews():ReviewClass[] {
+    let r1 = new ReviewClass("praxidike", "/images/companies/prax-logo.png");
     return [r1, r1];
 }
 

@@ -2,25 +2,15 @@
  * Data structure used to load information into the ReviewClass component
  */
 export class ReviewClass {
-    title: string;
-    text: string;
+    localizationKey: string;
     logo: string;
-    alt: string;
-    company: string;
 
     /**
-     *
-     * @param title title of the review
-     * @param text body of the review
+     * @param localizationKey key for lookup for translations inside the sveltekit-i18n
      * @param logo logo of the company that gives the review
-     * @param alt alternative text of the logo for accessibility
-     * @param company the name of the company
      */
-    constructor(title:string, text:string, logo:string, alt:string, company:string){
-        this.title = title;
-        this.text = text;
+    constructor(localizationKey:string, logo:string){
+        this.localizationKey = localizationKey;
         this.logo = logo;
-        this.alt = alt;
-        this.company = company;
     }
 }
