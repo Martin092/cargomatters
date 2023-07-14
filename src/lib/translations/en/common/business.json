@@ -8,6 +8,18 @@
     "aerospace": {
       "type": "Aerospace",
       "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "military": {
+      "type": "Military",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "chemical": {
+      "type": "Chemical",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "agriculture": {
+      "type": "Agriculture",
+      "subtitle": "Lorem ipsum dolor sitamet"
     }
   }
 }

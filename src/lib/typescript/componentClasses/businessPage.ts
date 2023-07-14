@@ -1,13 +1,13 @@
-import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "../index";
+import {IndustrySolutionClass, BusinessReviewClass} from "../index";
 
 /**
  * A business page builder for seamless creation of business pages
  */
 export class BusinessPageBuilder {
     public type:string = "undefined";
-    public features:FeatureClass[] = [];
-    public benefits:BenefitClass[] = [];
-    public reviews:ReviewClass[] = [];
+    public features:string[] = [];
+    public benefits:string[] = [];
+    public reviews:BusinessReviewClass[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
     public heroImage:string = "/images/hero-ornaments.svg";
@@ -26,7 +26,7 @@ export class BusinessPageBuilder {
      * @param features the features to be set on this BusinessPage
      * as an array of FeatureClass objects
      */
-    withFeatures(features:FeatureClass[]):BusinessPageBuilder {
+    withFeatures(features:string[]):BusinessPageBuilder {
         this.features = features;
         return this;
     }
@@ -36,7 +36,7 @@ export class BusinessPageBuilder {
      * @param benefits the benefits to be set on this BusinessPage
      * as an array of BenefitClass objects
      */
-    addBenefits(benefits:BenefitClass[]):BusinessPageBuilder {
+    addBenefits(benefits:string[]):BusinessPageBuilder {
         benefits.forEach(b => {
             this.benefits.push(b);
         })
@@ -49,7 +49,7 @@ export class BusinessPageBuilder {
      * as an array of ReviewClass objects rendered inside the
      * Social Proof component of the dynamic Business page
      */
-    withReviews(reviews:ReviewClass[]):BusinessPageBuilder {
+    withReviews(reviews:BusinessReviewClass[]):BusinessPageBuilder {
         this.reviews = reviews;
         return this;
     }
@@ -132,9 +132,9 @@ export class BusinessPage {
     localizationKey:string;
     type:string;
     heroImage:string;
-    features:FeatureClass[];
-    benefits:BenefitClass[];
-    reviews:ReviewClass[];
+    features:string[];
+    benefits:string[];
+    reviews:BusinessReviewClass[];
     private readonly _catalogueCard:IndustrySolutionClass;
 
     /**
@@ -149,7 +149,7 @@ export class BusinessPage {
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: string[], benefits: string[], reviews: BusinessReviewClass[], alt:string, image:string, heroImage:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
@@ -172,28 +172,22 @@ export class BusinessPage {
 /**
  * A function to create dummy features
  */
-export function dummyFeatures():FeatureClass[] {
-    let f1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
-    let f2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-    let f3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-
-    return [f1,f2,f3,f1,f2];
+export function dummyFeatures():string[] {
+    return ["dummy", "dummy", "dummy", "dummy"];
 }
 
 /**
  * A function to create dummy benefits
  */
-export function dummyBenefits():BenefitClass[] {
-    let b1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/gray.png", "alt", "Explore services >", "/services");
-
-    return [b1, b1];
+export function dummyBenefits():string[] {
+    return ["dummy", "dummy"];
 }
 
 /**
  * A function to create dummy reviews
  */
-export function dummyReviews():ReviewClass[] {
-    let r1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
+export function dummyReviews():BusinessReviewClass[] {
+    let r1 = new BusinessReviewClass("/images/companies/prax-logo.png", "alt", "praxidike");
 
     return [r1, r1];
 }
