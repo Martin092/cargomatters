@@ -1,6 +1,7 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
-    import {Hero, Features, Benefits, SocialProof, FAQ, CTA} from "$lib/components/services/businessSpecific"
+    import {Hero, Features, Benefits, SocialProof, FAQ} from "$lib/components/services/businessSpecific";
+    import {CTA} from "$lib/components/home";
     import type { PageData } from './$types';
     import {BusinessPage} from "$lib/typescript";
 

@@ -1,4 +1,4 @@
-import {IndustrySolutionClass, BusinessReviewClass, BusinessFeatureClass} from "../index";
+import {IndustrySolutionClass, BusinessReviewClass, BusinessFeatureClass, BenefitClass} from "../index";
 
 /**
  * A business page builder for seamless creation of business pages
@@ -6,7 +6,7 @@ import {IndustrySolutionClass, BusinessReviewClass, BusinessFeatureClass} from "
 export class BusinessPageBuilder {
     public type:string = "undefined";
     public features:BusinessFeatureClass[] = [];
-    public benefits:string[] = [];
+    public benefits:BenefitClass[] = [];
     public reviews:BusinessReviewClass[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
@@ -36,7 +36,7 @@ export class BusinessPageBuilder {
      * @param benefits the benefits to be set on this BusinessPage
      * as an array of BenefitClass objects
      */
-    addBenefits(benefits:string[]):BusinessPageBuilder {
+    addBenefits(benefits:BenefitClass[]):BusinessPageBuilder {
         benefits.forEach(b => {
             this.benefits.push(b);
         })
@@ -133,7 +133,7 @@ export class BusinessPage {
     type:string;
     heroImage:string;
     features:BusinessFeatureClass[];
-    benefits:string[];
+    benefits:BenefitClass[];
     reviews:BusinessReviewClass[];
     private readonly _catalogueCard:IndustrySolutionClass;
 
@@ -149,7 +149,7 @@ export class BusinessPage {
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, features: BusinessFeatureClass[], benefits: string[], reviews: BusinessReviewClass[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: BusinessReviewClass[], alt:string, image:string, heroImage:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
@@ -180,8 +180,10 @@ export function dummyFeatures():BusinessFeatureClass[] {
 /**
  * A function to create dummy benefits
  */
-export function dummyBenefits():string[] {
-    return ["dummy", "dummy"];
+export function dummyBenefits():BenefitClass[] {
+    let b1 = new BenefitClass("benefit1", "/images/gray.png", `services`);
+
+    return [b1, b1];
 }
 
 /**

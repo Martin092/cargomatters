@@ -5,11 +5,8 @@
 <script lang="ts">
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript";
-    import {t, locale} from "$lib/translations";
 
-    let benefit1 = new BenefitClass($t('benefits.benefit1.subtitle'),
-        $t('benefits.benefit1.title'),
-        $t('benefits.benefit1.desc'), "/images/gray.png", "alt", `${$t('benefits.benefit1.link-text')} >`, `/${$locale}/services`);
+    let benefit1 = new BenefitClass("benefit1", "/images/gray.png", `services`);
 </script>
 
 <div class="flex flex-col row-start-2 col-start-1 col-span-4 gap-16 py-20
