@@ -1,16 +1,24 @@
 {
   "common": {
-    "card-title": "{{type}} Бизнес Решения",
-    "card-link": "Вижте {{type}} решения",
+    "card-title": "Бизнес решения за {{type}} индустрия",
+    "card-link": "Решения за {{type}} индустрия",
     "hero": "Ние предлагаме решения за {{type}} индустрия"
   },
   "entries": {
     "aerospace": {
-      "type": "Аеровъздушната",
+      "type": "аерокосмическата",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "military": {
+      "type": "военната",
       "subtitle": "Lorem ipsum dolor sitamet"
     },
     "chemical": {
-      "type": "Химическата",
+      "type": "химическата",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "agriculture": {
+      "type": "земеделската",
       "subtitle": "Lorem ipsum dolor sitamet"
     }
   }
