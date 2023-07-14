@@ -22,7 +22,7 @@
             </div>
             <p class="text-secondary-400">{$t(`benefits.${benefit.localizationKey}.desc`)}</p>
         </div>
-        <a href={`/${$locale}/${benefit.link}`} class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
+        <a href={`/${$locale}${benefit.link}`} class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
             {$t(`benefits.${benefit.localizationKey}.link-text`)}
         </a>
     </div>

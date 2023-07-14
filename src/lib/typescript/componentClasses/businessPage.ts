@@ -8,6 +8,7 @@ export class BusinessPageBuilder {
     public features:BusinessFeatureClass[] = [];
     public benefits:BenefitClass[] = [];
     public reviews:BusinessReviewClass[] = [];
+    public questions:string[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
     public heroImage:string = "/images/hero-ornaments.svg";
@@ -78,6 +79,15 @@ export class BusinessPageBuilder {
     }
 
     /**
+     * Set question localization keys to be loaded in the FAQ section
+     * @param q the localization keys for all questions to be added
+     */
+    withQuestions(q:string[]):BusinessPageBuilder {
+        this.questions = q;
+        return this;
+    }
+
+    /**
      * Add dummy features for testing to be rendered on the
      * business page
      */
@@ -105,12 +115,21 @@ export class BusinessPageBuilder {
     }
 
     /**
+     * Add dummy questions for testing to be rendered on the
+     * business page
+     */
+    withDummyQuestions():BusinessPageBuilder {
+        this.questions = dummyQuestions();
+        return this;
+    }
+
+    /**
      * Add dummy values for testing to be rendered on the
      * business page. This method adds dummy features,
      * benefits and reviews
      */
     withDummyValues():BusinessPageBuilder {
-        this.withDummyFeatures().withDummyBenefits().withDummyReviews();
+        this.withDummyFeatures().withDummyBenefits().withDummyReviews().withDummyQuestions();
         return this;
     }
 
@@ -119,7 +138,7 @@ export class BusinessPageBuilder {
      * not given, this method will fall back to the default values.
      */
     build():BusinessPage {
-        return new BusinessPage(this.type, this.features, this.benefits, this.reviews, this.alt, this.image, this.heroImage);
+        return new BusinessPage(this.type, this.features, this.benefits, this.reviews, this.questions, this.alt, this.image, this.heroImage);
     }
 }
 
@@ -135,6 +154,7 @@ export class BusinessPage {
     features:BusinessFeatureClass[];
     benefits:BenefitClass[];
     reviews:BusinessReviewClass[];
+    questions:string[];
     private readonly _catalogueCard:IndustrySolutionClass;
 
     /**
@@ -145,15 +165,17 @@ export class BusinessPage {
      * @param features the features to be rendered on the dynamic page as an array
      * @param benefits the benefits to be rendered on the dynamic page as an array
      * @param reviews the reviews to be rendered on the dynamic page as an array
+     * @param questions the question localization keys for the questions to be loaded in the FAQ
      * @param alt the alt text to the catalogue image
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: BusinessReviewClass[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: BusinessReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
         this.reviews = reviews;
+        this.questions = questions;
         this._catalogueCard = new IndustrySolutionClass(image, alt, type, `/services/industry/${type.toLowerCase()}`, type.toLowerCase());
         this.heroImage = heroImage;
 
@@ -170,7 +192,7 @@ export class BusinessPage {
 }
 
 /**
- * A function to create dummy features
+ * Create dummy features array
  */
 export function dummyFeatures():BusinessFeatureClass[] {
     let dummy = new BusinessFeatureClass('pepicons-print:truck','/','dummy.features.dummy')
@@ -178,19 +200,25 @@ export function dummyFeatures():BusinessFeatureClass[] {
 }
 
 /**
- * A function to create dummy benefits
+ * Create dummy benefits array
  */
 export function dummyBenefits():BenefitClass[] {
-    let b1 = new BenefitClass("benefit1", "/images/gray.png", `services`);
-
+    let b1 = new BenefitClass("benefit1", "/images/gray.png", `/services`);
     return [b1, b1];
 }
 
 /**
- * A function to create dummy reviews
+ * Create dummy reviews array
  */
 export function dummyReviews():BusinessReviewClass[] {
     let r1 = new BusinessReviewClass("/images/companies/prax-logo.png", "alt", "praxidike");
-
     return [r1, r1];
+}
+
+/**
+ * Create dummy question key string array
+ */
+export function dummyQuestions():string[] {
+    let q1 = "dummy";
+    return [q1,q1,q1,q1];
 }

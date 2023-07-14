@@ -31,7 +31,7 @@
             <h4 class="text-gray-50">{$t(`business.entries.${feature.localizationKey}.title`)}</h4>
             <p class="text-gray-300">{$t(`business.entries.${feature.localizationKey}.desc`)}</p>
         </div>
-        <p><a href={`/${$locale}/${feature.link}`} class="text-primary-500 underline">
+        <p><a href={`/${$locale}${feature.link}`} class="text-primary-500 underline">
             {$t(`business.entries.${feature.localizationKey}.link-text`)}
         </a></p>
     </div>

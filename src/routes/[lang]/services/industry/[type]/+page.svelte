@@ -42,7 +42,9 @@
     {/if}
 
     <!--  FAQ  -->
-    <FAQ />
+    {#if page.questions.length !== 0}
+        <FAQ questions={page.questions} />
+    {/if}
 
     <!--  CTA  -->
     <CTA />
