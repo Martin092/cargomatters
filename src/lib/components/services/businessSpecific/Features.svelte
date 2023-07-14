@@ -5,13 +5,13 @@
 
 
 <script lang="ts">
-    import {Feature} from "$lib/components/reusable/index";
-    import {FeatureClass} from "$lib/typescript";
+    import {BusinessFeature} from "$lib/components/reusable/index";
+    import {BusinessFeatureClass} from "$lib/typescript";
 
     /**
      * an array of all the features that have to be loaded on the page
      */
-    export let features:FeatureClass[] = [];
+    export let features:BusinessFeatureClass[] = [];
 
 </script>
 
@@ -23,7 +23,7 @@
                 md:col-start-1 md:flex-row md:col-span-8
                 xl:col-start-2 xl:col-span-10" >
     {#each features as feature}
-        <Feature {feature}  />
+        <BusinessFeature {feature}  />
     {/each}
 </div>
 

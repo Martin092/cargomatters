@@ -11,9 +11,11 @@ import {BusinessPageLoader} from "./BussinessPageLoader";
 import {PagesDatabase} from "./PagesDatabase";
 import {TransportServiceClass} from "./componentClasses/transportService"
 import {BusinessReviewClass} from "./componentClasses/businessReview"
+import {BusinessFeatureClass} from "./componentClasses/businessFeature";
 import type {HashMapPagesDatabase} from "./PagesDatabase";
 
 export {BenefitClass,
+        BusinessFeatureClass,
         WideSolutionClass,
         FeatureClass,
         IndustrySolutionClass,
