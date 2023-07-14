@@ -1,4 +1,4 @@
-import type { PageServerLoad } from '../../../../../.svelte-kit/types/src/routes';
+import type { PageServerLoad } from './$types';
 import {businessDao} from "$lib/server/server";
 
 export const load = (async () => {

@@ -1,4 +1,4 @@
-import type { PageServerLoad } from '../../../../../../.svelte-kit/types/src/routes';
+import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 import {businessDao} from "$lib/server/server";
 
