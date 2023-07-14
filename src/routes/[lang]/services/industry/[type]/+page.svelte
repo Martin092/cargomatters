@@ -6,6 +6,7 @@
 
     export let data: PageData;
 
+    // @ts-ignore
     const page:BusinessPage = data.page;
 
     let hero = {
