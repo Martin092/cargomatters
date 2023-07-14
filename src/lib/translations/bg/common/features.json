@@ -1,0 +1,32 @@
+{
+  "free-consult": {
+    "icon": "pepicons-print:truck",
+    "title": "Безплатни консултации",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Свържете се с нас"
+  },
+  "best-transport": {
+    "icon": "pepicons-print:airplane",
+    "title": "Скоростен транспорт",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "See transport solutions"
+  },
+  "best-logistics": {
+    "icon": "solar:box-bold",
+    "title": "Брилянтна Логистика",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Вижте транспортни услуги"
+  },
+  "expert-team": {
+    "icon": "solar:box-bold",
+    "title": "Expert Team",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Вижте логистични услуги"
+  },
+  "dummy": {
+    "icon": "pepicons-print:truck",
+    "title": "Отбор от Експерти",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Разберете повече за нас"
+  }
+}

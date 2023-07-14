@@ -7,27 +7,5 @@
       "emergency": "I need Emergency Care"
     },
     "social-proof": "More than 1000 companies chose us as their logistical partner"
-  },
-  "features": {
-    "1": {
-      "title": "Free Consultations",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Consult us for Free"
-    },
-    "2": {
-      "title": "Top-notch Transportation",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "See transport solutions"
-    },
-    "3": {
-      "title": "Brilliant Logistics",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "See logistical solutions"
-    },
-    "4": {
-      "title": "Expert Team",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Learn more About us"
-    }
   }
 }

@@ -1,11 +1,11 @@
-import {IndustrySolutionClass, ReviewClass, BusinessFeatureClass, BenefitClass} from "../index";
+import {IndustrySolutionClass, ReviewClass, FeatureClass, BenefitClass} from "../index";
 
 /**
  * A business page builder for seamless creation of business pages
  */
 export class BusinessPageBuilder {
     public type:string = "undefined";
-    public features:BusinessFeatureClass[] = [];
+    public features:FeatureClass[] = [];
     public benefits:BenefitClass[] = [];
     public reviews:ReviewClass[] = [];
     public questions:string[] = [];
@@ -27,7 +27,7 @@ export class BusinessPageBuilder {
      * @param features the features to be set on this BusinessPage
      * as an array of FeatureClass objects
      */
-    withFeatures(features:BusinessFeatureClass[]):BusinessPageBuilder {
+    withFeatures(features:FeatureClass[]):BusinessPageBuilder {
         this.features = features;
         return this;
     }
@@ -151,7 +151,7 @@ export class BusinessPage {
     localizationKey:string;
     type:string;
     heroImage:string;
-    features:BusinessFeatureClass[];
+    features:FeatureClass[];
     benefits:BenefitClass[];
     reviews:ReviewClass[];
     questions:string[];
@@ -170,7 +170,7 @@ export class BusinessPage {
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, features: BusinessFeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
@@ -194,8 +194,8 @@ export class BusinessPage {
 /**
  * Create dummy features array
  */
-export function dummyFeatures():BusinessFeatureClass[] {
-    let dummy = new BusinessFeatureClass('pepicons-print:truck','/','dummy.features.dummy')
+export function dummyFeatures():FeatureClass[] {
+    let dummy = new FeatureClass('free-consult','/contact')
     return [dummy, dummy, dummy, dummy];
 }
 

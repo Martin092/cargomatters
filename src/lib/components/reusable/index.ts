@@ -10,6 +10,5 @@ import Review from "./Review.svelte";
 import TeamMember from "./TeamMember.svelte";
 import WideSolution from "./WideSolution.svelte";
 import IndustrySolution from "./IndustrySolution.svelte";
-import BusinessFeature from "./BusinessFeature.svelte"
 
-export {Benefit, Feature, MainSolutions, Review, TeamMember, WideSolution, IndustrySolution, BusinessFeature};
+export {Benefit, Feature, MainSolutions, Review, TeamMember, WideSolution, IndustrySolution};

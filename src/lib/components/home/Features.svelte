@@ -6,12 +6,10 @@
     import {Feature} from "$lib/components/reusable/index";
     import {FeatureClass} from "$lib/typescript";
 
-    import {t, locale} from "$lib/translations";
-
-    let feature1 = new FeatureClass("pepicons-print:truck", $t('home.features.1.title'), $t('home.features.1.desc'), `${$locale}/contact`, `${$t('home.features.1.link-text')} >`);
-    let feature2 = new FeatureClass("pepicons-print:airplane", $t('home.features.2.title'), $t('home.features.2.desc'), `${$locale}/contact`, `${$t('home.features.1.link-text')} >`);
-    let feature3 = new FeatureClass("solar:box-bold", $t('home.features.3.title'), $t('home.features.3.desc'), "/contact", `${$t('home.features.1.link-text')} >`);
-    let feature4 = new FeatureClass("solar:box-bold", $t('home.features.4.title'), $t('home.features.4.desc'), "/contact", `${$t('home.features.4.link-text')} >`);
+    let feature1 = new FeatureClass("free-consult", `/contact`);
+    let feature2 = new FeatureClass("best-transport", `/contact`);
+    let feature3 = new FeatureClass("best-logistics", `/contact`);
+    let feature4 = new FeatureClass("expert-team", `/contact`);
 </script>
 
 <div id="features" class="col-start-1 col-span-full row-start-2 w-screen

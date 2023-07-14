@@ -7,27 +7,5 @@
       "emergency": "Спешна Помощ"
     },
     "social-proof": "Повече от 1000 компании ни избраха като логистичен партньор"
-  },
-  "features": {
-    "1": {
-      "title": "Безплатни Консултации",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Свържете се с нас"
-    },
-    "2": {
-      "title": "Скоростен транспорт",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Вижте транспортни услуги"
-    },
-    "3": {
-      "title": "Брилятна Логистика",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Вижте логистични услуги"
-    },
-    "4": {
-      "title": "Отбор от Експерти",
-      "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-      "link-text": "Разберете повече за нас"
-    }
   }
 }

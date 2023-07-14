@@ -20,15 +20,6 @@
     "agriculture": {
       "type": "Agriculture",
       "subtitle": "Lorem ipsum dolor sitamet"
-    },
-    "dummy": {
-      "features": {
-        "dummy": {
-          "title": "Feature Bullet",
-          "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
-          "link-text": "Click here >"
-        }
-      }
     }
   }
 }

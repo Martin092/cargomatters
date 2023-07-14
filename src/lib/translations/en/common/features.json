@@ -1,0 +1,32 @@
+{
+  "free-consult": {
+    "icon": "pepicons-print:truck",
+    "title": "Free Consultations",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Consult us for Free"
+  },
+  "best-transport": {
+    "icon": "pepicons-print:airplane",
+    "title": "Top-notch Transportation",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "See transport solutions"
+  },
+  "best-logistics": {
+    "icon": "solar:box-bold",
+    "title": "Brilliant Logistics",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "See logistical solutions"
+  },
+  "expert-team": {
+    "icon": "solar:box-bold",
+    "title": "Expert Team",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Learn more About us"
+  },
+  "dummy": {
+    "icon": "pepicons-print:truck",
+    "title": "Expert Team",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Learn more About us"
+  }
+}

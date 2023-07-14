@@ -71,6 +71,11 @@ const config:Config = {
         },
         {
             locale: 'en',
+            key: 'features',
+            loader: async () => (await import('./en/common/features.json')).default,
+        },
+        {
+            locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/pages/error.json')).default,
@@ -136,6 +141,11 @@ const config:Config = {
             locale: 'bg',
             key: 'business',
             loader: async () => (await import('./bg/common/business.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'features',
+            loader: async () => (await import('./bg/common/features.json')).default,
         },
         {
             locale: 'bg',
