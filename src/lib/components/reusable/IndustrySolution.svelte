@@ -17,10 +17,10 @@
     <img src={industrySolution.image} alt={industrySolution.alt}>  
     <div class="flex flex-col gap-6 p-7">
         <div class="flex flex-col gap-2 text-white">
-            <h5 class="font-bold">{industrySolution.title}</h5>
+            <h5 class="font-bold" data-testid="industry-title">{industrySolution.title}</h5>
             <p>{industrySolution.description}</p>
         </div> 
-        <a href={industrySolution.link}>
+        <a href={industrySolution.link} data-testid="industry-solution">
             <p class="text-primary-500 underline underline-offset-4">{industrySolution.linkText}</p>
         </a>
     </div>

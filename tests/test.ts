@@ -337,13 +337,73 @@ test('All transport buttons in transport page goes to the correct page', async (
     await page.goto('/services/transport');
 
     const elementss = await page.$$('[data-testid="transport-contact-button"]');
-    // elements[0].click();
-    // await expect(page).toHaveURL(/\/contact$/);
+
     for(let i = 0; i < elementss.length; i++){
         const elements = await page.$$('[data-testid="transport-contact-button"]');
-        elements[i].click();
+        await elements[i].waitForElementState('visible');
+        await elements[i].click();
         await expect(page).toHaveURL(/\/contact$/);
         await page.goBack();
     }
-
 });
+
+//----------------------------------------------------------------------
+//------------------test industries page--------------------------------
+
+// ste mu eba maikata twa prosto ne moga da go naprawq da raboti
+//dolnite dwa testa bi trqbwalo da prawqt edno i susto nesto ama ne bachkat
+
+// test('Industries in industries page go to the correct page', async ({ page }) => {
+//     await page.setViewportSize({width: 810, height: 1080});
+//     await page.goto('/services/industry');
+
+//     const all = await page.$$('[data-testid="industry-solution"]');
+    
+    
+//     for(let i = 0; i < all.length; i++){
+//         const elements = await page.$$('[data-testid="industry-solution"]');
+//         await elements[i].waitForElementState('visible');
+
+//         const titles = await page.$$('[data-testid="industry-title"]');
+//         await elements[i].click();
+
+//         let title = await titles[i].innerText();
+//         let a = title.split(" ")[0].toLowerCase();
+//         console.log(a);
+
+//         var regex = new RegExp("\/services\/industry\/" + a + "$");
+//         await expect(page).toHaveURL(regex);
+        
+//         await page.goBack();
+//     }
+
+//  });
+
+// test('Industries in industries page go to the correct page', async ({ page }) => {
+//     await page.setViewportSize({width: 810, height: 1080});
+//     await page.goto('/services/industry');
+
+//     const all = await page.$$('[data-testid="industry-solution"]');
+    
+    
+//     for(let i = 0; i < all.length; i++){
+//         let elements = page.locator("industry-solution");
+        
+//         let current = elements.nth(i);
+
+        
+//         const titles = await page.$$('[data-testid="industry-title"]');
+//         await current.click();
+
+//         let title = await titles[i].innerText();
+//         let a = title.split(" ")[0].toLowerCase();
+//         console.log(a);
+
+//         var regex = new RegExp("\/services\/industry\/" + a + "$");
+//         await expect(page).toHaveURL(regex);
+        
+//         await page.goBack();
+//     }
+//  });
+
+

@@ -3,7 +3,7 @@
     @ret: a catalogue with all industry solutions to load
 -->
 <script lang="ts">
-    import {IndustrySolutionClass} from "$lib/typescript";
+    import type {IndustrySolutionClass} from "$lib/typescript";
     import {IndustrySolution} from "$lib/components/reusable";
 
     /**
