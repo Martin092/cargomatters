@@ -5,14 +5,22 @@
 <script>
     import {MainSolutions} from "$lib/components/reusable";
     import {MainSolution} from "$lib/typescript";
+    import {t, locale} from "$lib/translations";
 
-    let transportSolution = new MainSolution("/images/gray.png", "/images/gray.png", "Transport", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
-        ["Road Freight", "Sea Freight", "Air Freight", "Rail Freight", "Emergency Transport"],
-        "/services/transport")
+    let transportSolution = new MainSolution("/images/gray.png", "/images/gray.png",
+        $t('services.mpc.transport.type'), $t('services.mpc.transport.desc'),
+        [$t('services.mpc.transport.bullets.road'), $t('services.mpc.transport.bullets.sea'),
+        $t('services.mpc.transport.bullets.air'), $t('services.mpc.transport.bullets.rail'),
+        $t('services.mpc.transport.bullets.emergency')],
+        `/${$locale}/services/transport`)
 
-    let industrySolution = new MainSolution("/images/gray.png", "/images/gray.png", "Logistics & Industry", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
-        ["Business Solutions", "Customs handling", "Integrated services", "Distributions", "Cargo Insurance", "Claim Handling", "Added Value Services"],
-        "/services/industry")
+    let industrySolution = new MainSolution("/images/gray.png", "/images/gray.png",
+        $t('services.mpc.logistical.type'), $t('services.mpc.logistical.desc'),
+        [$t('services.mpc.logistical.bullets.1'), $t('services.mpc.logistical.bullets.2'),
+        $t('services.mpc.logistical.bullets.3'), $t('services.mpc.logistical.bullets.4'),
+        $t('services.mpc.logistical.bullets.4'), $t('services.mpc.logistical.bullets.6'),
+        $t('services.mpc.logistical.bullets.7')],
+        `/${$locale}/services/industry`)
 </script>
 
 

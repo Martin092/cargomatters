@@ -5,6 +5,7 @@
 <script lang="ts">
     import type {WideSolutionClass} from "$lib/typescript";
     import Icon from '@iconify/svelte';
+    import {t, locale} from "$lib/translations";
 
     export let solution:WideSolutionClass;
 </script>
@@ -24,7 +25,7 @@
             </div>
         {/each}
     </div>
-    <a href="/contact" class="underline text-primary-500">Consult Us for Free ></a>
+    <a href="/{$locale}/contact" class="underline text-primary-500">{$t('cta.consult')} ></a>
 </div>
 
 <style>

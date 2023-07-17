@@ -1,17 +1,31 @@
-import {describe, it, expect, beforeEach} from "vitest";
+import {describe, it, expect, beforeEach, beforeAll} from "vitest";
 import {cleanup, render, screen} from '@testing-library/svelte';
+import {loadTranslations, setLocale} from "$lib/translations";
 
 import {Feature, Benefit, MainSolutions} from "./index";
-import {FeatureClass, BenefitClass, MainSolution} from "../../typescript/index";
+import {FeatureClass, BenefitClass, MainSolution} from "$lib/typescript";
+
+
+/**
+ * Before any test is run, the translations must be loaded
+ * and the locale shall be set to english
+ */
+beforeAll( async() => {
+    await loadTranslations('en');
+    await setLocale('en');
+})
 
 describe('Feature component', () => {
-    beforeEach(() => cleanup());
+    beforeEach(() => {
+        cleanup();
+    });
 
-    it('renders correct link', async () => {
-        let testFeature = new FeatureClass("-","Feature", "desc", "/", "Home");
+    it('renders correct link and proper localization', async () => {
+
+        let testFeature = new FeatureClass("dummy","/");
 
         render(Feature, {feature: testFeature});
-        const link = screen.getByText("Home");
+        const link = screen.getByText("Dummy link");
 
         expect(link).toBeTruthy();
     });
@@ -21,10 +35,10 @@ describe('Benefit component', () => {
     beforeEach(() => cleanup());
 
     it('renders correct link', async () => {
-        let testBenefit = new BenefitClass("sub title", "title", "desc", "/", "alt", "Browse", "/");
+        let testBenefit = new BenefitClass("dummy", "/some/image", "/");
 
         render(Benefit, {benefit: testBenefit});
-        const link = screen.getByText("Browse");
+        const link = screen.getByText("Explore services");
 
         expect(link).toBeTruthy();
     });

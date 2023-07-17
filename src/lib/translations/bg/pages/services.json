@@ -1,0 +1,139 @@
+{
+  "mpc": {
+    "title": "{{type}} Услуги",
+    "link": "Вижте всички {{type}} услуги",
+    "transport": {
+      "type": "Транспортни",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "road": "Сухопътен транспорт",
+        "sea": "Воден транспорт",
+        "air": "Въздушен транспорт",
+        "rail": "Железопътен транспорт",
+        "emergency": "Спешен транспорт"
+      }
+    },
+    "logistical": {
+      "type": "Логистични и Бизнес",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.",
+      "bullets": {
+        "1": "Бизнес решения",
+        "2": "Customs handling",
+        "3": "Интегрирани услуги",
+        "4": "Дистрибуции",
+        "5": "Товарна застраховка",
+        "6": "Claim Handling",
+        "7": "Услуги за добавена стойност"
+      }
+    }
+  },
+  "transport": {
+    "sub-hero": {
+      "title": "За каквито и да е спешни нужди, свържете се с нас директно",
+      "subtitle": "Вашето време е безценно. Нека разрешим спешния Ви проблем при първа възможност!",
+      "cta": {
+        "button": "Нуждая се от спешна помощ",
+        "link": "Повече Информация"
+      }
+    },
+    "hero": {
+      "title": "Транспортни Решения",
+      "subtitle": "Ние предлагаме всякакви решения - от сухопътни до въздушни. Свържете се с нас, за да намерим перфектното за Вас."
+    },
+    "solutions": {
+      "road": {
+        "title": "Сухопътен Транспорт",
+        "subtitle": "Достъпен и обширен",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+        "features": {
+          "1": {
+            "title": "Бързо решение",
+            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
+          }
+        }
+      },
+      "sea": {
+        "title": "Воден Транспорт",
+        "subtitle": "Достъпен и обширен",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+        "features": {
+          "1": {
+            "title": "Бързо решение",
+            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
+          }
+        }
+      },
+      "air": {
+        "title": "Въздушен Транспорт",
+        "subtitle": "Достъпен и обширен",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+        "features": {
+          "1": {
+            "title": "Бързо решение",
+            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
+          }
+        }
+      },
+      "rail": {
+        "title": "Железопътен транспорт",
+        "subtitle": "Достъпен и обширен",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+        "features": {
+          "1": {
+            "title": "Бързо решение",
+            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
+          }
+        }
+      }
+    }
+  },
+  "emergency": {
+    "sub-hero": {
+      "title": "За каквито и да е спешни нужди, свържете се с нас директно",
+      "subtitle": "Вашето време е безценно. Нека разрешим спешния Ви проблем при първа възможност!",
+      "cta": {
+        "button": "Нуждая се от спешна помощ",
+        "link": "Повече Информация"
+      }
+    },
+    "hero": {
+      "title": "Спешни решения",
+      "subtitle": "Тук са изброени в каталог спешните решния, които предлагаме. Ако се нуждаете от която и да е от тях, ни се обадете при първа възможност."
+    },
+    "solutions": {
+      "1": {
+        "subtitle": "Бързо решение",
+        "title": "Куриер на борда",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+        "stats": {
+          "1": "Услуги"
+        }
+      }
+    }
+  },
+  "logistical": {
+    "hero": {
+      "title": "Логистични и индустриални решения",
+      "subtitle": "Нуждаете се от специфични логистично решение или готови решения за вашия бизнес? Разгледайте каталога ни",
+      "cta": "Консултирайте Бизнес Услуги"
+    },
+    "business": {
+      "title": "Ние подкрепяме бизнеси от всякакъв вид",
+      "subtitle": "Търсите пакет от решения за вашия бизнес? Разгледайте бизнес решенията ни или директно се свържете с нас."
+    },
+    "logistics": {
+      "title": "Търсите спецично логистично решение?",
+      "subtitle": "Търсите пакет от решения за вашия бизнес? Разгледайте бизнес решенията ни или директно се свържете с нас.",
+      "solutions": {
+        "1": {
+          "subtitle": "Бързо решение",
+          "title": "На-борден куриер",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "услуги"
+          }
+        }
+      }
+    }
+  }
+}

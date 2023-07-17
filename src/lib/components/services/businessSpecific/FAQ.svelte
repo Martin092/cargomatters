@@ -5,11 +5,17 @@
 <script lang="ts">
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
     import Icon from "@iconify/svelte";
+    import {t} from "$lib/translations";
 
     /**
-     * class for which row to take when loading the component inside a grid element
+     * Prop for which row to take when loading the component inside a grid element
      */
-    export let row:String = "row-start-5"
+    export let row:string = "row-start-5"
+
+    /**
+     *  Question keys to load into the Accordion
+     */
+    export let questions:string[] = []
 </script>
 
 
@@ -20,26 +26,19 @@
     <h3 class="text-center leading-normal">Frequently Asked Questions</h3>
     <div class="md:w-10/12 bg-[#353535] text-gray-100 rounded-lg">
         <Accordion autocollapse padding="py-2 px-4 md:py-3 px-6 xl:py-4 xl:px-10 ">
-            <AccordionItem open>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
-            </AccordionItem>
-            <AccordionItem open>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
-            </AccordionItem>
-            <AccordionItem open>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
-            </AccordionItem>
-            <AccordionItem open>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">How do I choose between the available solutions?</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut.</p></svelte:fragment>
-            </AccordionItem>
+            {#each questions as q}
+                <AccordionItem closed>
+                    <svelte:fragment slot="lead">
+                        <Icon color="grey" height="32" icon={$t(`faq.questions.${q}.icon`)}/>
+                    </svelte:fragment>
+                    <svelte:fragment slot="summary"><h5 class="font-semibold">
+                        {$t(`faq.questions.${q}.question`)}
+                    </h5></svelte:fragment>
+                    <svelte:fragment slot="content"><p>
+                        {$t(`faq.questions.${q}.answer`)}
+                    </p></svelte:fragment>
+                </AccordionItem>
+            {/each}
         </Accordion>
     </div>
 </div>

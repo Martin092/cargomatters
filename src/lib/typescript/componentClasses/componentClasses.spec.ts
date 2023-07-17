@@ -3,31 +3,17 @@ import {
     BenefitClass,
     BusinessPage,
     BusinessPageBuilder,
-    FeatureClass,
     IndustrySolutionClass,
     Member,
     Stat, TransportServiceClass, WideSolutionClass
 } from "../index";
 import {dummyBenefits, dummyFeatures, dummyReviews} from "./businessPage";
 
-
-describe("Feature class", () => {
-    it('should work correctly with the static method for transport solutions', function () {
-        let feature = FeatureClass.TransportFeature("icon", "test", "desc");
-
-        expect(feature.link).toBe("");
-        expect(feature.linkText).toBe("");
-        expect(feature.icon).toBe("icon");
-        expect(feature.title).toBe("test");
-        expect(feature.description).toBe("desc");
-    });
-})
-
 describe("BusinessPageBuilder and BusinessPage", () => {
     it('should work properly with all given basic methods', function () {
 
         let b1 = new BusinessPageBuilder();
-        b1.setKeywordTitle("test").withSubTitle("subtitle")
+        b1.setKeywordTitle("test")
             .withDummyValues().withImage("/some/image", "alt")
             .withHeroImage("/some/hero/image");
 
@@ -38,18 +24,18 @@ describe("BusinessPageBuilder and BusinessPage", () => {
         let expectedReviews = dummyReviews();
 
         let expected =
-            new BusinessPage("test", "subtitle", expectedFeatures, expectedBenefits,
-                expectedReviews, "alt", "/some/image", "/some/hero/image");
+            new BusinessPage("test", expectedFeatures, expectedBenefits,
+                expectedReviews, ["dummy","dummy","dummy","dummy"], "alt", "/some/image", "/some/hero/image");
 
         expect(actual).toStrictEqual(expected);
     });
 
     it('should work properly with setters for array fields', function () {
         let testBenefit =
-            new BenefitClass("st","t","m","/image","alt","l","l");
+            new BenefitClass("test","/some/image","/");
 
         let b1 = new BusinessPageBuilder();
-        b1.setKeywordTitle("test").withSubTitle("subtitle")
+        b1.setKeywordTitle("test")
             .withFeatures(dummyFeatures())
             .addBenefits(dummyBenefits())
             .withReviews(dummyReviews())
@@ -65,8 +51,8 @@ describe("BusinessPageBuilder and BusinessPage", () => {
 
         expectedBenefits.push(testBenefit);
         let expected =
-            new BusinessPage("test", "subtitle", expectedFeatures, expectedBenefits,
-                expectedReviews, "alt", "/some/image", "/some/hero/image");
+            new BusinessPage("test", expectedFeatures, expectedBenefits,
+                expectedReviews, [], "alt", "/some/image", "/some/hero/image");
 
         expect(actual).toStrictEqual(expected);
     });
@@ -75,14 +61,13 @@ describe("BusinessPageBuilder and BusinessPage", () => {
 
         let b1 = new BusinessPageBuilder();
         b1.setKeywordTitle("test")
-            .withSubTitle("subtitle")
             .withImage("/some/image", "alt");
 
         let actual = b1.build().catalogueCard;
 
         let expected =
-            new IndustrySolutionClass("/some/image", "alt", "test Industry Solutions",
-                "subtitle", "See test solutions","/services/industry/test");
+            new IndustrySolutionClass("/some/image", "alt", "test",
+                "/services/industry/test", "test");
 
         expect(actual).toStrictEqual(expected);
     });

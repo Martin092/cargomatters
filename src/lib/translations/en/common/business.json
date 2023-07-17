@@ -1,0 +1,25 @@
+{
+  "common": {
+    "card-title": "{{type}} Industry Solution",
+    "card-link": "See {{type}} solutions",
+    "hero": "We provide services for the {{type}} industry"
+  },
+  "entries": {
+    "aerospace": {
+      "type": "Aerospace",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "military": {
+      "type": "Military",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "chemical": {
+      "type": "Chemical",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "agriculture": {
+      "type": "Agriculture",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    }
+  }
+}

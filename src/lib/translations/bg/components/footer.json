@@ -1,0 +1,22 @@
+{
+  "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus.",
+  "titles": {
+    "links": "Връзки",
+    "contact": "Контакт"
+  },
+  "nav": {
+    "tos": "Условия за ползване",
+    "privacy": "Поверителност",
+    "attr": "Атрибуции",
+    "sitemap": "Карта на сайта",
+    "transport": "Транспортни Услуги",
+    "logistical": "Логистични Услуги",
+    "contact": "Контакти",
+    "about": "За Нас"
+  },
+  "contact": {
+    "email": "Имейл",
+    "phone": "Телефон",
+    "cta": "Свържете се с Нас Безплатно"
+  }
+}

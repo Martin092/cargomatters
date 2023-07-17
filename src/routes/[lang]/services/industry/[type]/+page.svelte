@@ -1,16 +1,17 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
-    import {Hero, Features, Benefits, SocialProof, FAQ, CTA} from "$lib/components/services/businessSpecific"
+    import {Hero, Features, Benefits, SocialProof, FAQ} from "$lib/components/services/businessSpecific";
+    import {CTA} from "$lib/components/home";
     import type { PageData } from './$types';
     import {BusinessPage} from "$lib/typescript";
 
     export let data: PageData;
 
+    // @ts-ignore
     const page:BusinessPage = data.page;
 
     let hero = {
-        type: page.type,
-        subTitle: page.subTitle,
+        lkey: page.localizationKey,
         heroImage: page.heroImage
     }
 </script>
@@ -41,7 +42,9 @@
     {/if}
 
     <!--  FAQ  -->
-    <FAQ />
+    {#if page.questions.length !== 0}
+        <FAQ questions={page.questions} />
+    {/if}
 
     <!--  CTA  -->
     <CTA />

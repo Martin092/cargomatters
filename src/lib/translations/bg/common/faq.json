@@ -1,0 +1,15 @@
+{
+  "title": "Често задавани въпроси",
+  "questions": {
+    "q1": {
+      "icon": "mdi:truck",
+      "question": "Как да избера от много налични услуги?",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut."
+    },
+    "dummy": {
+      "icon": "mdi:truck",
+      "question": "Как да избера от много налични услуги?",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut."
+    }
+  }
+}

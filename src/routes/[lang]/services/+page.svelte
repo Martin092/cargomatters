@@ -1,6 +1,6 @@
 <script lang="ts">
-    import {Hero, WorkProcess} from "$lib/components/services/index"
-    import {FAQ, CTA} from "$lib/components/home/index";
+    import {Hero, WorkProcess} from "$lib/components/services"
+    import {FAQ, CTA} from "$lib/components/home";
     import Header from "$lib/components/Header.svelte";
 </script>
 

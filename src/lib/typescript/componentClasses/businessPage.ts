@@ -1,14 +1,14 @@
-import {IndustrySolutionClass, BenefitClass, ReviewClass, FeatureClass} from "../index";
+import {IndustrySolutionClass, ReviewClass, FeatureClass, BenefitClass} from "../index";
 
 /**
  * A business page builder for seamless creation of business pages
  */
 export class BusinessPageBuilder {
     public type:string = "undefined";
-    public subTitle:string = "undefined";
     public features:FeatureClass[] = [];
     public benefits:BenefitClass[] = [];
     public reviews:ReviewClass[] = [];
+    public questions:string[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
     public heroImage:string = "/images/hero-ornaments.svg";
@@ -19,17 +19,6 @@ export class BusinessPageBuilder {
      */
     setKeywordTitle(type:string):BusinessPageBuilder {
         this.type = type;
-        return this;
-    }
-
-    /**
-     * Add a subtitle to be rendered underneath the title and as a description inside
-     * the wide solution method used in the catalogue inside the logistical services
-     * page - /services/industry
-     * @param subTitle the subtitle and description to be rendered
-     */
-    withSubTitle(subTitle:string):BusinessPageBuilder {
-        this.subTitle = subTitle;
         return this;
     }
 
@@ -90,6 +79,15 @@ export class BusinessPageBuilder {
     }
 
     /**
+     * Set question localization keys to be loaded in the FAQ section
+     * @param q the localization keys for all questions to be added
+     */
+    withQuestions(q:string[]):BusinessPageBuilder {
+        this.questions = q;
+        return this;
+    }
+
+    /**
      * Add dummy features for testing to be rendered on the
      * business page
      */
@@ -117,12 +115,21 @@ export class BusinessPageBuilder {
     }
 
     /**
+     * Add dummy questions for testing to be rendered on the
+     * business page
+     */
+    withDummyQuestions():BusinessPageBuilder {
+        this.questions = dummyQuestions();
+        return this;
+    }
+
+    /**
      * Add dummy values for testing to be rendered on the
      * business page. This method adds dummy features,
      * benefits and reviews
      */
     withDummyValues():BusinessPageBuilder {
-        this.withDummyFeatures().withDummyBenefits().withDummyReviews();
+        this.withDummyFeatures().withDummyBenefits().withDummyReviews().withDummyQuestions();
         return this;
     }
 
@@ -131,7 +138,7 @@ export class BusinessPageBuilder {
      * not given, this method will fall back to the default values.
      */
     build():BusinessPage {
-        return new BusinessPage(this.type, this.subTitle, this.features, this.benefits, this.reviews, this.alt, this.image, this.heroImage);
+        return new BusinessPage(this.type, this.features, this.benefits, this.reviews, this.questions, this.alt, this.image, this.heroImage);
     }
 }
 
@@ -141,35 +148,38 @@ export class BusinessPageBuilder {
  * class instead for creating business pages.
  */
 export class BusinessPage {
+    localizationKey:string;
     type:string;
-    subTitle:string;
     heroImage:string;
     features:FeatureClass[];
     benefits:BenefitClass[];
     reviews:ReviewClass[];
+    questions:string[];
     private readonly _catalogueCard:IndustrySolutionClass;
 
     /**
      * Create a business page class. Tedious to use on its own.
      * Use of the provided builder class for BusinessPages is recommended.
      * @param type the type keyword of the page
-     * @param subTitle the subtitle to be rendered as a subtitle in the hero
      * and a description inside the business solutions catalogue
      * @param features the features to be rendered on the dynamic page as an array
      * @param benefits the benefits to be rendered on the dynamic page as an array
      * @param reviews the reviews to be rendered on the dynamic page as an array
+     * @param questions the question localization keys for the questions to be loaded in the FAQ
      * @param alt the alt text to the catalogue image
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
      */
-    constructor(type: string, subTitle: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
         this.type = type;
-        this.subTitle = subTitle;
         this.features = features;
         this.benefits = benefits;
         this.reviews = reviews;
-        this._catalogueCard = new IndustrySolutionClass(image, alt, `${type} Industry Solutions`, subTitle, `See ${type} solutions`, `/services/industry/${type.toLowerCase()}`);
+        this.questions = questions;
+        this._catalogueCard = new IndustrySolutionClass(image, alt, type, `/services/industry/${type.toLowerCase()}`, type.toLowerCase());
         this.heroImage = heroImage;
+
+        this.localizationKey = type.toLowerCase();
     }
 
     /**
@@ -182,30 +192,33 @@ export class BusinessPage {
 }
 
 /**
- * A function to create dummy features
+ * Create dummy features array
  */
 export function dummyFeatures():FeatureClass[] {
-    let f1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
-    let f2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-    let f3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-
-    return [f1,f2,f3,f1,f2];
+    let dummy = new FeatureClass('free-consult','/contact')
+    return [dummy, dummy, dummy, dummy];
 }
 
 /**
- * A function to create dummy benefits
+ * Create dummy benefits array
  */
 export function dummyBenefits():BenefitClass[] {
-    let b1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/gray.png", "alt", "Explore services >", "/services");
-
+    let b1 = new BenefitClass("benefit1", "/images/gray.png", `/services`);
     return [b1, b1];
 }
 
 /**
- * A function to create dummy reviews
+ * Create dummy reviews array
  */
 export function dummyReviews():ReviewClass[] {
-    let r1 = new ReviewClass("\"Honest, dedicated work...\"", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/companies/prax-logo.png", "alt", "Praxidike - IT Team");
-
+    let r1 = new ReviewClass("praxidike", "/images/companies/prax-logo.png");
     return [r1, r1];
+}
+
+/**
+ * Create dummy question key string array
+ */
+export function dummyQuestions():string[] {
+    let q1 = "dummy";
+    return [q1,q1,q1,q1];
 }

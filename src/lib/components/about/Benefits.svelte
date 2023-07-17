@@ -6,7 +6,7 @@
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript";
 
-    let benefit1 = new BenefitClass("International Partners", "Solutions to all problems", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.", "/images/gray.png", "alt", "Explore services >", "/services");
+    let benefit1 = new BenefitClass("benefit1", "/images/gray.png", `services`);
 </script>
 
 <div class="flex flex-col row-start-2 col-start-1 col-span-4 gap-16 py-20

@@ -48,8 +48,7 @@ describe("BusinessPageLoader Port unit tests", () => {
 class MockedPageDb implements HashMapPagesDatabase {
     basicBusinessPage = new BusinessPageBuilder()
         .setKeywordTitle("hiphop")
-        .withImage("gray", "alt")
-        .withSubTitle("subtitle").build();
+        .withImage("gray", "alt").build();
 
     /**
      * Mocked implementation of the addPage method

@@ -4,6 +4,7 @@
 -->
 <script lang="ts">
     import type {BenefitClass} from "$lib/typescript";
+    import {t, locale} from "$lib/translations";
 
     /**
      * a typescript object that holds the benefits to be loaded
@@ -16,16 +17,16 @@
     <div class="flex flex-col gap-8 md:w-1/2">
         <div class="gap-4">
             <div class="gap-2">
-                <h6 class="mb-1 text-secondary-400">{benefit.subTitle}</h6>
-                <h3 class="mb-2 font-semibold">{benefit.mainTitle}</h3>
+                <h6 class="mb-1 text-secondary-400">{$t(`benefits.${benefit.localizationKey}.subtitle`)}</h6>
+                <h3 class="mb-2 font-semibold">{$t(`benefits.${benefit.localizationKey}.title`)}</h3>
             </div>
-            <p class="text-secondary-400">{benefit.message}</p>
+            <p class="text-secondary-400">{$t(`benefits.${benefit.localizationKey}.desc`)}</p>
         </div>
-        <a href={benefit.link} class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
-            {benefit.linkMessage}
+        <a href={`/${$locale}${benefit.link}`} class="font-bold xl:font-extrabold underline underline-offset-4 max-md:text-[12px]">
+            {$t(`benefits.${benefit.localizationKey}.link-text`)}
         </a>
     </div>
-    <img src={benefit.photo} alt={benefit.alt} class="md:w-1/2 rounded-lg">
+    <img src={benefit.image} alt={$t(`benefits.${benefit.localizationKey}.alt`)} class="md:w-1/2 rounded-lg">
 </div>
 
 <style>
