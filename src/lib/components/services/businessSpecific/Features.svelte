@@ -1,6 +1,16 @@
+<!-- Features component
+    @uses: the FeatureClass class as a data structure to load information about the component and the Feature svelte component
+    @ret: a component that holds all the features that are needed for a page
+-->
+
+
 <script lang="ts">
     import {Feature} from "$lib/components/reusable/index";
-    import {FeatureClass} from "$lib/typescript/feature";
+    import {FeatureClass} from "$lib/typescript";
+
+    /**
+     * an array of all the features that have to be loaded on the page
+     */
     export let features:FeatureClass[] = [];
 
 </script>
@@ -20,6 +30,7 @@
 
 <style lang="scss">
     #features {
+        background-color: #313131;
         background-image: url("/images/feature-background.png");
         background-position: top right;
         background-size: cover;

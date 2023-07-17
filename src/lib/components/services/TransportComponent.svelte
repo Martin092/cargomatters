@@ -1,13 +1,22 @@
+<!-- TransportComponent catalogue item
+    @uses: Feature component; TransportServiceClass class to load the information about this solution
+    @ret: a responsive text description of a transport service WITHOUT the image
+-->
+
 <script lang="ts">
-    import type {TransportServiceClass} from "$lib/typescript/transportService";
+    import type {TransportServiceClass} from "$lib/typescript";
     import {Feature} from "$lib/components/reusable";
 
+    /**
+     * The transport service to be loaded as a TransportServiceClass
+     */
     export let transportService:TransportServiceClass;
 
     let colors = {icon: "text-[#707070]",text: "text-gray-900", title: "text-[#474747]"};
     let hasLink:boolean = false;
     let smallText:boolean = true;
     let iconSize:string = "20";
+    import {t, locale} from "$lib/translations";
 </script>
 
 <div class="flex flex-col mt-4 gap-4 py-8 lg:py-4">
@@ -31,9 +40,9 @@
         {/each}
     </div>
 
-    <a href="/contact">
-        <h5 class="font-bold underline text-primary-500 md:hidden">Consult {transportService.title} ></h5>
-        <p class="font-bold underline text-primary-500 hidden md:block">Consult {transportService.title} ></p>
+    <a href="/{$locale}/contact">
+        <h5 class="font-bold underline text-primary-500 md:hidden">{$t('cta.consult-word')} {transportService.title} ></h5>
+        <p class="font-bold underline text-primary-500 hidden md:block">{$t('cta.consult-word')} {transportService.title} ></p>
     </a>
 </div>
 

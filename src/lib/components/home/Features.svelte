@@ -1,10 +1,15 @@
+<!-- Home Features
+    @uses: Feature component and FeatureClass class to load features
+    @ret: a responsive features section used on the Home page
+-->
 <script>
     import {Feature} from "$lib/components/reusable/index";
-    import {FeatureClass} from "$lib/typescript/feature";
+    import {FeatureClass} from "$lib/typescript";
 
-    let feature1 = new FeatureClass("pepicons-print:truck", "Feature Bullet", "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.", "/contact", "Consult Us for Free >");
-    let feature2 = new FeatureClass("pepicons-print:airplane", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
-    let feature3 = new FeatureClass("solar:box-bold", "Feature Bullet", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Ut et massa mi. Aliquam in hendrerit urna.", "/contact", "Consult Us for Free >");
+    let feature1 = new FeatureClass("free-consult", `/contact`);
+    let feature2 = new FeatureClass("best-transport", `/services/transport`);
+    let feature3 = new FeatureClass("best-logistics", `/services/logistics`);
+    let feature4 = new FeatureClass("expert-team", `/contact`);
 </script>
 
 <div id="features" class="col-start-1 col-span-full row-start-2 w-screen
@@ -17,14 +22,13 @@
     <Feature feature={feature1}  />
     <Feature feature={feature2}  />
     <Feature feature={feature3}  />
-    <div class="hidden xl:block">
-        <Feature feature={feature3}  />
-    </div>
+    <Feature feature={feature4}  />
 </div>
 
 
 <style lang="scss">
     #features {
+        background-color: #313131;
         background-image: url("/images/feature-background.png");
         background-position: top right;
         background-size: cover;

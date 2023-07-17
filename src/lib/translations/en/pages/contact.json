@@ -1,0 +1,14 @@
+{
+  "titles": {
+    "contact": "Contact Us",
+    "emergency": "Emergency Contact"
+  },
+  "subtitles": {
+    "contact": "Reach us on phone or via email.",
+    "emergency": "Get in contact ASAP."
+  },
+  "cta": {
+    "emergency": "I need Emergent Care",
+    "browse": "Browse Emergency Solutions"
+  }
+}

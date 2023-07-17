@@ -1,8 +1,26 @@
+<!-- SubHero component for Hero of Sub pages
+-->
 <script lang="ts">
+    import {t, locale} from "$lib/translations";
+
+    /**
+     * If the information should be shown
+     */
     export let showInfo:boolean = true;
+
+    /**
+     * The title inside the hero of the subpages of the services
+     */
     export let title:string = "For any Emergency services Contact us ASAP";
+
+    /**
+     * The subtitle inside the hero of the subpages of the services
+     */
     export let subTitle:string = "Your time is precious. Let’s tackle the logistical issues as soon as possible!";
 
+    /**
+     * If the emergency CTA button shall be displayed instead of the normal one
+     */
     export let emergency:boolean = true;
 </script>
 
@@ -18,20 +36,22 @@
             <h4>{subTitle}</h4>
         </div>
         <div class="flex flex-row flex-wrap gap-8 w-10/12 items-center">
-            <a href="/emergency">
-                {#if emergency}
+            {#if emergency}
+                <a href="/{$locale}/emergency">
                     <button class="btn p-4 text-xs rounded-lg bg-tertiary-500 text-gray-100 font-bold md:text-base">
-                        I need Emergent Care
+                        {$t('services.transport.sub-hero.cta.button')}
                     </button>
-                {:else}
+                </a>
+            {:else}
+                <a href="/{$locale}/contact">
                     <button class="btn p-4 text-xs rounded-lg bg-primary-500 text-gray-950 font-bold md:text-base">
-                        Consult Bussiness Solutions
+                        {$t('services.logistical.hero.cta')}
                     </button>
-                {/if}
-            </a>
+                </a>
+            {/if}
             {#if showInfo}
-                <a href="/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
-                    More Information >
+                <a href="/{$locale}/services/transport/emergency" class="text-xs text-tertiary-500 underline font-bold md:text-base">
+                    {$t('services.transport.sub-hero.cta.link')} >
                 </a>
             {/if}
         </div>

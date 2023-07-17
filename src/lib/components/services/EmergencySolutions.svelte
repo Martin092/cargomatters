@@ -1,11 +1,17 @@
+<!-- EmergencySolutions component
+    @uses: WideSolution component; WideSolutionClass, Stat classes to load all the solutions
+    @ret: a responsive emergency section used on the emergency solutions page
+-->
+
 <script lang="ts">
     import WideSolution from "$lib/components/reusable/WideSolution.svelte";
-    import {WidesolutionClass, Stat} from "$lib/typescript";
+    import {WideSolutionClass, Stat} from "$lib/typescript";
+    import {t} from "$lib/translations";
 
-    let stat1 = new Stat(12, "Services");
+    let stat1 = Stat.shortenedStatistic(12, $t('services.emergency.solutions.1.stats.1'));
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
-    let em = new WidesolutionClass("/images/gray.png", "alt", "mdi:card-account-details", "Fast Solution",
-        "On Board Courier", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.", stats);
+    let em = new WideSolutionClass("mdi:card-account-details", $t('services.emergency.solutions.1.subtitle'),
+        $t('services.emergency.solutions.1.title'), $t('services.emergency.solutions.1.desc'), stats);
 </script>
 
 <div class="col-start-1 row-start-3 col-span-4 flex flex-col py-20
@@ -15,22 +21,22 @@
                 md:grid md:grid-cols-8
                 xl:grid-cols-12">
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution emergency={em} />
+            <WideSolution solution={em} />
         </div>
     </div>
 </div>

@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "Home",
+    "description": "We are CargoMatters - your logistical partner for personal and business needs."
+  },
+  "services": {
+    "title": "Services",
+    "description": "Browse our catalogue of transport, emergency, logistical and business-specific solutions."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contact CargoMatters for consultation or if you have any questions."
+  },
+  "about": {
+    "title": "About",
+    "description": "We are CargoMatters - your logistical partner for personal and business needs."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Privacy Policy of CargoMatters website"
+  },
+  "tos": {
+    "title": "Terms of Service",
+    "description": "Terms of Service of CargoMatters"
+  }
+}
