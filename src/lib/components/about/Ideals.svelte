@@ -26,6 +26,7 @@
 
 <style lang="scss">
   #ideals {
+    background-color: #313131;
     background-image: url("/images/feature-background.png");
     background-position: top right;
     background-size: cover;
