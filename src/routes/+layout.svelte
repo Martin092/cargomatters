@@ -11,7 +11,6 @@
     <meta name="author" content="Praxidike">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="lang" content="en">
 <!--    <link rel="canonical" href="https://conventions.praxidike.org/">-->
     <meta name="theme-color" content="#EDBB3A">
 

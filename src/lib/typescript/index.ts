@@ -10,7 +10,7 @@ import {BusinessPage, BusinessPageBuilder} from "./componentClasses/businessPage
 import {BusinessPageLoader} from "./BussinessPageLoader";
 import {PagesDatabase} from "./PagesDatabase";
 import {TransportServiceClass} from "./componentClasses/transportService"
-import {MetaSnippet} from "./metaSnippet";
+import {MetaSnippet, MetaSnippetBuilder} from "./metaSnippet";
 import type {HashMapPagesDatabase} from "./PagesDatabase";
 
 export {BenefitClass,
@@ -27,4 +27,5 @@ export {BenefitClass,
         BusinessPageBuilder,
         TransportServiceClass,
         MetaSnippet,
+        MetaSnippetBuilder,
         HashMapPagesDatabase};
