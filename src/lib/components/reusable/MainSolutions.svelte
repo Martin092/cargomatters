@@ -46,6 +46,7 @@
 
 <style lang="scss">
     #bg {
+        background-color: #333333;
         background-image: url("/images/main-solution-bg.svg");
         background-size: cover;
         background-position: center;

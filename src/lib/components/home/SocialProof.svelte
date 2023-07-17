@@ -29,6 +29,7 @@
 
 <style lang="scss">
     #social-proof {
+        background-color: #313131;
         background-image: url("/images/social-proof.svg");
         background-size: cover;
     }

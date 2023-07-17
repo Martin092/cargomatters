@@ -76,6 +76,11 @@ const config:Config = {
         },
         {
             locale: 'en',
+            key: 'meta',
+            loader: async () => (await import('./en/components/meta.json')).default,
+        },
+        {
+            locale: 'en',
             key: 'error',
             routes: ['error'],
             loader: async () => (await import('./en/pages/error.json')).default,
@@ -146,6 +151,11 @@ const config:Config = {
             locale: 'bg',
             key: 'features',
             loader: async () => (await import('./bg/common/features.json')).default,
+        },
+        {
+            locale: 'bg',
+            key: 'meta',
+            loader: async () => (await import('./bg/components/meta.json')).default,
         },
         {
             locale: 'bg',

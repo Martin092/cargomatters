@@ -2,7 +2,14 @@
 
     import {Hero, Benefits, Stats, Ideals, Members} from "$lib/components/about";
     import Header from "$lib/components/Header.svelte";
+
+    import Meta from "$lib/components/Meta.svelte";
+    import {MetaSnippetBuilder} from "$lib/typescript";
+
+    let meta = new MetaSnippetBuilder().setLocalizationKey("about").withType("website").build();
 </script>
+
+<Meta {meta} />
 
 <Header background=""/>
 

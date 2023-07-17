@@ -50,7 +50,7 @@
         <div data-testid="wide-screen-nav" class="hidden md:flex links gap-4
                 md:text-sm
                 lg:text-base
-                xl:col-span-6 xl:col-start-6 xl:justify-end">
+                xl:col-span-7 xl:col-start-5 xl:justify-end">
             <a href="/{$locale}">{$t('header.nav.home')}</a>
             <a href="/{$locale}/about">{$t('header.nav.about')}</a>
             <a href="/{$locale}/services">{$t('header.nav.services')}</a>
