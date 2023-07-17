@@ -7,8 +7,8 @@
     import {FeatureClass} from "$lib/typescript";
 
     let feature1 = new FeatureClass("free-consult", `/contact`);
-    let feature2 = new FeatureClass("best-transport", `/contact`);
-    let feature3 = new FeatureClass("best-logistics", `/contact`);
+    let feature2 = new FeatureClass("best-transport", `/services/transport`);
+    let feature3 = new FeatureClass("best-logistics", `/services/logistics`);
     let feature4 = new FeatureClass("expert-team", `/contact`);
 </script>
 

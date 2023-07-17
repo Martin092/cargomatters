@@ -9,8 +9,7 @@
     import {FeatureClass} from "$lib/typescript";
     import {t} from "$lib/translations";
 
-    let f1 = FeatureClass.TransportFeature("pepicons-print:truck",
-        $t('services.transport.solutions.road.features.1.title'), $t('services.transport.solutions.road.features.1.desc'));
+    let f1 = new FeatureClass($t('services.transport.solutions.road.features.1.title'), $t('services.transport.solutions.road.features.1.desc'));
     let t1 = new TransportServiceClass($t('services.transport.solutions.road.title'),
         $t('services.transport.solutions.road.subtitle'),
         $t('services.transport.solutions.road.desc'), [f1,f1,f1]);
