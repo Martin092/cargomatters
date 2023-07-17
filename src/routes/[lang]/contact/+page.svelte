@@ -1,7 +1,14 @@
 <script lang="ts">
     import {Hero} from "$lib/components/contact";
     import Header from "$lib/components/Header.svelte";
+
+    import Meta from "$lib/components/Meta.svelte";
+    import {MetaSnippetBuilder} from "$lib/typescript";
+
+    let meta = new MetaSnippetBuilder().setLocalizationKey("contact").withType("website").build();
 </script>
+
+<Meta {meta} />
 
 <Header background="" />
 

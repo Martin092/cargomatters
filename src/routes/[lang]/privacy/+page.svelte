@@ -1,8 +1,14 @@
 <script lang="ts">
-
     import Header from "$lib/components/Header.svelte";
     import { TableOfContents } from '@skeletonlabs/skeleton';
+
+    import Meta from "$lib/components/Meta.svelte";
+    import {MetaSnippetBuilder} from "$lib/typescript";
+
+    let meta = new MetaSnippetBuilder().setLocalizationKey("privacy").withType("website").build();
 </script>
+
+<Meta {meta} />
 
 <Header background=""/>
 
