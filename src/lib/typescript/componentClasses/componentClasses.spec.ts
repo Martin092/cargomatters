@@ -121,11 +121,11 @@ describe("Statistic Number Shortener Method", () => {
 describe("Constructor methods", () => {
     it('it should compile', function () {
         let m = new Member("img", "alt", "ceo", "name", "desc");
-        let ts = new TransportServiceClass("img", "alt", "ceo", []);
+        let ts = new TransportServiceClass("air", ["dummy"]);
         let wc = new WideSolutionClass("img", "alt", "ceo", "name", []);
 
         expect(m.position).toBe("ceo");
-        expect(ts.title).toBe("img");
+        expect(ts.type).toBe("air");
         expect(wc.icon).toBe("img");
     });
 })
