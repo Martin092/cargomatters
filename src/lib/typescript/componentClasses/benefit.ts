@@ -10,7 +10,7 @@ export class BenefitClass {
      * Construct a BenefitClass
      * @param localizationKey the key to lookup for translations in the i18n
      * @param image an image to support the benefit
-     * @param link where the link leads to
+     * @param link where the link leads to. Must start with a slash
      */
     constructor(localizationKey:string, image:string, link:string){
         this.localizationKey = localizationKey;

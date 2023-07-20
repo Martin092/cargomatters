@@ -22,22 +22,22 @@
     <div class="md:w-10/12 bg-[#353535] text-gray-100 rounded-lg">
         <Accordion autocollapse padding="py-2 px-4 md:py-3 px-6 xl:py-4 xl:px-10 ">
             <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q1.icon`)}/></svelte:fragment>
                 <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
                 <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
             </AccordionItem>
             <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q2.icon`)}/></svelte:fragment>
+                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q2.question')}</h5></svelte:fragment>
+                <svelte:fragment slot="content"><p>{$t('faq.questions.q2.answer')}</p></svelte:fragment>
+            </AccordionItem>
+            <AccordionItem closed>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q1.icon`)}/></svelte:fragment>
                 <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
                 <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
             </AccordionItem>
             <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
-            </AccordionItem>
-            <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon="mdi:truck"/></svelte:fragment>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q1.icon`)}/></svelte:fragment>
                 <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
                 <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
             </AccordionItem>
