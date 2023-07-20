@@ -17,32 +17,33 @@
     let smallText:boolean = true;
     let iconSize:string = "20";
     import {t, locale} from "$lib/translations";
+    import {FeatureClass} from "$lib/typescript";
 </script>
 
-<div class="flex flex-col mt-4 gap-4 py-8 lg:py-4">
+<div class="flex flex-col mt-4 gap-4 py-8 lg:py-4 xl:w-[50vw]">
     <div class="md:hidden">
-        <h3>{transportService.title}</h3>
-        <h4>{transportService.subtitle}</h4>
+        <h3>{$t(`services.transport.solutions.${transportService.type}.title`)}</h3>
+        <h4>{$t(`services.transport.solutions.${transportService.type}.subtitle`)}</h4>
     </div>
 
     <div class="hidden md:flex flex-col">
-        <h3 class="font-bold">{transportService.title}</h3>
-        <h4>{transportService.subtitle}</h4>
+        <h3 class="font-bold">{$t(`services.transport.solutions.${transportService.type}.title`)}</h3>
+        <h4>{$t(`services.transport.solutions.${transportService.type}.subtitle`)}</h4>
     </div>
 
-    <h5 class="md:hidden">{transportService.description}</h5>
-    <p class="hidden md:block">{transportService.description}</p>
+    <h5 class="md:hidden">{$t(`services.transport.solutions.${transportService.type}.desc`)}</h5>
+    <p class="hidden md:block">{$t(`services.transport.solutions.${transportService.type}.desc`)}</p>
     <div class="flex flex-row flex-wrap sm:flex-nowrap justify-between gap-4">
-        {#each transportService.features as feat}
+        {#each transportService.featureKeys as feat}
             <div class="max-w-[220px]">
-                <Feature feature={feat} colors={colors} hasLink={hasLink} smallText={smallText} iconSize={iconSize}/>
+                <Feature feature={new FeatureClass(feat,'/')} colors={colors} hasLink={hasLink} smallText={smallText} iconSize={iconSize}/>
             </div>
         {/each}
     </div>
 
     <a href="/{$locale}/contact">
-        <h5 class="font-bold underline text-primary-500 md:hidden">{$t('cta.consult-word')} {transportService.title} ></h5>
-        <p class="font-bold underline text-primary-500 hidden md:block">{$t('cta.consult-word')} {transportService.title} ></p>
+        <h5 class="font-bold underline text-primary-500 md:hidden">{$t('cta.consult-word')} {$t(`services.transport.solutions.${transportService.type}.title`)} ></h5>
+        <p class="font-bold underline text-primary-500 hidden md:block">{$t('cta.consult-word')} {$t(`services.transport.solutions.${transportService.type}.title`)} ></p>
     </a>
 </div>
 
