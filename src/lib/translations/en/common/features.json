@@ -1,14 +1,14 @@
 {
   "free-consult": {
-    "icon": "pepicons-print:truck",
+    "icon": "mdi:phone-in-talk",
     "title": "Free Consultations",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "We know how important it is for us to gain our client’s trust. That is why you can book a consultation with one of our experts completely free of charge. ",
     "link-text": "Consult us for Free"
   },
   "best-transport": {
     "icon": "pepicons-print:airplane",
     "title": "Top-notch Transportation",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal solution for you. We do focus on your demands to create the best transport solutions, because it is the customer that matters!",
     "link-text": "See transport solutions"
   },
   "best-logistics": {
@@ -18,15 +18,21 @@
     "link-text": "See logistical solutions"
   },
   "expert-team": {
-    "icon": "solar:box-bold",
+    "icon": "mdi:account-group",
     "title": "Expert Team",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "With over 100 years of combined experience, our experts are here to offer you professional advice based on your concrete demands, as well as full-service and tailor-made solutions that best fit your business needs.",
     "link-text": "Learn more About us"
   },
   "dummy": {
     "icon": "pepicons-print:truck",
     "title": "Expert Team",
     "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "link-text": "Dummy link"
+  },
+  "customised-transport": {
+    "icon": "pepicons-print:truck",
+    "title": "Customised transport",
+    "desc": "We carefully plan and arrange the optimal transport solution for your cargo. Our road freight services guarantee swift transportation of your goods across the globe, ensuring that your products reach their destination with utmost efficiency and speed.",
     "link-text": "Dummy link"
   }
 }
