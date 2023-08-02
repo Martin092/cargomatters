@@ -1,7 +1,8 @@
 {
   "hero": {
     "title": "CargoMatters - Matters (ае - от значение)",
-    "subtitle": "Ние сме CargoMatters - вашият логистичен партньор."
+    "subtitle": "Ние сме CargoMatters - вашият логистичен партньор.",
+    "block": "At CargoMatters, we understand that in today's fast-paced world, reliable and efficient logistics solutions are crucial for the success of your business. That's why we have made it our mission to redefine the logistics industry and set new standards of excellence. With years of experience and collaboration of the knowledge in both freight forwarding or as airline representative and a passion for innovation, CargoMatters stands remarkable among the rest, offering you unmatched logistics services that make a tangible difference to your bottom line."
   },
   "ideals": {
     "title": "Ние вярваме в",
@@ -17,14 +18,16 @@
     "subtitle": "Ние сме CargoMatters",
     "members": {
       "1": {
-        "position": "CEO",
-        "name": "Питър Грифин",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+        "position": "CEO & Founder",
+        "name": "Alen Magardichian",
+        "desc": "Alen has over 28 years of experience in aviation industry as a regional representative of Austrian Airlines and Lufthansa Cargo for the territory of Bulgaria, Serbia, North Macedonia, Albania and Kosovo, as well as playing crucial roll in implementing of the services of Time:Matters in the region.\nBack in the late 90’s his project made possible the all-time first AN12 scheduled cargo freighter out of Bulgaria covering Vienna, Prague, Kiev, Warsaw and Minsk",
+        "alt": "A picture of Alen Magardichian"
       },
       "2": {
-        "position": "CEO",
-        "name": "Питър Грифин",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+        "position": "Managing Partner",
+        "name": "Адриана Дамянова",
+        "desc": "With over 24 years of experience in freight forwarding, Adriana has vast knowledge of all types of transport and their specifics. She has a distinct approach to every logistic issue and believes that there is no problem without a solution. ",
+        "alt": "A picture of Adriana Damyanova"
       }
     }
   },
