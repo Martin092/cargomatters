@@ -6,6 +6,48 @@
     "link-text": "Explore services",
     "alt": "Empty photo"
   },
+  "tailored-solutions": {
+    "subtitle": "Personalisation",
+    "title": "Tailored Solutions",
+    "desc": "At CargoMatters, we believe that no two shipments are the same. That's why we take it personally and dedicate our  time to understand your unique logistical needs and challenges. Our team of  friendly seasoned experts will craft tailored solutions that align with your business goals and exceed your expectations. We ensure your cargo reaches its destination with speed, precision, and cost-effectiveness. <strong>Because It Matters!</strong>",
+    "link-text": "See all solutions",
+    "alt": "Empty photo"
+  },
+  "reliability": {
+    "subtitle": "Security",
+    "title": "Reliability and On time Performance",
+    "desc": "We know the value of time in business, and we treat your time with the utmost respect. Our commitment to punctuality means that your cargo will arrive at its destination exactly when you expect it. With CargoMatters, you can bid farewell to delays and disruptions, ensuring a smooth flow of goods and an enhanced reputation for your business. <strong>Because time Matters</strong>!",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
+  },
+  "sustainability": {
+    "subtitle": "Trust",
+    "title": "Sustainability and Responsibility",
+    "desc": "We take our environmental and social responsibilities seriously. CargoMatters is committed to reducing its carbon footprint and promoting sustainable logistics practices. We offer you a certificate with exactly calculated CO2 emission for every shipment. By choosing us, you partner with a company that cares for the planet and future generations. <strong>Because the future Matters to us!</strong>",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
+  },
+  "emergency-solutions": {
+    "subtitle": "Immediate help",
+    "title": "Emergency solutions",
+    "desc": "When unforeseen circumstances strike, Cargo Matters is your reliable brigade to handle emergency logistics needs. Our rapid response team is equipped and well trained to address critical situations promptly, ensuring urgent shipments reach their destination without delay. With Cargo Matters' emergency solutions, you can keep calm that your business can navigate through crises with minimal disruptions, maintaining your reputation and customer satisfaction, being fed with constant update of the status We are here … as quick as you need us to be, <strong>Because time Matters.</strong>",
+    "link-text": "Browse emergency services",
+    "alt": "Empty photo"
+  },
+  "global-reach": {
+    "subtitle": "International Partners",
+    "title": "Global Reach, Local Expertise",
+    "desc": "Benefit from our extensive global network while taking advantage of the personalized touch of local expertise. CargoMatters' worldwide reach ensures seamless connections to key locations, while our dedicated teams ensure that your cargo receives the individual attention it deserves throughout its journey. <strong>Because It Matters.</strong>",
+    "link-text": "Explore all services",
+    "alt": "Empty photo"
+  },
+  "strategic-collaboration": {
+    "subtitle": "Collaborate work",
+    "title": "Strategic Collaboration",
+    "desc": "CargoMatters is not just a service provider; we are your strategic ally.<br/> <br/> Our customer-centric approach means we invest in understanding your business goals and challenges to create bespoke logistics strategies that align with your vision, propelling your business forward. With CargoMatters, you can focus on your core business, knowing that your logistics needs are expertly taken care of, hassle-free, as <strong>your Cargo Matters!</strong>",
+    "link-text": "Get in touch",
+    "alt": "Empty photo"
+  },
   "dummy": {
     "subtitle": "International Partners",
     "title": "Solutions to all problems",

@@ -31,8 +31,8 @@
         <h4>{$t(`services.transport.solutions.${transportService.type}.subtitle`)}</h4>
     </div>
 
-    <h5 class="md:hidden">{$t(`services.transport.solutions.${transportService.type}.desc`)}</h5>
-    <p class="hidden md:block">{$t(`services.transport.solutions.${transportService.type}.desc`)}</p>
+    <h5 class="md:hidden">{@html $t(`services.transport.solutions.${transportService.type}.desc`)}</h5>
+    <p class="hidden md:block">{@html $t(`services.transport.solutions.${transportService.type}.desc`)}</p>
     <div class="flex flex-row flex-wrap sm:flex-nowrap justify-between gap-4">
         {#each transportService.featureKeys as feat}
             <div class="max-w-[220px]">

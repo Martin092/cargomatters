@@ -1,6 +1,6 @@
 <script lang="ts">
 
-    import {Hero, Benefits, Stats, Ideals, Members} from "$lib/components/about";
+    import {Hero, Benefits, Ideals, Members} from "$lib/components/about";
     import Header from "$lib/components/Header.svelte";
 
     import Meta from "$lib/components/Meta.svelte";
@@ -31,7 +31,7 @@
     <Members />
 
     <!--  Stats  -->
-    <Stats />
+    <!--    <Stats />-->
 </main>
 
 <style lang="scss">

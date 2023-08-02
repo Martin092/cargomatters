@@ -6,14 +6,17 @@
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript";
 
-    let benefit1 = new BenefitClass("benefit1", "/images/gray.png", `/services`);
+    let tailoredSolutions = new BenefitClass("tailored-solutions", "/images/gray.png", `/services`);
+    let reliability = new BenefitClass("reliability", "/images/gray.png", `/services`);
+    let sustainability = new BenefitClass("sustainability", "/images/gray.png", `/services`);
 </script>
 
 <div class="flex flex-col row-start-2 col-start-1 col-span-4 gap-16 py-20
                 md:col-span-8
                 xl:col-start-2 xl:col-span-10">
-    <Benefit benefit={benefit1}/>
-    <Benefit benefit={benefit1}/>
+    <Benefit benefit={tailoredSolutions}/>
+    <Benefit benefit={reliability}/>
+    <Benefit benefit={sustainability}/>
 </div>
 <div id="benefit" class="row-start-2 col-span-1 xl:col-start-12"></div>
 

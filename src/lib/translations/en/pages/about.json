@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "About Us",
-    "subtitle": "We are CargoMatters and we do logistics for you."
+    "title": "Cargo Matters. Yes, it matters.",
+    "subtitle": "Welcome to CargoMatters – Your Versatile Logistics Partner."
   },
   "ideals": {
     "title": "We believe in",
@@ -17,14 +17,16 @@
     "subtitle": "We are CargoMatters",
     "members": {
       "1": {
-        "position": "CEO",
-        "name": "Pieter Griffin",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+        "position": "CEO & Founder",
+        "name": "Alen Magardichian",
+        "desc": "Alen has over 28 years of experience in aviation industry as a regional representative of Austrian Airlines and Lufthansa Cargo for the territory of Bulgaria, Serbia, North Macedonia, Albania and Kosovo, as well as playing crucial roll in implementing of the services of Time:Matters in the region.\nBack in the late 90’s his project made possible the all-time first AN12 scheduled cargo freighter out of Bulgaria covering Vienna, Prague, Kiev, Warsaw and Minsk",
+        "alt": "A picture of Alen Magardichian"
       },
       "2": {
-        "position": "CEO",
-        "name": "Pieter Griffin",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+        "position": "Managing Partner",
+        "name": "Adriana Damyanova",
+        "desc": "With over 24 years of experience in freight forwarding, Adriana has vast knowledge of all types of transport and their specifics. She has a distinct approach to every logistic issue and believes that there is no problem without a solution. ",
+        "alt": "A picture of Adriana Damyanova"
       }
     }
   },
