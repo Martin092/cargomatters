@@ -28,5 +28,11 @@
     "title": "Отбор от Експерти",
     "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
     "link-text": "Разберете повече за нас"
+  },
+  "customised-transport": {
+    "icon": "pepicons-print:truck",
+    "title": "Customised transport",
+    "desc": "We carefully plan and arrange the optimal transport solution for your cargo. Our road freight services guarantee swift transportation of your goods across the globe, ensuring that your products reach their destination with utmost efficiency and speed.",
+    "link-text": "Dummy link"
   }
 }
