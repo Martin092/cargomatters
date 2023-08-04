@@ -44,25 +44,25 @@
       "road": {
         "title": "Road Freight",
         "subtitle": "Reliable and convenient",
-        "desc": "Road freight refers to the efficient and reliable transportation of goods via trucks and lorries on well-connected networks of roads. Whether it's delivering products to local markets or crossing borders for international distribution, road freight plays a pivotal role in keeping businesses connected and thriving. <br />At Cargo Matters we use various types of vehicles, depending on the goods your business needs transported. We provide door-to-door delivery, FTL, LTL, and express solutions. We also offer specialized transport services, such as refrigerated trucks for temperature-sensitive goods and pharmaceuticals, as well as hazardous goods transport and trucks for oversized cargoes. <br />With our unparalleled expertise and commitment to excellence, we ensure seamless and timely deliveries, empowering your business to reach the set targets. "
+        "desc": "Road freight refers to the efficient and reliable transportation of goods via trucks on well-connected networks of roads. At Cargo Matters we use various types of vehicles, depending on the goods your business needs transported. We provide door-to-door delivery, FTL, LTL, and express solutions. We also offer specialized transport services, such as refrigerated trucks for temperature-sensitive goods and pharmaceuticals, as well as hazardous goods transport and trucks for oversized cargoes. With our unparalleled expertise and commitment to excellence, we ensure seamless and timely deliveries, empowering your business to reach the set targets."
         
       },
       "sea": {
         "title": "Sea Freight",
         "subtitle": "Affordable and extensive",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        "desc": "Discover the unparalleled potential of ocean freight, the backbone of international trade and commerce. Ocean freight encompasses the transportation of goods via vast maritime networks, connecting continents and opening up boundless opportunities for businesses worldwide. With its immense capacity and cost-effectiveness, ocean freight is the preferred choice for bulk shipments and intercontinental trade. Embrace the reliability of our ocean freight services, where your cargo is handled with utmost care by seasoned professionals. Experience seamless global connectivity, reduced transit times, and cost-efficient solutions that elevate your business to new horizons."
         
       },
       "air": {
         "title": "Air Freight",
         "subtitle": "Affordable and extensive",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        "desc": "Welcome to the world of air freight, where speed and efficiency converge elevate your logistics to new heights. With our extensive global network of airlines and airports, your cargo enjoys seamless connections across continents, enabling rapid deliveries that keep your business ahead of the competition. Embrace the advantage of quick turnaround times, ideal for time-sensitive shipments and urgent deliveries. Our air freight services offer reliability and precision, backed by a team of experts who handle your cargo with utmost care and attention."
         
       },
       "rail": {
         "title": "Rail Freight",
         "subtitle": "Affordable and extensive",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        "desc": "Rail freight is the backbone of land-based transportation, offering a reliable and cost-effective means to move goods across vast distances. With its massive hauling capacity and dedicated rail networks, we provide your business with a seamless and streamlined shipping experience. Embrace the benefits of reduced carbon emissions and lower transportation costs, as our rail freight services offer an environmentally conscious choice that aligns with your green initiatives."
         
       }
     }
