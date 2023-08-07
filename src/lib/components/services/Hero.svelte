@@ -7,14 +7,14 @@
     import {MainSolution} from "$lib/typescript";
     import {t, locale} from "$lib/translations";
 
-    let transportSolution = new MainSolution("/images/gray.png", "/images/gray.png",
+    let transportSolution = new MainSolution("/images/transport-card.png", "a cargo ship from a bird's eye view",
         $t('services.mpc.transport.type'), $t('services.mpc.transport.desc'),
         [$t('services.mpc.transport.bullets.road'), $t('services.mpc.transport.bullets.sea'),
         $t('services.mpc.transport.bullets.air'), $t('services.mpc.transport.bullets.rail'),
         $t('services.mpc.transport.bullets.emergency')],
         `/${$locale}/services/transport`)
 
-    let industrySolution = new MainSolution("/images/gray.png", "/images/gray.png",
+    let industrySolution = new MainSolution("/images/logistics-card.png", "a truck carrying a freight container",
         $t('services.mpc.logistical.type'), $t('services.mpc.logistical.desc'),
         [$t('services.mpc.logistical.bullets.1'), $t('services.mpc.logistical.bullets.2'),
         $t('services.mpc.logistical.bullets.3'), $t('services.mpc.logistical.bullets.4'),
