@@ -6,8 +6,8 @@
     import {Benefit} from "$lib/components/reusable";
     import {BenefitClass} from "$lib/typescript";
 
-    let benefit1 = new BenefitClass("emergency-solutions", "/images/gray.png", `/services/transport/emergency`);
-    let benefit2 = new BenefitClass("global-reach", "/images/gray.png", `/services`);
+    let benefit1 = new BenefitClass("emergency-solutions", "/images/benefits-emergency.png", `/services/transport/emergency`);
+    let benefit2 = new BenefitClass("global-reach", "/images/benefit-global-reach.png", `/services`);
     let benefit3 = new BenefitClass("strategic-collaboration", "/images/strat-collab.webp", `/contact`);
 </script>
 

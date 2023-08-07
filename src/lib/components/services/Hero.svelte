@@ -14,7 +14,7 @@
         $t('services.mpc.transport.bullets.emergency')],
         `/${$locale}/services/transport`)
 
-    let industrySolution = new MainSolution("/images/gray.png", "/images/gray.png",
+    let industrySolution = new MainSolution("/images/logistics-card.png", "a truck carrying a freight container",
         $t('services.mpc.logistical.type'), $t('services.mpc.logistical.desc'),
         [$t('services.mpc.logistical.bullets.1'), $t('services.mpc.logistical.bullets.2'),
         $t('services.mpc.logistical.bullets.3'), $t('services.mpc.logistical.bullets.4'),
