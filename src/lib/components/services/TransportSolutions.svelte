@@ -6,25 +6,11 @@
 <script lang="ts">
     import TransportComponent from "$lib/components/services/TransportComponent.svelte";
     import {TransportServiceClass} from "$lib/typescript";
-    import {FeatureClass} from "$lib/typescript";
-    import {t} from "$lib/translations";
 
-    let f1 = new FeatureClass($t('services.transport.solutions.road.features.1.title'), $t('services.transport.solutions.road.features.1.desc'));
-    let t1 = new TransportServiceClass($t('services.transport.solutions.road.title'),
-        $t('services.transport.solutions.road.subtitle'),
-        $t('services.transport.solutions.road.desc'), [f1,f1,f1]);
-
-    let t2 = new TransportServiceClass($t('services.transport.solutions.sea.title'),
-        $t('services.transport.solutions.sea.subtitle'),
-        $t('services.transport.solutions.sea.desc'), [f1,f1,f1]);
-
-    let t3 = new TransportServiceClass($t('services.transport.solutions.air.title'),
-        $t('services.transport.solutions.air.subtitle'),
-        $t('services.transport.solutions.air.desc'), [f1,f1,f1]);
-
-    let t4 = new TransportServiceClass($t('services.transport.solutions.rail.title'),
-        $t('services.transport.solutions.rail.subtitle'),
-        $t('services.transport.solutions.rail.desc'), [f1,f1,f1]);
+    let t1 = new TransportServiceClass("road", ["customised-transport-road","flexible-solutions-road","reliable-updates-road"]);
+    let t2 = new TransportServiceClass("sea", ["global-reach-ocean","large-shipments-ocean","environment-ocean"]);
+    let t3 = new TransportServiceClass("air", ["swift-deliveries-air","global-connectivity-air","for-high-value-goods-air"]);
+    let t4 = new TransportServiceClass("rail", ["intermodality-rail","cost-effective-rail","environment-rail"]);
 </script>
 
 

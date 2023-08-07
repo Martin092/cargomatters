@@ -44,46 +44,26 @@
       "road": {
         "title": "Сухопътен Транспорт",
         "subtitle": "Достъпен и обширен",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        "features": {
-          "1": {
-            "title": "Бързо решение",
-            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
-          }
-        }
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        
       },
       "sea": {
         "title": "Воден Транспорт",
         "subtitle": "Достъпен и обширен",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        "features": {
-          "1": {
-            "title": "Бързо решение",
-            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
-          }
-        }
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        
       },
       "air": {
         "title": "Въздушен Транспорт",
         "subtitle": "Достъпен и обширен",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        "features": {
-          "1": {
-            "title": "Бързо решение",
-            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
-          }
-        }
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        
       },
       "rail": {
         "title": "Железопътен транспорт",
         "subtitle": "Достъпен и обширен",
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        "features": {
-          "1": {
-            "title": "Бързо решение",
-            "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world."
-          }
-        }
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu."
+        
       }
     }
   },

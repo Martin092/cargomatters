@@ -24,6 +24,7 @@ let agriculture = new BusinessPageBuilder()
     .withDummyFeatures()
     .withDummyBenefits()
     .withDummyReviews()
+    .withQuestions([`q1`,'q2','q1'])
     .build();
 
 export const data = PagesDatabase.getInstance();

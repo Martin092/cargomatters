@@ -11,8 +11,9 @@
             md:col-start-1 md:col-span-6 md:gap-12
             xl:col-start-2 xl:col-span-12">
     <div class="flex flex-col gap-4">
-        <h1>{$t('about.hero.title')}</h1>
-        <h4>{$t('about.hero.subtitle')}</h4>
+        <h1 class="text-secondary-500">{$t('about.hero.title')}</h1>
+        <h4 class="text-secondary-500">{$t('about.hero.subtitle')}</h4>
+        <p class="xl:w-1/2 text-secondary-400">{$t('about.hero.block')}</p>
     </div>
 </div>
 
