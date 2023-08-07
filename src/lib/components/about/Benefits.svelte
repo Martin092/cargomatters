@@ -8,7 +8,7 @@
 
     let tailoredSolutions = new BenefitClass("tailored-solutions", "/images/gray.png", `/services`);
     let reliability = new BenefitClass("reliability", "/images/gray.png", `/services`);
-    let sustainability = new BenefitClass("sustainability", "/images/gray.png", `/services`);
+    let sustainability = new BenefitClass("sustainability", "/images/strat-collab.webp", `/services`);
 </script>
 
 <div class="flex flex-col row-start-2 col-start-1 col-span-4 gap-16 py-20
