@@ -7,8 +7,8 @@
     import {Member} from "$lib/typescript";
     import {t} from "$lib/translations";
 
-    let member = new Member("/images/gray.png", "member", $t('about.team.members.1.position'),
-        $t('about.team.members.1.name'), $t('about.team.members.1.desc'))
+    let alen = new Member("/images/gray.png", "1");
+    let adriana = new Member("/images/gray.png", "2");
 </script>
 
 <img class="row-start-4 col-start-1 col-span-4
@@ -22,8 +22,8 @@
             <h5>{$t('about.team.subtitle')}</h5>
         </div>
         <div class="flex flex-col gap-2 md:flex-row md:gap-4 xl:gap-6">
-            <TeamMember {member} />
-            <TeamMember {member} />
+            <TeamMember member={alen} />
+            <TeamMember member={adriana} />
         </div>
     </div>
 </div>

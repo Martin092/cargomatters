@@ -9,7 +9,7 @@ export class FeatureClass {
     /**
      * Construct a feature
      * @param localizationKey the key for translations using the sveltekit i18n
-     * @param link the link to where this feature should lead to. Could be omitted if a transport feature
+     * @param link MUST START WITH / the link to where this feature should lead to. Could be omitted if a transport feature
      */
     constructor(localizationKey:string, link: string) {
         this.localizationKey = localizationKey;

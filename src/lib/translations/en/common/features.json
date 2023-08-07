@@ -1,14 +1,14 @@
 {
   "free-consult": {
-    "icon": "pepicons-print:truck",
+    "icon": "mdi:phone-in-talk",
     "title": "Free Consultations",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "We know how important it is for us to gain our client’s trust. That is why you can book a consultation with one of our experts completely free of charge. ",
     "link-text": "Consult us for Free"
   },
   "best-transport": {
     "icon": "pepicons-print:airplane",
     "title": "Top-notch Transportation",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal solution for you. We do focus on your demands to create the best transport solutions, because it is the customer that matters!",
     "link-text": "See transport solutions"
   },
   "best-logistics": {
@@ -18,9 +18,9 @@
     "link-text": "See logistical solutions"
   },
   "expert-team": {
-    "icon": "solar:box-bold",
+    "icon": "mdi:account-group",
     "title": "Expert Team",
-    "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
+    "desc": "With over 100 years of combined experience, our experts are here to offer you professional advice based on your concrete demands, as well as full-service and tailor-made solutions that best fit your business needs.",
     "link-text": "Learn more About us"
   },
   "dummy": {
@@ -28,5 +28,80 @@
     "title": "Expert Team",
     "desc": "Considering all types of transportation, we carefully plan and arrange the optimal transport solution to any place in the world.",
     "link-text": "Dummy link"
+  },
+  "customised-transport-road": {
+    "icon": "pepicons-print:truck",
+    "title": "Customised transport",
+    "desc": "We carefully plan and arrange the optimal transport solution for your cargo. Our road freight services guarantee swift transportation of your goods across the globe, ensuring that your products reach their destination with utmost efficiency and speed.",
+    "link-text": "Dummy link"
+  },
+  "flexible-solutions-road": {
+    "icon": "mdi:currency-usd",
+    "title": "Flexible and Cost-Effective Solutions",
+    "desc": "Benefit from our adaptable road freight options, tailored to meet your unique business requirements. Enjoy cost-effective solutions that optimize your supply chain and boost your bottom line.",
+    "link-text": "Dummy link"
+  },
+  "reliable-updates-road": {
+    "icon": "mdi:clock-outline",
+    "title": "Reliable Tracking and Real-Time Updates",
+    "desc": "Stay informed every step of the way with our advanced tracking system. Gain peace of mind as you receive real-time updates on your shipments, allowing you to manage your logistics with confidence.",
+    "link-text": "Dummy link"
+  },
+  "global-reach-ocean": {
+    "icon": "mdi:earth",
+    "title": "Unparalleled Global Reach",
+    "desc": "Leverage the expansive network of ocean freight to access markets around the world. Our services span continents, providing your business with unparalleled opportunities for growth and expansion.",
+    "link-text": "Dummy link"
+  },
+  "large-shipments-ocean": {
+    "icon": "mdi:currency-usd",
+    "title": "Cost-Effective for Large Shipments",
+    "desc": "Benefit from the cost-effectiveness of ocean freight, especially for bulk shipments and large cargo consignments. Maximize your savings while shipping significant quantities across international waters.",
+    "link-text": "Dummy link"
+  },
+  "environment-ocean": {
+    "icon": "mdi:sprout",
+    "title": "Environmentally Friendly Shipping",
+    "desc": "Embrace sustainability with ocean freight's eco-friendly advantages. Compared to other modes of transportation, shipping goods by sea significantly reduces carbon emissions, making it a greener choice for responsible businesses.",
+    "link-text": "Dummy link"
+  },
+  "swift-deliveries-air": {
+    "icon": "mdi:clock-fast",
+    "title": "Swift and Expedited Deliveries",
+    "desc": "Experience the unmatched speed of air freight, ensuring your goods reach their destination in the shortest possible time. With our air cargo services, you can meet tight deadlines and satisfy even the most time-sensitive demands.",
+    "link-text": "Dummy link"
+  },
+  "global-connectivity-air": {
+    "icon": "mdi:earth",
+    "title": "Global Connectivity and Accessibility",
+    "desc": "Tap into our extensive network of airlines and airports, providing you with seamless connections to virtually any destination worldwide. Enjoy the ease of accessibility and the ability to ship your products across continents with ease.",
+    "link-text": "Dummy link"
+  },
+  "for-high-value-goods-air": {
+    "icon": "mdi:diamond-stone",
+    "title": "Ideal for High-Value and Perishable Goods",
+    "desc": "Trust in the reliability of air freight, especially for transporting high-value or perishable items. Our secure handling processes and temperature-controlled options safeguard your precious cargo, ensuring it arrives in condition.",
+    "link-text": "Dummy link"
+  },
+  "intermodality-rail": {
+    "icon": "mdi:train",
+    "title": "Intermodality",
+    "desc": "Rail freight is easily combined with road and ocean freight for your convenience. We offer rail transport throughout Europe, as well as to and from Asia. We also provide door-to-door distributions and customs clearance support.",
+    "link-text": "Dummy link"
+  },
+  "cost-effective-rail": {
+    "icon": "mdi:currency-usd",
+    "title": "Cost-Effective Solutions",
+    "desc": "Save on transportation costs with rail freight's competitive pricing. Benefit from its high hauling capacity, enabling you to transport large volumes of goods at a lower cost per unit.",
+    "link-text": "Dummy link"
+  },
+  "environment-rail": {
+    "icon": "mdi:sprout",
+    "title": "Environmentally Conscious Shipping",
+    "desc": "Embrace sustainability with rail freight's eco-friendly advantages. Compared to other modes of transport, trains produce fewer carbon emissions per ton of cargo, making rail freight a greener choice for your business and the planet.",
+    "link-text": "Dummy link"
   }
+  
+
+
 }

@@ -7,10 +7,10 @@
     import TransportComponent from "$lib/components/services/TransportComponent.svelte";
     import {TransportServiceClass} from "$lib/typescript";
 
-    let t1 = new TransportServiceClass("road", ["best-transport","best-transport","best-transport"]);
-    let t2 = new TransportServiceClass("sea", ["best-transport","best-transport","best-transport"]);
-    let t3 = new TransportServiceClass("air", ["best-transport","best-transport","best-transport"]);
-    let t4 = new TransportServiceClass("rail", ["best-transport","best-transport","best-transport"]);
+    let t1 = new TransportServiceClass("road", ["customised-transport-road","flexible-solutions-road","reliable-updates-road"]);
+    let t2 = new TransportServiceClass("sea", ["global-reach-ocean","large-shipments-ocean","environment-ocean"]);
+    let t3 = new TransportServiceClass("air", ["swift-deliveries-air","global-connectivity-air","for-high-value-goods-air"]);
+    let t4 = new TransportServiceClass("rail", ["intermodality-rail","cost-effective-rail","environment-rail"]);
 </script>
 
 
