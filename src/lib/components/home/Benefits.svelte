@@ -8,7 +8,7 @@
 
     let benefit1 = new BenefitClass("emergency-solutions", "/images/gray.png", `/services/transport/emergency`);
     let benefit2 = new BenefitClass("global-reach", "/images/gray.png", `/services`);
-    let benefit3 = new BenefitClass("strategic-collaboration", "/images/gray.png", `/contact`);
+    let benefit3 = new BenefitClass("strategic-collaboration", "/images/strat-collab.webp", `/contact`);
 </script>
 
 <div class="flex flex-col row-start-3 col-start-1 col-span-4 gap-16 py-20
