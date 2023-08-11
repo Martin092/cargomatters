@@ -102,9 +102,27 @@
     "link-text": "Dummy link"
   },
   "automotive-jit": {
-    "icon": "mdi:sprout",
+    "icon": "mdi:truck-fast",
     "title": "Just-in-Time (JIT) Delivery",
     "desc": "Implementing a JIT approach to minimize inventory holding costs by delivering automotive parts and components to manufacturing facilities exactly when needed for production.",
+    "link-text": "Contact us"
+  },
+  "automotive-tailor-made": {
+    "icon": "mdi:cached",
+    "title": "A solution-driven approach",
+    "desc": "Providing solutions based on the emergency demand of every project and our expertise",
+    "link-text": "Contact us"
+  },
+  "automotive-supply-chain": {
+    "icon": "mdi:package-variant",
+    "title": "Supply Chain Visibility Platforms",
+    "desc": "Using data analytics and digital platforms to provide real-time insights into supply chain operations",
+    "link-text": "Contact us"
+  },
+  "automotive-care": {
+    "icon": "mdi:face-agent",
+    "title": "Customer care",
+    "desc": "A team that gives you utmost control, reliability and transparency. 24/7",
     "link-text": "Contact us"
   }
   

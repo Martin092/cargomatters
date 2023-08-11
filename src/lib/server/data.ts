@@ -2,7 +2,10 @@ import {BusinessPageBuilder, FeatureClass, PagesDatabase} from "$lib/typescript"
 
 let auto = new BusinessPageBuilder()
     .setKeywordTitle("Automotive")
-    .withFeatures([new FeatureClass("automotive-jit", "/contact")])
+    .withFeatures([new FeatureClass("automotive-tailor-made", "/contact"),
+                    new FeatureClass("automotive-jit", "/contact"),
+                    new FeatureClass("automotive-supply-chain", "/contact"),
+                    new FeatureClass("automotive-care", "/contact")])
     .withImage("/images/automobile.webp", "cars on an assembly line")
     .build();
 
