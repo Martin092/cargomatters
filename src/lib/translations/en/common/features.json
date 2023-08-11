@@ -100,6 +100,12 @@
     "title": "Environmentally Conscious Shipping",
     "desc": "Embrace sustainability with rail freight's eco-friendly advantages. Compared to other modes of transport, trains produce fewer carbon emissions per ton of cargo, making rail freight a greener choice for your business and the planet.",
     "link-text": "Dummy link"
+  },
+  "automotive-jit": {
+    "icon": "mdi:sprout",
+    "title": "Just-in-Time (JIT) Delivery",
+    "desc": "Implementing a JIT approach to minimize inventory holding costs by delivering automotive parts and components to manufacturing facilities exactly when needed for production.",
+    "link-text": "Contact us"
   }
   
 

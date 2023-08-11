@@ -1,4 +1,10 @@
-import {BusinessPageBuilder, PagesDatabase} from "$lib/typescript";
+import {BusinessPageBuilder, FeatureClass, PagesDatabase} from "$lib/typescript";
+
+let auto = new BusinessPageBuilder()
+    .setKeywordTitle("Automotive")
+    .withFeatures([new FeatureClass("automotive-jit", "/contact")])
+    .withImage("/images/automobile.webp", "cars on an assembly line")
+    .build();
 
 let aero = new BusinessPageBuilder()
     .setKeywordTitle("Aerospace")
@@ -29,6 +35,7 @@ let agriculture = new BusinessPageBuilder()
 
 export const data = PagesDatabase.getInstance();
 
+data.addPage(auto)
 data.addPage(aero);
 data.addPage(military);
 data.addPage(chem);

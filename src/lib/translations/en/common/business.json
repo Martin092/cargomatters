@@ -9,6 +9,10 @@
       "type": "Aerospace",
       "subtitle": "Lorem ipsum dolor sitamet"
     },
+    "automotive": {
+      "type": "Automotive",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
     "military": {
       "type": "Military",
       "subtitle": "Lorem ipsum dolor sitamet"
