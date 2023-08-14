@@ -11,7 +11,7 @@ let auto = new BusinessPageBuilder()
 
 let aero = new BusinessPageBuilder()
     .setKeywordTitle("Aerospace")
-    .withImage("/images/gray.png", "Gray image")
+    .withImage("/images/aero-ship.webp", "a space ship under construction")
     .withDummyFeatures()
     .build();
 
@@ -27,9 +27,9 @@ let chem = new BusinessPageBuilder()
     .withDummyReviews()
     .build();
 
-let agriculture = new BusinessPageBuilder()
-    .setKeywordTitle("Agriculture")
-    .withImage("/images/gray.png", "Gray image")
+let hightech = new BusinessPageBuilder()
+    .setKeywordTitle("High-tech")
+    .withImage("/images/high-tech.webp", "Close-up image of a CPU")
     .withDummyFeatures()
     .withDummyBenefits()
     .withDummyReviews()
@@ -42,4 +42,4 @@ data.addPage(auto)
 data.addPage(aero);
 data.addPage(military);
 data.addPage(chem);
-data.addPage(agriculture);
+data.addPage(hightech);
