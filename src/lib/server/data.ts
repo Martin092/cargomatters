@@ -15,14 +15,14 @@ let aero = new BusinessPageBuilder()
     .withDummyFeatures()
     .build();
 
-let military = new BusinessPageBuilder()
-    .setKeywordTitle("Military")
+let food = new BusinessPageBuilder()
+    .setKeywordTitle("Food")
     .withImage("/images/gray.png", "Gray image")
     .withDummyValues()
     .build();
 
-let chem = new BusinessPageBuilder()
-    .setKeywordTitle("Chemical")
+let pharma = new BusinessPageBuilder()
+    .setKeywordTitle("Pharmaceutical")
     .withImage("/images/gray.png", "Gray image")
     .withDummyReviews()
     .build();
@@ -40,6 +40,6 @@ export const data = PagesDatabase.getInstance();
 
 data.addPage(auto)
 data.addPage(aero);
-data.addPage(military);
-data.addPage(chem);
+data.addPage(food);
+data.addPage(pharma);
 data.addPage(hightech);
