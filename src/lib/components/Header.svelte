@@ -38,10 +38,10 @@
 
         <!--  Mobile Nav - Hidden from md upwards  -->
         <div data-testid="mobile-nav"  class="md:hidden flex right-group gap-2">
-            <select class="bg-transparent m-0 cursor-pointer" on:change="{({ target }) => goto(target.value)}" aria-label="Choose a language">
+            <!-- <select class="bg-transparent m-0 cursor-pointer" on:change="{({ target }) => goto(target.value)}" aria-label="Choose a language">
                 <option value="/en{route}" selected={$locale === 'en'} aria-label="English">EN 🇬🇧</option>
                 <option value="/bg{route}" selected={$locale === 'bg'} aria-label="Български">BG 🇧🇬</option>
-            </select>
+            </select> -->
             <a href="/{$locale}/contact" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">{$t('header.consult')}</a>
             <button data-testid="toggle-nav" on:click={toggleNav}><Icon color="grey" height="30"  icon="fontisto:nav-icon-a"/></button>
         </div>
@@ -55,10 +55,11 @@
             <a href="/{$locale}/about">{$t('header.nav.about')}</a>
             <a href="/{$locale}/services">{$t('header.nav.services')}</a>
             <a href="/{$locale}/emergency">{$t('header.nav.emergency')}</a>
-            <select class="bg-transparent m-0 cursor-pointer" on:change="{({ target }) => goto(target.value)}" aria-label="Choose a language">
+
+            <!-- <select class="bg-transparent m-0 cursor-pointer" on:change="{({ target }) => goto(target.value)}" aria-label="Choose a language">
                 <option value="/en{route}" selected={$locale === 'en'} aria-label="English">EN 🇬🇧</option>
                 <option value="/bg{route}" selected={$locale === 'bg'} aria-label="Български">BG 🇧🇬</option>
-            </select>
+            </select> -->
             <a href="/{$locale}/contact" class="btn rounded-lg btn-md variant-filled-primary flex-grow-0 text-sm font-bold" data-sveltekit-preload-data="hover">{$t('header.consult')}</a>
         </div>
     </nav>
