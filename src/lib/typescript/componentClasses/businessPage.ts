@@ -11,7 +11,7 @@ export class BusinessPageBuilder {
     public questions:string[] = [];
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
-    public heroImage:string = "/images/hero-ornaments.svg";
+    public heroImage:string = "/images/hero-image.svg";
 
     /**
      * Set the keyword title of the business page. Can have capitals
