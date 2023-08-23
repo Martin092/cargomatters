@@ -13,6 +13,7 @@ let auto = new BusinessPageBuilder()
 let aero = new BusinessPageBuilder()
     .setKeywordTitle("Aerospace")
     .withImage("/images/aero-ship.webp", "a space ship under construction")
+    .withHeroImage("/images/aerospace-hero.png")
     .withDummyFeatures()
     .build();
 
