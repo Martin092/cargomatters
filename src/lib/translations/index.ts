@@ -5,7 +5,7 @@ import lang from './lang.json';
 const config:Config = {
     translations: {
         en: { lang },
-        bg: { lang },
+        // bg: { lang },
     },
     loaders: [
         // English Localization
@@ -87,82 +87,82 @@ const config:Config = {
         },
 
         // Bulgarian Localization
-        {
-            locale: 'bg',
-            key: 'home',
-            loader: async () => (await import('./bg/pages/home.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'header',
-            loader: async () => (await import('./bg/components/header.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'footer',
-            loader: async () => (await import('./bg/components/footer.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'benefits',
-            loader: async () => (await import('./bg/common/benefits.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'social-proof',
-            loader: async () => (await import('./bg/common/social-proof.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'faq',
-            loader: async () => (await import('./bg/common/faq.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'cta',
-            loader: async () => (await import('./bg/components/cta.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'contact',
-            loader: async () => (await import('./bg/pages/contact.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'work-process',
-            loader: async () => (await import('./bg/common/work-process.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'about',
-            loader: async () => (await import('./bg/pages/about.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'services',
-            loader: async () => (await import('./bg/pages/services.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'business',
-            loader: async () => (await import('./bg/common/business.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'features',
-            loader: async () => (await import('./bg/common/features.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'meta',
-            loader: async () => (await import('./bg/components/meta.json')).default,
-        },
-        {
-            locale: 'bg',
-            key: 'error',
-            routes: ['error'],
-            loader: async () => (await import('./bg/pages/error.json')).default,
-        },
+        // {
+        //     locale: 'bg',
+        //     key: 'home',
+        //     loader: async () => (await import('./bg/pages/home.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'header',
+        //     loader: async () => (await import('./bg/components/header.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'footer',
+        //     loader: async () => (await import('./bg/components/footer.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'benefits',
+        //     loader: async () => (await import('./bg/common/benefits.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'social-proof',
+        //     loader: async () => (await import('./bg/common/social-proof.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'faq',
+        //     loader: async () => (await import('./bg/common/faq.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'cta',
+        //     loader: async () => (await import('./bg/components/cta.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'contact',
+        //     loader: async () => (await import('./bg/pages/contact.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'work-process',
+        //     loader: async () => (await import('./bg/common/work-process.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'about',
+        //     loader: async () => (await import('./bg/pages/about.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'services',
+        //     loader: async () => (await import('./bg/pages/services.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'business',
+        //     loader: async () => (await import('./bg/common/business.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'features',
+        //     loader: async () => (await import('./bg/common/features.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'meta',
+        //     loader: async () => (await import('./bg/components/meta.json')).default,
+        // },
+        // {
+        //     locale: 'bg',
+        //     key: 'error',
+        //     routes: ['error'],
+        //     loader: async () => (await import('./bg/pages/error.json')).default,
+        // },
     ],
 };
 
