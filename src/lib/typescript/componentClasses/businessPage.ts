@@ -12,6 +12,7 @@ export class BusinessPageBuilder {
     public alt:string = "Gray image";
     public image:string = "/images/gray.png";
     public heroImage:string = "/images/hero-image.svg";
+    public headerBackground:string = "";
 
     /**
      * Set the keyword title of the business page. Can have capitals
@@ -79,6 +80,15 @@ export class BusinessPageBuilder {
     }
 
     /**
+     * Set a header background for this page
+     * @param headerBackground a style class in Skeleton/Tailwind to be loadeded
+     */
+    withHeaderBackground(headerBackground:string):BusinessPageBuilder {
+        this.headerBackground = headerBackground;
+        return this;
+    }
+
+    /**
      * Set question localization keys to be loaded in the FAQ section
      * @param q the localization keys for all questions to be added
      */
@@ -138,7 +148,7 @@ export class BusinessPageBuilder {
      * not given, this method will fall back to the default values.
      */
     build():BusinessPage {
-        return new BusinessPage(this.type, this.features, this.benefits, this.reviews, this.questions, this.alt, this.image, this.heroImage);
+        return new BusinessPage(this.type, this.features, this.benefits, this.reviews, this.questions, this.alt, this.image, this.heroImage, this.headerBackground);
     }
 }
 
@@ -151,6 +161,7 @@ export class BusinessPage {
     localizationKey:string;
     type:string;
     heroImage:string;
+    headerBackground: string;
     features:FeatureClass[];
     benefits:BenefitClass[];
     reviews:ReviewClass[];
@@ -169,8 +180,9 @@ export class BusinessPage {
      * @param alt the alt text to the catalogue image
      * @param image the image to be loaded inside the catalogue entry
      * @param heroImage the image to be rendered on the hero section of this page
+     * @param headerBackground the background as a style class to be loaded in the header
      */
-    constructor(type: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string) {
+    constructor(type: string, features: FeatureClass[], benefits: BenefitClass[], reviews: ReviewClass[], questions:string[], alt:string, image:string, heroImage:string, headerBackground:string) {
         this.type = type;
         this.features = features;
         this.benefits = benefits;
@@ -178,7 +190,7 @@ export class BusinessPage {
         this.questions = questions;
         this._catalogueCard = new IndustrySolutionClass(image, alt, type, `/services/industry/${type.toLowerCase()}`, type.toLowerCase());
         this.heroImage = heroImage;
-
+        this.headerBackground = headerBackground;
         this.localizationKey = type.toLowerCase();
     }
 

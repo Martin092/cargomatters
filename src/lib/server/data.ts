@@ -8,6 +8,7 @@ let auto = new BusinessPageBuilder()
                     new FeatureClass("automotive-care", "/contact")])
     .withImage("/images/automobile.webp", "cars on an assembly line")
     .withHeroImage("/images/automotive-hero.png")
+    .withHeaderBackground("bg-surface-50")
     .build();
 
 let aero = new BusinessPageBuilder()
