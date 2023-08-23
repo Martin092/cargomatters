@@ -26,7 +26,8 @@ let food = new BusinessPageBuilder()
 
 let pharma = new BusinessPageBuilder()
     .setKeywordTitle("Pharmaceutical")
-    .withImage("/images/gray.png", "Gray image")
+    .withImage("/images/pharma-card.webp", "Medical supplies")
+    .withHeroImage("/images/pharma-hero.png")
     .withDummyReviews()
     .build();
 
