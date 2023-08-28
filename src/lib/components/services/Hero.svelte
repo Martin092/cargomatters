@@ -7,7 +7,7 @@
     import {MainSolution} from "$lib/typescript";
     import {t, locale} from "$lib/translations";
 
-    let transportSolution = new MainSolution("/images/transport-card.png", "a cargo ship from a bird's eye view",
+    let transportSolution = new MainSolution("/images/ship-aerial.webp", "a cargo ship from a bird's eye view",
         $t('services.mpc.transport.type'), $t('services.mpc.transport.desc'),
         [$t('services.mpc.transport.bullets.road'), $t('services.mpc.transport.bullets.sea'),
         $t('services.mpc.transport.bullets.air'), $t('services.mpc.transport.bullets.rail'),

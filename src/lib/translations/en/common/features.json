@@ -124,6 +124,19 @@
     "title": "Customer care",
     "desc": "A team that gives you utmost control, reliability and transparency. 24/7",
     "link-text": "Contact us"
+  },
+  "automotive-24/7": {
+    "icon": "mdi:airplane-alert",
+    "title": "Responsive 24/7 team",
+    "desc": "Lorem ipsum dolor sitamet something. Lorem ipsum dolor sitamet something",
+    "link-text": "Contact us"
+  }
+  ,
+  "pharma-solutions": {
+    "icon": "mdi:cached",
+    "title": "Providing the right solution",
+    "desc": "Enusre the most relevant and tailor made solutions Is provided to meet the requirements",
+    "link-text": "Contact us"
   }
   
 
