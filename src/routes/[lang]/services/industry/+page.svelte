@@ -4,8 +4,13 @@
     import {SubHero, IndustrySolutions} from "$lib/components/services";
     import LogisticsSolutions from "$lib/components/services/LogisticsSolutions.svelte";
     import {t} from "$lib/translations";
+    import { WideSolutionClass } from '$lib/typescript';
 
     export let data: PageData;
+    let em = [new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.1.subtitle'),
+        $t('services.logistical.logistics.solutions.1.title'),
+        $t('services.logistical.logistics.solutions.1.desc'))];
 </script>
 
 <Header background=""/>
@@ -39,6 +44,6 @@
         </div>
     </div>
 
-    <LogisticsSolutions />
+    <LogisticsSolutions logistcSolutions={em}/>
 </main>
 
