@@ -25,8 +25,10 @@ let aero = new BusinessPageBuilder()
 
 let food = new BusinessPageBuilder()
     .setKeywordTitle("Food")
-    .withImage("/images/gray.png", "Gray image")
+    .withImage("/images/cherries.webp", "A crate of cherries")
+    .withHeroImage("/images/food-hero.png")
     .withDummyValues()
+    .withHeaderBackground("bg-surface-50")
     .build();
 
 let pharma = new BusinessPageBuilder()

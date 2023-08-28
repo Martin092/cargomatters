@@ -28,6 +28,9 @@
                     <br>
                     
                     <div class="flex flex-row gap-2 items-center">
+                        <Icon icon="ic:round-mail"/> <p>cargo@cargo-matters.com</p>
+                    </div>
+                    <div class="flex flex-row gap-2 items-center">
                         <Icon icon="ic:round-mail"/> <p>air@cargo-matters.com</p>
                     </div>
                     <div class="flex flex-row gap-2 items-center">
