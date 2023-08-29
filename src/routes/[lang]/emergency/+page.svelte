@@ -10,35 +10,35 @@
 
 
     let meta = new MetaSnippetBuilder().setLocalizationKey("contact").withType("website").build();
-    let em = [new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.1.subtitle'),
-        $t('services.logistical.logistics.solutions.1.title'),
-        $t('services.logistical.logistics.solutions.1.desc')),
+    let em = [new WideSolutionClass("mdi:airplane-takeoff",
+        $t('services.logistical.logistics.solutions.7.subtitle'),
+        $t('services.logistical.logistics.solutions.7.title'),
+        $t('services.logistical.logistics.solutions.7.desc')),
 
-        new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.2.subtitle'),
-        $t('services.logistical.logistics.solutions.2.title'),
-        $t('services.logistical.logistics.solutions.2.desc')),
+        new WideSolutionClass("mdi:airplane",
+        $t('services.logistical.logistics.solutions.8.subtitle'),
+        $t('services.logistical.logistics.solutions.8.title'),
+        $t('services.logistical.logistics.solutions.8.desc')),
         
-        new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.3.subtitle'),
-        $t('services.logistical.logistics.solutions.3.title'),
-        $t('services.logistical.logistics.solutions.3.desc')),
+        new WideSolutionClass("mdi:account-clock",
+        $t('services.logistical.logistics.solutions.9.subtitle'),
+        $t('services.logistical.logistics.solutions.9.title'),
+        $t('services.logistical.logistics.solutions.9.desc')),
         
-        new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.4.subtitle'),
-        $t('services.logistical.logistics.solutions.4.title'),
-        $t('services.logistical.logistics.solutions.4.desc')),
+        new WideSolutionClass("mdi:clock-fast",
+        $t('services.logistical.logistics.solutions.10.subtitle'),
+        $t('services.logistical.logistics.solutions.10.title'),
+        $t('services.logistical.logistics.solutions.10.desc')),
         
-        new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.5.subtitle'),
-        $t('services.logistical.logistics.solutions.5.title'),
-        $t('services.logistical.logistics.solutions.5.desc')),
+        new WideSolutionClass("mdi:transfer",
+        $t('services.logistical.logistics.solutions.11.subtitle'),
+        $t('services.logistical.logistics.solutions.11.title'),
+        $t('services.logistical.logistics.solutions.11.desc')),
         
-        new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.6.subtitle'),
-        $t('services.logistical.logistics.solutions.6.title'),
-        $t('services.logistical.logistics.solutions.6.desc'))];
+        new WideSolutionClass("mdi:routes",
+        $t('services.logistical.logistics.solutions.12.subtitle'),
+        $t('services.logistical.logistics.solutions.12.title'),
+        $t('services.logistical.logistics.solutions.12.desc'))];
 </script>
 
 <Meta {meta} />
