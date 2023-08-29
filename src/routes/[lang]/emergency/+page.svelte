@@ -13,7 +13,32 @@
     let em = [new WideSolutionClass("mdi:card-account-details",
         $t('services.logistical.logistics.solutions.1.subtitle'),
         $t('services.logistical.logistics.solutions.1.title'),
-        $t('services.logistical.logistics.solutions.1.desc'))];
+        $t('services.logistical.logistics.solutions.1.desc')),
+
+        new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.2.subtitle'),
+        $t('services.logistical.logistics.solutions.2.title'),
+        $t('services.logistical.logistics.solutions.2.desc')),
+        
+        new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.3.subtitle'),
+        $t('services.logistical.logistics.solutions.3.title'),
+        $t('services.logistical.logistics.solutions.3.desc')),
+        
+        new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.4.subtitle'),
+        $t('services.logistical.logistics.solutions.4.title'),
+        $t('services.logistical.logistics.solutions.4.desc')),
+        
+        new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.5.subtitle'),
+        $t('services.logistical.logistics.solutions.5.title'),
+        $t('services.logistical.logistics.solutions.5.desc')),
+        
+        new WideSolutionClass("mdi:card-account-details",
+        $t('services.logistical.logistics.solutions.6.subtitle'),
+        $t('services.logistical.logistics.solutions.6.title'),
+        $t('services.logistical.logistics.solutions.6.desc'))];
 </script>
 
 <Meta {meta} />

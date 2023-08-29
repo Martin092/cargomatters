@@ -25,19 +25,19 @@
             <WideSolution solution={logistcSolutions[0]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={logistcSolutions[0]} />
+            <WideSolution solution={logistcSolutions[1]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={logistcSolutions[0]} />
+            <WideSolution solution={logistcSolutions[2]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={logistcSolutions[0]} />
+            <WideSolution solution={logistcSolutions[3]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={logistcSolutions[0]} />
+            <WideSolution solution={logistcSolutions[4]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={logistcSolutions[0]} />
+            <WideSolution solution={logistcSolutions[5]} />
         </div>
     </div>
 </div>
