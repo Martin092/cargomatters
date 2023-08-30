@@ -1,6 +1,6 @@
 {
   "common": {
-    "card-title": "{{type}} Industry Solution",
+    "card-title": "{{type}} Industry",
     "card-link": "See {{type}} solutions",
     "hero": "We provide services for the {{type}} industry"
   },
@@ -9,16 +9,20 @@
       "type": "Aerospace",
       "subtitle": "Lorem ipsum dolor sitamet"
     },
-    "military": {
-      "type": "Military",
+    "automotive": {
+      "type": "Automotive",
       "subtitle": "Lorem ipsum dolor sitamet"
     },
-    "chemical": {
-      "type": "Chemical",
+    "food": {
+      "type": "Food",
       "subtitle": "Lorem ipsum dolor sitamet"
     },
-    "agriculture": {
-      "type": "Agriculture",
+    "pharmaceutical": {
+      "type": "Pharmaceutical",
+      "subtitle": "Lorem ipsum dolor sitamet"
+    },
+    "high-tech": {
+      "type": "High-tech",
       "subtitle": "Lorem ipsum dolor sitamet"
     }
   }

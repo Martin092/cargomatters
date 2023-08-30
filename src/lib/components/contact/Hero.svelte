@@ -18,11 +18,26 @@
             <div class="flex flex-col md:flex-row gap-4 md:gap-32">
                 <div class="flex flex-col">
                     <h4>{$t('contact.subtitles.contact')}</h4>
+                    
                     <div class="flex flex-row gap-2 items-center">
-                        <Icon icon="zondicons:phone"/> <p>+359 88 888 8888</p>
+                        <Icon icon="zondicons:phone"/> <p>+359 88 950 1353</p>
                     </div>
                     <div class="flex flex-row gap-2 items-center">
-                        <Icon icon="ic:round-mail"/> <p>contact@cargomatters.com</p>
+                        <Icon icon="zondicons:phone"/> <p>+359 88 202 0257</p>
+                    </div>
+                    <br>
+                    
+                    <div class="flex flex-row gap-2 items-center">
+                        <Icon icon="ic:round-mail"/> <p>cargo@cargo-matters.com</p>
+                    </div>
+                    <div class="flex flex-row gap-2 items-center">
+                        <Icon icon="ic:round-mail"/> <p>air@cargo-matters.com</p>
+                    </div>
+                    <div class="flex flex-row gap-2 items-center">
+                        <Icon icon="ic:round-mail"/> <p>sea@cargo-matters.com</p>
+                    </div>
+                    <div class="flex flex-row gap-2 items-center">
+                        <Icon icon="ic:round-mail"/> <p>road@cargo-matters.com</p>
                     </div>
                 </div>
                 <div class="flex flex-col">

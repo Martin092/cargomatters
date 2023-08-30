@@ -8,12 +8,11 @@
     import {WideSolutionClass, Stat} from "$lib/typescript";
     import {t} from "$lib/translations";
 
+    export let logistcSolutions: WideSolutionClass[];
+
     let stat1 = Stat.shortenedStatistic(12, $t('services.logistical.logistics.solutions.1.stats.1'));
     let stats:Stat[] = [stat1, stat1, stat1, stat1];
-    let em = new WideSolutionClass("mdi:card-account-details",
-        $t('services.logistical.logistics.solutions.1.subtitle'),
-        $t('services.logistical.logistics.solutions.1.title'),
-        $t('services.logistical.logistics.solutions.1.desc'), stats);
+    
 </script>
 
 <div class="col-start-1 row-start-5 col-span-4 flex flex-col py-20
@@ -23,22 +22,22 @@
                 md:grid md:grid-cols-8
                 xl:grid-cols-12">
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[0]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[1]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[2]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[3]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[4]} />
         </div>
         <div class="md:col-span-4">
-            <WideSolution solution={em} />
+            <WideSolution solution={logistcSolutions[5]} />
         </div>
     </div>
 </div>

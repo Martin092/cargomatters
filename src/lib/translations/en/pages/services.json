@@ -106,8 +106,96 @@
       "subtitle": "Looking for whole package solution for your business? Browse our industrial solutions catalog or contact us directly.",
       "solutions": {
         "1": {
-          "subtitle": "Fast Solution",
+          "subtitle": "Your safety matters",
+          "title": "Cargo Insurance",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "2": {
+          "subtitle": "Saves you time and efforts",
+          "title": "Customs clearance",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "3": {
+          "subtitle": "Value added services",
+          "title": "Logistics services",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "4": {
+          "subtitle": "Optimizing costs",
+          "title": "Door-to-door distribution",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "5": {
+          "subtitle": "Efficient solutions",
+          "title": "Long term storage",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "6": {
+          "subtitle": "Reliable and safe",
+          "title": "Specialized packings",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "7": {
+          "subtitle": "Cost-effective and reliable",
+          "title": "Next Flight out",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "8": {
+          "subtitle": "Fast and reliable",
+          "title": "Charter flights",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "9": {
+          "subtitle": "Tailored solution",
           "title": "On Board Courier",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "10": {
+          "subtitle": "Solution-oriented",
+          "title": "Priority Handling",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "11": {
+          "subtitle": "Swift and reliable",
+          "title": "Ramp transfer",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
+          "stats": {
+            "1": "services"
+          }
+        },
+        "12": {
+          "subtitle": "Special and supportive",
+          "title": "Express routings",
           "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.",
           "stats": {
             "1": "services"

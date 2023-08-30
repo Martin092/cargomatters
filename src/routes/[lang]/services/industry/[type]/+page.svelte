@@ -16,7 +16,7 @@
     }
 </script>
 
-<Header background=""/>
+<Header background={page.headerBackground}/>
 
 <main class="text-gray-800
              grid grid-cols-4 gap-x-2 mx-4
