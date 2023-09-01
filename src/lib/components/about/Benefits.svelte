@@ -7,7 +7,7 @@
     import {BenefitClass} from "$lib/typescript";
 
     let tailoredSolutions = new BenefitClass("tailored-solutions", "/images/benefits-tailored.png", `/services`);
-    let reliability = new BenefitClass("reliability", "/images/gray.png", `/services`);
+    let reliability = new BenefitClass("reliability", "/images/time.webp", `/services`);
     let sustainability = new BenefitClass("sustainability", "/images/benefit-sustainability.png", `/services`);
 </script>
 

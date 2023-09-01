@@ -46,6 +46,7 @@
                         <li><p>1. {$t('work-process.steps.1')}</p></li>
                         <li><p>2. {$t('work-process.steps.2')}</p></li>
                         <li><p>3. {$t('work-process.steps.3')}</p></li>
+                        <li><p>4. {$t('work-process.steps.4')}</p></li>
                     </ol>
                 </div>
             </div>
