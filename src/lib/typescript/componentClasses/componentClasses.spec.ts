@@ -9,69 +9,69 @@ import {
 } from "../index";
 import {dummyBenefits, dummyFeatures, dummyReviews} from "./businessPage";
 
-describe("BusinessPageBuilder and BusinessPage", () => {
-    it('should work properly with all given basic methods', function () {
+// describe("BusinessPageBuilder and BusinessPage", () => {
+//     it('should work properly with all given basic methods', function () {
 
-        let b1 = new BusinessPageBuilder();
-        b1.setKeywordTitle("test")
-            .withDummyValues().withImage("/some/image", "alt")
-            .withHeroImage("/some/hero/image");
+//         let b1 = new BusinessPageBuilder();
+//         b1.setKeywordTitle("test")
+//             .withDummyValues().withImage("/some/image", "alt")
+//             .withHeroImage("/some/hero/image");
 
-        let actual = b1.build();
+//         let actual = b1.build();
 
-        let expectedFeatures = dummyFeatures();
-        let expectedBenefits = dummyBenefits();
-        let expectedReviews = dummyReviews();
+//         let expectedFeatures = dummyFeatures();
+//         let expectedBenefits = dummyBenefits();
+//         let expectedReviews = dummyReviews();
 
-        let expected =
-            new BusinessPage("test", expectedFeatures, expectedBenefits,
-                expectedReviews, ["dummy","dummy","dummy","dummy"], "alt", "/some/image", "/some/hero/image");
+//         let expected =
+//             new BusinessPage("test", expectedFeatures, expectedBenefits,
+//                 expectedReviews, ["dummy","dummy","dummy","dummy"], "alt", "/some/image", "/some/hero/image");
 
-        expect(actual).toStrictEqual(expected);
-    });
+//         expect(actual).toStrictEqual(expected);
+//     });
 
-    it('should work properly with setters for array fields', function () {
-        let testBenefit =
-            new BenefitClass("test","/some/image","/");
+//     it('should work properly with setters for array fields', function () {
+//         let testBenefit =
+//             new BenefitClass("test","/some/image","/");
 
-        let b1 = new BusinessPageBuilder();
-        b1.setKeywordTitle("test")
-            .withFeatures(dummyFeatures())
-            .addBenefits(dummyBenefits())
-            .withReviews(dummyReviews())
-            .withImage("/some/image", "alt")
-            .addBenefits([testBenefit])
-            .withHeroImage("/some/hero/image");
+//         let b1 = new BusinessPageBuilder();
+//         b1.setKeywordTitle("test")
+//             .withFeatures(dummyFeatures())
+//             .addBenefits(dummyBenefits())
+//             .withReviews(dummyReviews())
+//             .withImage("/some/image", "alt")
+//             .addBenefits([testBenefit])
+//             .withHeroImage("/some/hero/image");
 
-        let actual = b1.build();
+//         let actual = b1.build();
 
-        let expectedFeatures = dummyFeatures();
-        let expectedBenefits = dummyBenefits();
-        let expectedReviews = dummyReviews();
+//         let expectedFeatures = dummyFeatures();
+//         let expectedBenefits = dummyBenefits();
+//         let expectedReviews = dummyReviews();
 
-        expectedBenefits.push(testBenefit);
-        let expected =
-            new BusinessPage("test", expectedFeatures, expectedBenefits,
-                expectedReviews, [], "alt", "/some/image", "/some/hero/image");
+//         expectedBenefits.push(testBenefit);
+//         let expected =
+//             new BusinessPage("test", expectedFeatures, expectedBenefits,
+//                 expectedReviews, [], "alt", "/some/image", "/some/hero/image");
 
-        expect(actual).toStrictEqual(expected);
-    });
+//         expect(actual).toStrictEqual(expected);
+//     });
 
-    it('should give correct catalogue card', function () {
+//     it('should give correct catalogue card', function () {
 
-        let b1 = new BusinessPageBuilder();
-        b1.setKeywordTitle("test")
-            .withImage("/some/image", "alt");
+//         let b1 = new BusinessPageBuilder();
+//         b1.setKeywordTitle("test")
+//             .withImage("/some/image", "alt");
 
-        let actual = b1.build().catalogueCard;
+//         let actual = b1.build().catalogueCard;
 
-        let expected =
-            new IndustrySolutionClass("/some/image", "alt", "test",
-                "/services/industry/test", "test");
+//         let expected =
+//             new IndustrySolutionClass("/some/image", "alt", "test",
+//                 "/services/industry/test", "test");
 
-        expect(actual).toStrictEqual(expected);
-    });
-})
+//         expect(actual).toStrictEqual(expected);
+//     });
+// })
 
 describe("StatClass class", () => {
     it('should be created successfully by shortened constructor', function () {

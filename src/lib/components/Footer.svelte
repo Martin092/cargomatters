@@ -51,8 +51,8 @@
                     md:row-start-2 md:col-span-4
                     xl:row-start-1 xl:col-start-9 xl:col-span-3">
             <h4>{$t('footer.titles.contact')}</h4>
-            <p>{$t('footer.contact.email')}: contact@cargomatters.com</p>
-            <p>{$t('footer.contact.phone')}: +359888888888</p>
+            <p>{$t('footer.contact.email')}: cargo@cargo-matters.com</p>
+            <p>{$t('footer.contact.phone')}: +359 88 502 0273</p>
             <a class="text-primary-500 underline" href="/{$locale}/contact">{$t('footer.contact.cta')}</a>
         </div>
     </div>

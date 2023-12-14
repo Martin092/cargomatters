@@ -18,7 +18,7 @@
     "title": "Reliability and On time Performance",
     "desc": "We know the value of time in business, and we treat your time with the utmost respect. Our commitment to punctuality means that your cargo will arrive at its destination exactly when you expect it. With CargoMatters, you can bid farewell to delays and disruptions, ensuring a smooth flow of goods and an enhanced reputation for your business. <strong>Because time Matters</strong>!",
     "link-text": "Explore services",
-    "alt": "Empty photo"
+    "alt": "A man holding a watch"
   },
   "sustainability": {
     "subtitle": "Trust",
@@ -54,5 +54,76 @@
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.",
     "link-text": "Explore services",
     "alt": "Empty photo"
+  },
+  "automotive-jit": {
+    "subtitle": "Right when you need us",
+    "title": "Just-in-Time (JIT) Delivery",
+    "desc": "Implementing a JIT approach to minimize inventory holding costs by delivering automotive parts and components to manufacturing facilities exactly when needed for production.",
+    "link-text": "Explore services",
+    "alt": "A man with a clipboard next to a truck"
+  },
+  "automotive-chain": {
+    "subtitle": "Because communication matters",
+    "title": "Supply Chain Visibility Platforms",
+    "desc": "Using data analytics and digital platforms to provide real-time insights into supply chain operations",
+    "link-text": "Explore services",
+    "alt": "A man on a desk looking at the world map"
+  },
+  "aerospace-components": {
+    "subtitle": "Lorem ispum",
+    "title": "Aircraft Parts and Components Transport",
+    "desc": "Develop specialized logistics and transportation networks to efficiently move aircraft parts, components, and materials to manufacturing facilities, assembly lines, and maintenance centers.",
+    "link-text": "Explore services",
+    "alt": "A plane in a hangar"
+  },
+  "aerospace-ground-handling": {
+    "subtitle": "Lorem ispum",
+    "title": "Aircraft Ground Handling Services",
+    "desc": "Offer ground handling and support services at airports, including aircraft loading and unloading, fueling, catering, and passenger services.",
+    "link-text": "Explore services",
+    "alt": "A plane being loaded with cargo"
+  },
+  "aerospace-hazards": {
+    "subtitle": "Lorem ispum",
+    "title": "Aerospace Hazardous Materials Transport",
+    "desc": "Handle the transportation of hazardous materials and substances used in aerospace operations, ensuring compliance with safety regulations and guidelines.",
+    "link-text": "Explore services",
+    "alt": "A man handling hazardous materials"
+  },
+  "aerospace-emergencies": {
+    "subtitle": "Lorem ispum",
+    "title": "Aerospace Emergency Solutions",
+    "desc": "Offer on time solutions to meet the demands to deliver on time to aerospace facilities and research centers.",
+    "link-text": "Explore services",
+    "alt": "Upclose photo of a plane"
+  },
+  "hightech-emergencies": {
+    "subtitle": "Lorem ispum",
+    "title": "Advanced Route Optimization",
+    "desc": "Utilize experience and know-how to to calculate the most efficient and cost-effective routes for transporting hi tech goods.",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
+  },
+  "hightech-platforms": {
+    "subtitle": "Lorem ispum",
+    "title": "Collaborative Platforms",
+    "desc": "Use digital platforms that facilitate collaboration and communication among different stakeholders in the supply chain, promoting seamless information sharing and coordination.",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
+  },
+  "pharma-platforms": {
+    "subtitle": "Lorem ispum",
+    "title": "Regulatory Compliance",
+    "desc": "Ensure that all transport operations of healthcare products adhere to relevant regulations, safety standards, and licensing requirements.",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
+  },
+  "pharma-emergencies": {
+    "subtitle": "Lorem ispum",
+    "title": "Emergency Response Planning",
+    "desc": "Develop comprehensive plans for responding to any emergencies during transport, including equipment failure unpredictable circumstances",
+    "link-text": "Explore services",
+    "alt": "Empty photo"
   }
+
 }

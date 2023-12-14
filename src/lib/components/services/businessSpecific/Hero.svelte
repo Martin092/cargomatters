@@ -11,12 +11,12 @@
      */
     export let hero = {
         lkey: "",
-        heroImage: "/images/hero-ornaments.svg"
+        heroImage: "/images/hero-image.svg"
     }
 
 </script>
 
-<div style={`background-image: url("${hero.heroImage}")`} class="col-span-4 flex flex-col row-start-1
+<div style={`background-image: url("/images/hero-ornaments.svg")`} class="col-span-4 flex flex-col row-start-1
                 md:col-span-6 md:gap-12
                 xl:col-span-12 xl:grid xl:grid-cols-12 xl:gap-6">
 
@@ -46,7 +46,8 @@
             <h6>{$t('home.hero.social-proof')}</h6>
         </div>
     </div>
-    <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src="/images/hero-image.svg" alt="">
+    <img data-testid="xl-hero" class="row-start-1 col-start-7 col-span-6 w-[947px] z-[-10] max-w-none overflow-visible hidden xl:block" src={hero.heroImage}
+     alt="">
 </div>
 
 <style lang="scss">

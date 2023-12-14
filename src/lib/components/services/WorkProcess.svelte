@@ -16,7 +16,7 @@
             xl:col-start-2 xl:col-span-10 xl:gap-16
             2xl:col-start-2 2xl:col-span-10">
 
-    <img class="row-start-1 md:col-start-5 md:col-span-4" src="/images/gray.png" alt="work process illustration" />
+    <img class="row-start-1 md:col-start-5 md:col-span-4 rounded-lg" src="/images/man-cogwheels.webp" alt="work process illustration" />
     <div class="flex flex-col gap-6 row-start-1
                 md:col-start-1 md:col-span-4
                 xl:gap-8 xl:py-4">

@@ -19,10 +19,10 @@
                 <div class="flex flex-col">
                     <h4>{$t('contact.subtitles.emergency')}</h4>
                     <div class="flex flex-row gap-2 items-center">
-                        <Icon icon="zondicons:phone"/> <p>+359 88 888 8888</p>
+                        <Icon icon="zondicons:phone"/> <p>+359 88 950 1353</p>
                     </div>
                     <div class="flex flex-row gap-2 items-center">
-                        <Icon icon="ic:round-mail"/> <p>contact@cargomatters.com</p>
+                        <Icon icon="ic:round-mail"/> <p>emergency@cargomatters.com</p>
                     </div>
                 </div>
                 <div class="flex flex-col">
@@ -31,6 +31,7 @@
                         <li><p>1. {$t('work-process.steps.1')}</p></li>
                         <li><p>2. {$t('work-process.steps.2')}</p></li>
                         <li><p>3. {$t('work-process.steps.3')}</p></li>
+                        <li><p>3. {$t('work-process.steps.4')}</p></li>
                     </ol>
                 </div>
             </div>

@@ -57,7 +57,7 @@
         <img class="hidden
                     md:mr-[-128px] md:block
                     lg:mr-0 lg:w-[52vw] lg:self-end
-                    xl:w-[50vw]" src="/images/transport-rail.png" alt="">
+                    xl:w-[50vw]" src="/images/train2.png" alt="">
     </div>
 </div>
 

@@ -8,7 +8,7 @@
 
     let feature1 = new FeatureClass("free-consult", `/contact`);
     let feature2 = new FeatureClass("best-transport", `/services/transport`);
-    let feature3 = new FeatureClass("best-logistics", `/services/logistics`);
+    //let feature3 = new FeatureClass("best-logistics", `/services/logistics`);
     let feature4 = new FeatureClass("expert-team", `/contact`);
 </script>
 
@@ -21,7 +21,7 @@
                 xl:col-start-2 xl:col-span-10" >
     <Feature feature={feature1}  />
     <Feature feature={feature2}  />
-    <Feature feature={feature3}  />
+    <!-- <Feature feature={feature3}  /> -->
     <Feature feature={feature4}  />
 </div>
 
