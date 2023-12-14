@@ -25,7 +25,7 @@
             </div>
         {/each}
     </div> -->
-    <a href="/{$locale}/contact" class="underline text-primary-500">{$t('cta.consult')} ></a>
+    <a href="/{$locale}/contact" class="underline text-primary-500">{$t('cta.consult')} </a>
 </div>
 
 <style>

@@ -32,14 +32,14 @@
                 <svelte:fragment slot="content"><p>{$t('faq.questions.q2.answer')}</p></svelte:fragment>
             </AccordionItem>
             <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q1.icon`)}/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q3.icon`)}/></svelte:fragment>
+                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q3.question')}</h5></svelte:fragment>
+                <svelte:fragment slot="content"><p>{$t('faq.questions.q3.answer')}</p></svelte:fragment>
             </AccordionItem>
             <AccordionItem closed>
-                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q1.icon`)}/></svelte:fragment>
-                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q1.question')}</h5></svelte:fragment>
-                <svelte:fragment slot="content"><p>{$t('faq.questions.q1.answer')}</p></svelte:fragment>
+                <svelte:fragment slot="lead"><Icon color="grey" height="32" icon={$t(`faq.questions.q4.icon`)}/></svelte:fragment>
+                <svelte:fragment slot="summary"><h5 class="font-semibold">{$t('faq.questions.q4.question')}</h5></svelte:fragment>
+                <svelte:fragment slot="content"><p>{$t('faq.questions.q4.answer')}</p></svelte:fragment>
             </AccordionItem>
         </Accordion>
     </div>

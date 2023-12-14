@@ -128,16 +128,56 @@
   "automotive-24/7": {
     "icon": "mdi:airplane-alert",
     "title": "Responsive 24/7 team",
-    "desc": "Lorem ipsum dolor sitamet something. Lorem ipsum dolor sitamet something",
+    "desc": "A team that gives you utmost control, reliability and transparency. 24/7",
     "link-text": "Contact us"
   }
   ,
   "pharma-solutions": {
     "icon": "mdi:cached",
     "title": "Providing the right solution",
-    "desc": "Enusre the most relevant and tailor made solutions Is provided to meet the requirements",
+    "desc": "Ensure the most relevant and tailor made solutions Is provided to meet the requirements",
     "link-text": "Contact us"
   }
+  ,
+  "pharma-regulations": {
+    "icon": "mdi:cached",
+    "title": "Regulatory Compliance",
+    "desc": "Ensure that all transport operations of healthcare products adhere to relevant regulations, safety standards, and licensing requirements.",
+    "link-text": "Contact us"
+  }
+  ,
+  "pharma-emergency": {
+    "icon": "mdi:cached",
+    "title": "Emergency Response Planning",
+    "desc": "Develop comprehensive plans for responding to any emergencies during transport, including equipment failure unpredictable circumstances",
+    "link-text": "Contact us"
+  }
+  ,
+  "transportation-food": {
+    "icon": "mdi:dolly",
+    "title": "Transportation modes",
+    "desc": "Food can be transported by various means, including refrigerated trucks, vans, ships, and air freight, depending on the distance and type of food being transported.",
+    "link-text": "Contact us"
+  },
+  "scheduling-food": {
+    "icon": "mdi:book-clock",
+    "title": "Delivery Scheduling",
+    "desc": "Efficient scheduling and routing are crucial to ensure timely deliver-ies, especially for perishable goods. Delivery schedules should account for traffic condi-tions and distance.",
+    "link-text": "Contact us"
+  },
+  "managment-food": {
+    "icon": "mdi:snowflake",
+    "title": "Cold Chain Management",
+    "desc": "For perishable and temperature-sensitive goods, maintaining a seamless cold chain is essential. This involves maintaining temperature control from the point of origin to the final destination.",
+    "link-text": "Contact us"
+  },
+  "regulations-food": {
+    "icon": "mdi:account-tie-hat",
+    "title": "Compliance with Regulations",
+    "desc": "When transporting food across inter-national borders, adherence to Customs and and Import Regulations",
+    "link-text": "Contact us"
+  }
+
   
 
 

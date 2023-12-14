@@ -27,7 +27,10 @@ let food = new BusinessPageBuilder()
     .setKeywordTitle("Food")
     .withImage("/images/cherries.webp", "A crate of cherries")
     .withHeroImage("/images/food-hero.png")
-    .withDummyValues()
+    .withFeatures([new FeatureClass("transportation-food", "/contact"),
+                    new FeatureClass("scheduling-food", "/contact"),
+                    new FeatureClass("managment-food", "/contact"),
+                    new FeatureClass("regulations-food", "/contact")])
     .withHeaderBackground("bg-surface-50")
     .build();
 
@@ -36,10 +39,9 @@ let pharma = new BusinessPageBuilder()
     .withImage("/images/pharma-card.webp", "Medical supplies")
     .withHeroImage("/images/pharma-hero.png")
     .withFeatures([new FeatureClass("pharma-solutions", "/contact"),
-                    new FeatureClass("automotive-24/7", "/contact")])
-    .addBenefits([new BenefitClass("pharma-platforms", "/images/gray.png", ""),
-                  new BenefitClass("pharma-emergencies", "/images/gray.png", ""),])
-    .withDummyReviews()
+                    new FeatureClass("automotive-24/7", "/contact"),
+                    new FeatureClass("pharma-emergency", "/contact"),
+                    new FeatureClass("pharma-regulations", "/contact")])
     .build();
 
 let hightech = new BusinessPageBuilder()

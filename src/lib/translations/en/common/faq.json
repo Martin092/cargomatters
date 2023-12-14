@@ -3,13 +3,28 @@
   "questions": {
     "q1": {
       "icon": "mdi:truck",
-      "question": "How do I choose between available solutions?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut."
+      "question": "How can I contact Cargo Matters directly?",
+      "answer": "Please provide us with some brief information regarding your demand and we will create the right solution. We are available on both phone and email; all contacts are in the CONTACT page."
     },
     "q2": {
       "icon": "mdi:truck",
-      "question": "How much will the consultation cost?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eos libero mollitia possimus provident quod soluta velit voluptatibus. Aliquam dolore doloribus dolorum ea facilis in laudantium modi, odit pariatur ut."
+      "question": "Where is my shipment? ",
+      "answer": "A question you will not have the opportunity to ask, as status will be provided right on time, proactively and precisely."
+    },
+    "q3": {
+      "icon": "mdi:truck",
+      "question": "What are the value-added services Cargo Matters can offer? ",
+      "answer": "To provide the utmost tailor-made solution to our customers, we have built up services which solve your logistics challenges. For concrete information of all our specific services, pls visit the section."
+    },
+    "q4": {
+      "icon": "mdi:truck",
+      "question": "How can I provide feedback on the services I received? ",
+      "answer": "We value every feedback as it gives us an opportunity to improve our services and the support to our partners. Please send us information on cargo@cargo-matters.com"
+    },
+    "q5": {
+      "icon": "mdi:truck",
+      "question": "Why Cargo Matters ? ",
+      "answer": "We are focused on providing the right solutions and we do it with expertise, committed to sustainably proving that your Cargo Matters."
     },
     "dummy": {
       "icon": "mdi:truck",
