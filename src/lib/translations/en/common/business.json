@@ -7,23 +7,23 @@
   "entries": {
     "aerospace": {
       "type": "Aerospace",
-      "subtitle": "Lorem ipsum dolor sitamet"
+      "subtitle": "We fly your demand"
     },
     "automotive": {
       "type": "Automotive",
-      "subtitle": "Lorem ipsum dolor sitamet"
+      "subtitle": "We fit into your demand"
     },
     "food": {
       "type": "Food",
-      "subtitle": "Lorem ipsum dolor sitamet"
+      "subtitle": "We deliver as per the regulations and needs"
     },
     "pharmaceutical": {
       "type": "Pharmaceutical",
-      "subtitle": "Lorem ipsum dolor sitamet"
+      "subtitle": "We deliver with utmost care"
     },
     "high-tech": {
       "type": "High-tech",
-      "subtitle": "Lorem ipsum dolor sitamet"
+      "subtitle": "We have every solution for your demand"
     }
   }
 }
