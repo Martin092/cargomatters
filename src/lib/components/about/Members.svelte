@@ -8,7 +8,7 @@
     import {t} from "$lib/translations";
 
     let alen = new Member("/images/alen2.png", "1");
-    let adriana = new Member("/images/adriana2.png", "2");
+    let adriana = new Member("/images/adriana3.webp", "2"); 
 </script>
 
 <img class="row-start-4 col-start-1 col-span-4

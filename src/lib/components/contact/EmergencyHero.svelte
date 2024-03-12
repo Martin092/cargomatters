@@ -22,7 +22,7 @@
                         <Icon icon="zondicons:phone"/> <p>+359 88 950 1353</p>
                     </div>
                     <div class="flex flex-row gap-2 items-center">
-                        <Icon icon="ic:round-mail"/> <p>emergency@cargomatters.com</p>
+                        <Icon icon="ic:round-mail"/> <p>emergency@cargo-matters.com</p>
                     </div>
                 </div>
                 <div class="flex flex-col">
