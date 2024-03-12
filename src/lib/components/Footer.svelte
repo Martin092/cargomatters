@@ -32,7 +32,7 @@
             <h4>{$t('footer.titles.links')}</h4>
             <div class="flex flex-row gap-8">
                 <div class="flex flex-col gap-2 text-[#8C8C8C]">
-                    <a href="/{$locale}/termsofservice"><p>{$t('footer.nav.tos')}</p></a>
+                    <!-- <a href="/{$locale}/termsofservice"><p>{$t('footer.nav.tos')}</p></a> -->
                     <a href="/{$locale}/privacy"><p>{$t('footer.nav.privacy')}</p></a>
                     <a href="/{$locale}"><p>{$t('footer.nav.attr')}</p></a>
                     <a href="/{$locale}"><p>{$t('footer.nav.sitemap')}</p></a>

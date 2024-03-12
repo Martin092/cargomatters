@@ -26,8 +26,8 @@
     <!--  Benefits  -->
     <Benefits />
 
-    <!--  Social Proof  -->
-    <SocialProof />
+     <!-- Social Proof 
+    <SocialProof /> -->
 
     <!--  FAQ  -->
     <FAQ />
